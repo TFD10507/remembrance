@@ -1,3 +1,5 @@
+@import url('reset.css');
+
 body{
     font-family: Arial, "微軟正黑體";
     font-size: 16px;
@@ -5,8 +7,6 @@ body{
 
     box-sizing: border-box;
 
-
-    /* background-image: url(../source/pexels-dua-chuot-917076.jpg); */
     background-image: url('../source/index_bg.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -311,7 +311,7 @@ body{
 
 }
 
-
+/* --------------------About------------------------------- */
 
 
 
