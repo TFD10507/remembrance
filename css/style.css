@@ -1,10 +1,21 @@
-.body{
+body{
     font-family: Arial, "微軟正黑體";
+    font-size: 16px;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+
+
+    /* background-image: url(../source/pexels-dua-chuot-917076.jpg); */
+    background-image: url('../source/index_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-.wrapper{}
 
 
 
+/* ---------------------left------------------------ */
 /* -------主選單-------- */
 .main-sel{
     width: 20%;
@@ -12,34 +23,35 @@
     background-image: url('../source/nav\ bg.jpg');
     
     /* padding: 0 30px; */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
-    /* position: relative; */
     position: fixed;
-    /* top: 0;
     left: 0;
-    z-index: 1; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction:column; */
+
+    z-index: 1;
 }
 
-.innernav{
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-}
+.innernav{}
+
+/* ---logo----- */
 .logo{
-    width: 100%;
-    height: 100px;
     /* border: black solid 1px; */
     display: flex;
     justify-content:center;
-    padding-top: 10px;
-    padding-right: 20px;
-    box-sizing: border-box;
+    
+    padding-right: 15px;
 }
 
-.main-sel img{
-    width: 100px;
+
+.logo img{
+    width: 80px;
 }
+
 
 /* -----選單文字---- */
 .main-item{
@@ -55,17 +67,15 @@
 
 .main-item li{
     /* border: 1px solid black; */
-    padding: 20px 0;
-    font-size: 24px;
-    box-sizing: border-box;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 60px;
 }
 .main-item a{
     display: inline-block;
     text-decoration: none;
     color: #333;
-    width: 200px;
-    height: 60px;
-
+    width: 100%;
 }
 
 .main-item a:hover{
@@ -95,22 +105,215 @@
     color: rgba(108, 56, 133, 1);
 }
 
+/* -----------------left end---------------------- */
+
+
+
+/* ---------------------right------------------------ */
+
 .right{
+    width: 80%;
     position: absolute;
     right: 0;
 }
-/* ----------------banner-------------------- */
+
+/* ------banner-------- */
 .banner{
-    width: calc(100% - 240px);
-    height: 100%;
+    position: relative;
 }
 
-.banner-viedo{
-    /* width: calc(100% - 240px);
-    height: 100%; */
+.banner-text{
+    width: 40%;
+    background-color: rgba(216, 216, 165, 0.58);
+    border: solid #333 1px;
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+
+}
+.banner-text p{
+    padding: 50px;
+    /* text-align: center; */
+}
+.dot1{
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    left: 13px;
+
+}
+.dot2{
+    width: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 13px;
+}
+
+
+/* ---------------銀------------------ */
+.sliver{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
+}
+
+.sliver h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* -----------金工課程--------------- */
+.course{
+    position: relative;
+    background-image: url(../source/course0.7.jpg);
+    padding: 40px 0;
+}
+
+
+.course h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.course ul{
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.course li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+}
+
+.ring{
+    background-image: url('../source/ring.jpg');
+    flex-grow: 3;
+}
+
+.pendant{
+    background-image: url('../source/厚方牌3.jpg');
+    flex-grow: 1.5;
+}
+
+.bracelet{
+    background-image: url('../source/bracelet.jpg');
+    flex-grow: 2;
+}
+
+.course li:hover{
+    flex-grow: 5;
+}
+
+.course p{
+    width: 500px;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-left: 50px;
+}
+
+.course a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(108, 56, 133, 1);
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+
+    transition: .5s;
+}
+
+.course a:hover{
+    background-color: rgba(225, 225, 197, 1);
+    color: black;
+    width: 120px;
+}
+
+/* ----------最新消息----------- */
+
+.news-title{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.news{
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.news img{
+    width: 80%;
+    height: 300px;
+    /* background-size: contain; */
+    margin: 0 auto;
+    display: block;
+}
+
+.news p{
+    width: 40%;
+    height: 100px;
+    border: black solid 1px;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px;
+
+    position: absolute;
+    bottom: -120px;
+    left: 300px;
+}
+
+/* -----------------footer------------------ */
+.footer{
+    border: black solid 1px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.info p{
+    float: left;
+    padding-left: 20px;
+}
+
+.footer ul{
+    float: right;
+}
+
+.footer li{
+    float: left;
+}
+
+.footer i{
+    color: white;
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.footer .text{
+    text-align: center;
+    padding-top: 90px;
 
 }
 
-.banner-text
-.dot1
-.dot2
+
+
+
+
+
+
