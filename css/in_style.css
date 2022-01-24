@@ -1,122 +1,13 @@
-@import url('reset.css');
+@import url('all_style.css');
 
 body{
-    font-family: Arial, "微軟正黑體";
-    font-size: 16px;
-    line-height: 1.6;
-
-    box-sizing: border-box;
-
     background-image: url('../source/index_bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-
-
-/* ---------------------left------------------------ */
-/* -------主選單-------- */
-.main-sel{
-    width: 20%;
-    height: 100%;
-    background-image: url('../source/nav\ bg.jpg');
-    
-    /* padding: 0 30px; */
-    /* box-sizing: border-box; */
-
-    position: fixed;
-    left: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction:column; */
-
-    z-index: 1;
-}
-
-.innernav{}
-
-/* ---logo----- */
-.logo{
-    /* border: black solid 1px; */
-    display: flex;
-    justify-content:center;
-    
-    padding-right: 15px;
-}
-
-
-.logo img{
-    width: 80px;
-}
-
-
-/* -----選單文字---- */
-.main-item{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    line-height: 60px;
-
-    /* position: absolute;
-    top: 100px;
-    left: 0; */
-}
-
-.main-item li{
-    /* border: 1px solid black; */
-    margin: 20px 0;
-    font-size: 18px;
-    line-height: 60px;
-}
-.main-item a{
-    display: inline-block;
-    text-decoration: none;
-    color: #333;
-    width: 100%;
-}
-
-.main-item a:hover{
-    background-color: rgba(190, 190, 127, 1);
-    color: white;
-    font-weight: bold;
-}
-
-/* ---------功能icon---------- */
-.main-icon{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.main-icon li{
-    margin: 10px;
-}
-.main-icon a{}
-
-.main-icon i{
-    color: black;
-    font-size: 40px;
-}
-
-.main-icon i:hover{
-    color: rgba(108, 56, 133, 1);
-}
-
-/* -----------------left end---------------------- */
-
-
-
 /* ---------------------right------------------------ */
-
-.right{
-    width: 80%;
-    position: absolute;
-    right: 0;
-}
-
 /* ------banner-------- */
 .banner{
     position: relative;
@@ -276,42 +167,7 @@ body{
     left: 300px;
 }
 
-/* -----------------footer------------------ */
-.footer{
-    border: black solid 1px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    font-size: 13px;
-    padding-top: 20px;
-}
 
-.info p{
-    float: left;
-    padding-left: 20px;
-}
-
-.footer ul{
-    float: right;
-}
-
-.footer li{
-    float: left;
-}
-
-.footer i{
-    color: white;
-    font-size: 45px;
-    margin-right: 10px;
-}
-
-.footer .text{
-    text-align: center;
-    padding-top: 90px;
-
-}
-
-/* --------------------About------------------------------- */
 
 
 
