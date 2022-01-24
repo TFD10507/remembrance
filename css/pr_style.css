@@ -1,0 +1,28 @@
+
+@import url('all_style.css');
+
+
+
+/* -------------------top--------------------- */
+
+.top{
+    width: 100%;
+    height: 250px;
+    background-image: url('../source/商品_top.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.top p{
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
+    float: right;
+    margin-top: 100px;
+    
+}
+
+/* ----------------------main---------------------------- */
+
+

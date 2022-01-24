@@ -48,7 +48,7 @@ body{
     padding-top: 50px;
     padding-left: 30px;
     padding-bottom: 50px;
-    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
+    text-shadow: rgba(211, 211, 211, 0.774) 1px 1px 2px;
 }
 
 .sliver h2{
