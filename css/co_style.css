@@ -1,0 +1,82 @@
+@import url('all_style.css');
+
+/* -------------------top--------------------- */
+
+.top {
+    width: 100%;
+    height: 350px;
+    background-image: url('../source/課程_top.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.top p {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
+    padding: 10px;
+    /* border: black solid 1px; */
+
+    position: relative;
+    padding-top: 230px;
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+}
+
+.top-text-position p::before{
+    content: '“';
+    font-size: 50px;
+}
+
+.top-text-position p::after{
+    content: '”';
+    font-size: 50px;
+
+    position: absolute;
+    bottom: -15px;
+    right: 50px;
+}
+
+
+/* ----------------------main---------------------------- */
+
+.hand-merit{
+    display: flex;
+    margin: 50px;
+    
+    
+    position: relative;
+}
+
+.hand-merit-img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url('../source/手作客戶(小).jpg');
+    background-size: cover;
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+
+    position: absolute;
+    top: -30px;
+    left: 0;
+
+}
+
+.hand-merit::before{
+    content: '';
+    width: 100%;
+    height: 150px;
+    background-color: rgba(225, 225, 197, 1);
+
+
+}
+
+.hand-merit-text{
+    position: absolute;
+    top: 0;
+    left: 300px;
+}

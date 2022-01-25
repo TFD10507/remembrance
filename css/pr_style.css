@@ -1,11 +1,8 @@
-
 @import url('all_style.css');
-
-
 
 /* -------------------top--------------------- */
 
-.top{
+.top {
     width: 100%;
     height: 250px;
     background-image: url('../source/商品_top.jpg');
@@ -13,16 +10,115 @@
     background-position: center center;
 }
 
-.top p{
+.top p {
     text-align: right;
     color: white;
     font-weight: bold;
     text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
     float: right;
     margin-top: 100px;
-    
 }
+
 
 /* ----------------------main---------------------------- */
 
+
+/* ------------- 主分類------------- */
+.product-class {
+    margin: 0 auto;
+    width: 540px;
+    height: 40px;
+    padding-top: 20px;
+}
+  
+.product-class li{
+    float: left;
+    margin-right: 20px;
+    width: 160px;
+
+    position: relative;
+}
+  
+.product-class li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(225, 225, 197, 1);
+}
+
+
+  /* ------------- 子分類 ------------- */
+.product-class ol{
+    width: 160px;
+    position: absolute;
+    display: none;
+}
+  
+  
+.product-class li > ol{
+    top: 40px;
+    left: 0px;
+} 
+  
+.product-class li:nth-child(2) ol{
+    top: 40px;
+    left: 0px;
+}
+
+.product-class ol li a{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+  
+  /*  主分類hover */
+.product-class li a:hover{
+    background-color: rgba(190, 190, 127, 1);
+    color: black;
+    font-weight: bold;
+}
+
+.product-class li:hover ol{
+    display: block;
+}
+  
+/* 子分類hover */
+.product-class ol li a:hover{
+    background-color: rgba(190, 190, 127, .6);
+    color: black;
+    font-weight: bold;
+}
+
+/* ----------------------商品------------------------------ */
+
+.content{
+    width: 100%;
+    /* border: black solid 1px; */
+    text-align: center;
+    
+    /* padding-left: 20px; */
+}
+.product-list{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+.product-list li{
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.product-list img{
+    width: 180px;
+}
+
+.name{}
+
+.price{
+    color: rgba(209, 194, 55, 1);
+    font-weight: bold;
+}
 

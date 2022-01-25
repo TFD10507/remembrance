@@ -52,7 +52,7 @@ h2{
 
 
 /* -----選單文字---- */
-.main-item{
+.main-list{
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -63,20 +63,20 @@ h2{
     left: 0; */
 }
 
-.main-item li{
+.main-list li{
     /* border: 1px solid black; */
     margin: 20px 0;
     font-size: 18px;
     line-height: 60px;
 }
-.main-item a{
+.main-list a{
     display: inline-block;
     text-decoration: none;
     color: #333;
     width: 100%;
 }
 
-.main-item a:hover{
+.main-list a:hover{
     background-color: rgba(190, 190, 127, 1);
     color: white;
     font-weight: bold;
