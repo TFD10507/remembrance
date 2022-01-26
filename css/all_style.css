@@ -1,9 +1,12 @@
 @import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+
 
 body{
-    font-family: Arial, "微軟正黑體";
+    font-family: 'Noto Sans TC',Arial,"微軟正黑體";
     font-size: 16px;
     line-height: 1.6;
+    color: #333;
 
     box-sizing: border-box;
 }
@@ -51,7 +54,7 @@ h2{
 }
 
 
-/* -----選單文字---- */
+/* -----選單選項---- */
 .main-list{
     display: inline-block;
     width: 100%;
@@ -63,9 +66,22 @@ h2{
     left: 0; */
 }
 
+.main-list i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+input{
+    width: 50%;
+    padding-left: 10px;
+    background: none;
+    border:0 none;
+    border-bottom: black solid 1px;
+}
+
 .main-list li{
     /* border: 1px solid black; */
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 18px;
     line-height: 60px;
 }
@@ -73,7 +89,7 @@ h2{
     display: inline-block;
     text-decoration: none;
     color: #333;
-    width: 100%;
+    width: 80%;
 }
 
 .main-list a:hover{
@@ -117,35 +133,52 @@ h2{
 
 /* -----------------footer------------------ */
 .footer{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     width: 100%;
-    background-color: black;
+    background-color: rgba(190, 190, 127, .6);
     color: white;
     font-size: 13px;
     padding-top: 20px;
 }
 
-.info p{
+/* 左側 */
+ .footer-text{
     float: left;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
+.footer-text section{
+    padding-bottom: 10px;
+}
+
+/* 右側 */
 .footer ul{
     float: right;
+    padding-top: 50px;
 }
 
 .footer li{
     float: left;
 }
 
-.footer i{
+.footer ul i{
     color: white;
     font-size: 45px;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
+
+/* 最下方 */
 .footer .text{
     text-align: center;
-    padding-top: 90px;
+    padding: 20px 0;
+}
 
+.footer hr{
+    padding-top: 50px;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid white;
+    width: 80%;
 }
