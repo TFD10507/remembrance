@@ -6,6 +6,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    /* background-position: center center; */
 }
 
 
@@ -19,11 +20,10 @@ body{
     background-position: center center;
 }
 
-.top h2{
+.top h1{
     text-align: center;
     line-height: 250px;
     color: white;
-    font-weight: bold;
     text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;;
 }
 
@@ -33,7 +33,7 @@ body{
     display: flex;
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: rgba(255, 255, 255, .5);
+    /* background-color: rgba(255, 255, 255, .5); */
     /* background-color: rgba(255, 255, 255, .5); */
 }
 .story-text{

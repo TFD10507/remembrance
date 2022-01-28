@@ -1,7 +1,7 @@
 @import url('all_style.css');
 
 body{
-    background-image: url('../source/index_bg.jpg');
+    background-image: url('../source/關於_bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -11,11 +11,18 @@ body{
 /* ------banner-------- */
 .banner{
     position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-video{
+    object-fit: cover;
 }
 
 .banner-text{
     width: 45%;
-    background-color: rgba(190, 190, 127, .5);
+    /* width: 500px; */
+    background-color: rgba(190, 190, 127, .6);
 
     position: absolute;
     bottom: 50px;
@@ -48,128 +55,145 @@ body{
 }
 
 
+
 /* ---------------銀------------------ */
 .sliver{
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     text-shadow: rgba(211, 211, 211, 0.774) 1px 1px 2px;
-}
-
-.sliver h2{
-    font-size: 40px;
-    font-weight: bold;
+    padding-left: 50px;
 }
 
 /* -----------金工課程--------------- */
-.course{
+.index-course{
+    /* border: solid black 1px; */
+    
     position: relative;
-    background-image: url(../source/course0.7.jpg);
-    padding: 40px 0;
 }
 
 
-.course h2{
+.index-course h2{
     text-align: center;
-    font-size: 30px;
-    margin: 10px 0;
+    margin-bottom: 30px;
+    /* border: solid black 1px; */
 }
 
-.course ul{
-    width: 70%;
-    height: 200px;
+.index-course ul{
+    /* width: auto; */
+    height: 250px;
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
 
     display: flex;
+    /* border: solid white 3px; */
 }
 
-.course li{
+.index-course li{
     background-size: cover;
     background-position: center center;
     transition: .5s;
+    
 }
 
-.ring{
+.index-ring{
     background-image: url('../source/ring.jpg');
     flex-grow: 3;
 }
 
-.pendant{
+.index-pendant{
     background-image: url('../source/厚方牌3.jpg');
     flex-grow: 1.5;
 }
 
-.bracelet{
+.index-bracelet{
     background-image: url('../source/bracelet.jpg');
     flex-grow: 2;
 }
 
-.course li:hover{
+.index-course li:hover{
     flex-grow: 5;
 }
 
-.course p{
+.index-course p{
     width: 500px;
     font-size: 13px;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-left: 50px;
 }
 
-.course a{
+.btn{
+    width: 98px;
+    height: 38px;
+    border: 2px solid black;
+    
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+}
+
+.index-course a{
     text-decoration: none;
     color: white;
     display: block;
     width: 100px;
     height: 40px;
-    background-color: rgba(108, 56, 133, 1);
+    background-color: rgb(124, 87, 141);
     text-align: center;
     line-height: 40px;
+    
+    /* box-shadow: 2px 2px black; */
 
     position: absolute;
-    bottom: 50px;
-    right: 100px;
+    bottom: 2px;
+    right: 52px;
 
     transition: .5s;
 }
 
-.course a:hover{
-    background-color: rgba(225, 225, 197, 1);
-    color: black;
-    width: 120px;
+
+.index-course a:hover{
+    position: absolute;
+    bottom: 4px;
+    right: 54px;
 }
 
 /* ----------最新消息----------- */
 
 .news-title{
-    font-size: 30px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-left: 20px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    padding-left: 50px;
 }
 
 .news{
     position: relative;
-    margin-bottom: 200px;
+    /* outline: black solid 1px; */
+    height: 400px;
+    width: 90%;
+    background-image: url('../source/news.jpg');
+    background-size: cover ;
+    margin: 0 auto;
+
+    margin-bottom: 90px;
 }
 
 .news img{
-    width: 80%;
-    height: 300px;
-    /* background-size: contain; */
+    /* width: 90%;
     margin: 0 auto;
-    display: block;
+    display: block; */
 }
 
 .news p{
-    width: 40%;
-    height: 100px;
-    border: black solid 1px;
-    background-color: rgba(255, 255, 255, .5);
-    padding: 20px;
+    width: 400px;
+    /* border: black solid 1px; */
+    background-color: rgba(190, 190, 127, .6);
+    padding: 30px;
+
 
     position: absolute;
-    bottom: -120px;
-    left: 300px;
+    bottom: 10px;
+    right: 10px;
 }
 
 
