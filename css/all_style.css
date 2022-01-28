@@ -14,6 +14,7 @@ body{
  body h1{
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
  }
 
 body h2{
@@ -24,7 +25,7 @@ body h2{
 /* ---------------------left------------------------ */
 /* -------主選單-------- */
 .main-sel{
-    width: 20%;
+    width: 15%;
     height: 100%;
     background-image: url('../source/nav_bg.jpg');
     background-size: cover;
@@ -42,8 +43,6 @@ body h2{
 
     z-index: 1;
 }
-
-.innernav{}
 
 /* ---logo----- */
 .logo{
@@ -185,4 +184,32 @@ input{
     border: 0;
     border-bottom: 1px solid white;
     width: 80%;
+}
+
+
+
+
+
+
+/* =============== top ==================== */
+
+
+.top {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.about-bg{
+    background-image: url('../source/關於_top.jpg');
+}
+
+.product-bg{
+    background-image: url('../source/商品_top.jpg');
+}
+
+.course-bg{
+    background-image: url('../source/課程_top.jpg');
 }

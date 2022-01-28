@@ -57,6 +57,10 @@ body{
 
 
 /* ---------------銀------------------ */
+.sliver h1{
+    text-align: left;
+}
+
 .sliver{
     padding-top: 90px;
     padding-bottom: 90px;

@@ -2,15 +2,6 @@
 
 /* -------------------top--------------------- */
 
-.top {
-    width: 100%;
-    height: 350px;
-    background-image: url('../source/課程_top.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-
 .top p {
     text-align: center;
     color: #333;

@@ -12,34 +12,33 @@ body{
 
 /* -------------------top--------------------- */
 
-.top{
-    width: 100%;
-    height: 250px;
-    background-image: url('../source/關於_top.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
 .top h1{
-    text-align: center;
     line-height: 250px;
     color: white;
     text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;;
 }
 
 
+
+.flex{
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 30px;
+}
+
+
 /* -------------------story--------------------- */
 .story{
     display: flex;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    /* background-color: rgba(255, 255, 255, .5); */
-    /* background-color: rgba(255, 255, 255, .5); */
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 30px;
 }
 .story-text{
     width: 50%;
     /* border: black solid 1px; */
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .story p{
     margin-top: 20px;
@@ -56,21 +55,30 @@ body{
 /* --------------------營業資訊----------------------- */
 .addr {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 90px;
+    padding-left: 30px;
+    
 }
 .addr h2{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+}
+
+.addr img{
+    width: 50%;
 }
 
 .detail{
-    width: 400px;
-    height: 300px;
-    border: solid black 1px;
+    width: 100%;
+    /* height: 300px; */
+    outline: solid black 1px;
     background-color: rgba(225, 225, 197, 0.6);
-    display: inline-flex;
+    clear: both;
+    display: flex;
+
+    /* display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
 }
 
 .detail ul{
