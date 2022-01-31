@@ -20,9 +20,30 @@ body{
 body h2{
     font-size: 30px;
     font-weight: bold;
+    padding-bottom: 30px;
 }
 
-/* ---------------------left------------------------ */
+  /* 網頁捲軸【寬度】 */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* 網頁捲軸【背景】顏色 */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* 網頁捲軸【把手】顏色 */
+  ::-webkit-scrollbar-thumb {
+    background:rgba(225, 225, 197, 1);
+}
+  
+  /* 網頁捲軸【滑過時】把手的顏色 */
+  ::-webkit-scrollbar-thumb:hover {
+    background:rgba(190, 190, 127, 1);
+}
+
+/* ======================== left ======================== */
 /* -------主選單-------- */
 .main-sel{
     width: 15%;
@@ -30,25 +51,21 @@ body h2{
     background-image: url('../source/nav_bg.jpg');
     background-size: cover;
     
-    /* padding: 0 30px; */
-    /* box-sizing: border-box; */
-
     position: fixed;
     left: 0;
 
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* flex-direction:column; */
 
     z-index: 1;
 }
 
+
 /* ---logo----- */
 .logo{
     /* border: black solid 1px; */
-    /* padding-right: 15px; */
-    padding-bottom: 10px;
+    padding: 20px 0 10px;
 }
 
 
@@ -61,14 +78,10 @@ body h2{
 
 /* -----選單選項---- */
 .main-list{
-    display: inline-block;
     width: 100%;
     text-align: center;
-    line-height: 60px;
-
-    /* position: absolute;
-    top: 100px;
-    left: 0; */
+    padding-top: 20px;
+    /* border: black solid 1px;  */
 }
 
 .main-list li{
@@ -89,28 +102,6 @@ body h2{
     font-weight: bold;
 }
 
-/* ---------功能icon---------- */
-.main-icon{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.main-icon li{
-    margin: 10px;
-}
-
-
-.main-icon i:hover{
-    color: rgba(108, 56, 133, 1);
-}
-
-.innernav i{
-    color: black;
-    font-size: 20px;
-}
-
-
 input{
     width: 50%;
     background: none;
@@ -120,18 +111,49 @@ input{
 }
 
 
+/* ---------功能icon---------- */
 
-/* ---------------------right------------------------ */
+.main-icon{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.main-icon li{
+    margin: 10px;
+}
+
+.main-icon i{
+    color: black;
+    font-size: 20px;
+}
+
+.main-icon i:hover{
+    color: rgba(108, 56, 133, 1);
+}
+
+
+
+
+
+
+/* ======================== right ======================== */
 
 .right{
-    width: 80%;
+    width: 85%;
     position: absolute;
     right: 0;
 }
 
 
 
-/* -----------------footer------------------ */
+/* ======================== footer ======================== */
 .footer{
     /* border: black solid 1px; */
     width: 100%;
@@ -196,14 +218,14 @@ input{
 
 .top {
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-size: cover;
     background-position: center center;
 }
 
 
 .about-bg{
-    background-image: url('../source/關於_top.jpg');
+    background-image: url('../source/關於_bg.jpg');
 }
 
 .product-bg{
@@ -212,4 +234,13 @@ input{
 
 .course-bg{
     background-image: url('../source/課程_top.jpg');
+}
+
+/* ===================== container ======================= */
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 130px;
+
+    /* position: relative; */
 }

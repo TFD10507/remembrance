@@ -1,13 +1,7 @@
 @import url('all_style.css');
 
-body{
-    background-image: url('../source/關於_bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
 
-/* ---------------------right------------------------ */
+/* -======================== right ======================= */
 /* ------banner-------- */
 .banner{
     position: relative;
@@ -19,75 +13,54 @@ body{
     object-fit: cover;
 }
 
-.banner-text{
-    width: 45%;
-    /* width: 500px; */
-    background-color: rgba(190, 190, 127, .6);
 
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
+/* ======================= container ===================== */
+/* ---------------memory------------------ */
+
+.memory{
+    padding: 130px 0;
+    position: relative;
+    letter-spacing: 3px;
+    /* border: red solid 1px; */
+
 }
 
-
-.banner-text p{
-    padding: 50px;
-    padding-top: 60px;
-    /* text-align: center; */
-}
-
-.banner-text::before{
+.memory p::before{
     content: '“';
     font-size: 80px;
 
     position: absolute;
-    top: -5px;
-    left: -30px;
+    top: 60px;
+    left: -70px;
 }
 
-.banner-text::after{
+.memory p::after{
     content: '”';
     font-size: 80px;
 
     position: absolute;
-    bottom: -40px;
-    right: -30px;
+    bottom: 30px;
+    right: -70px;
 }
 
-
-
-/* ---------------銀------------------ */
-.sliver h1{
-    text-align: left;
-}
-
-.sliver{
-    padding-top: 90px;
-    padding-bottom: 90px;
-    text-shadow: rgba(211, 211, 211, 0.774) 1px 1px 2px;
-    padding-left: 50px;
-}
 
 /* -----------金工課程--------------- */
 .index-course{
     /* border: solid black 1px; */
-    
     position: relative;
+
 }
 
 
 .index-course h2{
     text-align: center;
-    margin-bottom: 30px;
     /* border: solid black 1px; */
 }
 
 .index-course ul{
-    /* width: auto; */
-    height: 250px;
+    width: 100%;
+    height: 300px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
 
     display: flex;
     /* border: solid white 3px; */
@@ -97,21 +70,20 @@ body{
     background-size: cover;
     background-position: center center;
     transition: .5s;
-    
 }
 
 .index-ring{
-    background-image: url('../source/ring.jpg');
+    background-image: url('../source/商品/戒指/圓邊4.jpg');
     flex-grow: 3;
 }
 
 .index-pendant{
-    background-image: url('../source/厚方牌3.jpg');
+    background-image: url('../source/商品/墜飾/厚方牌3.jpg');
     flex-grow: 1.5;
 }
 
 .index-bracelet{
-    background-image: url('../source/bracelet.jpg');
+    background-image: url('../source/商品/手環/螺旋.jpg');
     flex-grow: 2;
 }
 
@@ -120,10 +92,10 @@ body{
 }
 
 .index-course p{
+    /* border: solid black 1px; */
     width: 500px;
     font-size: 13px;
     padding-top: 30px;
-    padding-left: 50px;
 }
 
 .btn{
@@ -133,7 +105,7 @@ body{
     
     position: absolute;
     bottom: 0px;
-    right: 50px;
+    right: 0px;
 }
 
 .index-course a{
@@ -149,8 +121,8 @@ body{
     /* box-shadow: 2px 2px black; */
 
     position: absolute;
-    bottom: 2px;
-    right: 52px;
+    bottom: 3px;
+    right: 3px;
 
     transition: .5s;
 }
@@ -158,50 +130,43 @@ body{
 
 .index-course a:hover{
     position: absolute;
-    bottom: 4px;
-    right: 54px;
+    bottom: 5px;
+    right: 5px;
 }
 
 /* ----------最新消息----------- */
 
-.news-title{
-    padding-top: 90px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-}
-
 .news{
-    position: relative;
-    /* outline: black solid 1px; */
-    height: 400px;
-    width: 90%;
-    background-image: url('../source/news.jpg');
-    background-size: cover ;
-    margin: 0 auto;
-
-    margin-bottom: 90px;
+    /* border: red solid 1px; */
+    padding-top: 130px;
 }
 
-.news img{
-    /* width: 90%;
-    margin: 0 auto;
-    display: block; */
+
+.flex-news{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.news p{
+.news-img img{
     width: 400px;
-    /* border: black solid 1px; */
-    background-color: rgba(190, 190, 127, .6);
-    padding: 30px;
-
-
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 15%;
+    top: 15%;
 }
 
+.news-text{
+    /* width: 400px; */
+    background-color: rgba(225, 225, 197, 0.6);
+    padding: 100px 30px 100px 100px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
 
-
+    
+}
 
 
 

@@ -1,95 +1,71 @@
 
 @import url('all_style.css');
 
-body{
-    background-image: url('../source/關於_bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /* background-position: center center; */
-}
-
-
 /* -------------------top--------------------- */
 
 .top h1{
-    line-height: 250px;
-    color: white;
-    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;;
+    line-height: 200px;
 }
-
-
-
-.flex{
-    display: flex;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    padding-right: 30px;
-}
-
 
 /* -------------------story--------------------- */
+
 .story{
+    padding: 130px 0;
+    /* border: solid black 1px; */
+}
+
+.flex-story ,.flex-addr{
     display: flex;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    /* border: solid black 1px; */
+    justify-content: center;   
+    align-items: center;
+}
+
+
+.story-text ,.addr-text{
+    padding-left: 50px;
     padding-right: 30px;
-}
-.story-text{
-    width: 50%;
-    /* border: black solid 1px; */
-    padding-left: 30px;
-}
-.story p{
-    margin-top: 20px;
-    padding-left: 80px;
-    padding-right: 50px;
+    /* border: solid blue 1px; */
+    letter-spacing:3px;
 }
 
-.story img{
-    width: 50%;
-}
 
+.story-img img, .addr-img img{
+    width: 400px;
+    display: block;
+}
 
 
 /* --------------------營業資訊----------------------- */
 .addr {
+    /* border: solid blue 1px; */
     text-align: center;
-    padding-top: 90px;
-    padding-left: 30px;
-    
-}
-.addr h2{
-    /* padding-bottom: 20px; */
+    /* padding-bottom: 130px; */
+    position: relative;
 }
 
-.addr img{
-    width: 50%;
+
+
+.addr-text ul:first-child{
+    /* border: solid red 1px; */
+    margin-bottom: 30px;
 }
 
-.detail{
+
+.flex-addr::after{
+    content: '';
     width: 100%;
-    /* height: 300px; */
-    outline: solid black 1px;
+    height: 270px;
     background-color: rgba(225, 225, 197, 0.6);
-    clear: both;
-    display: flex;
 
-    /* display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px; */
+    z-index: -1;
+    position: absolute;
+    top: 107px;
+    left: 0;
 }
 
-.detail ul{
-    width: 200px;
-    padding: 20px;
-    float: left;
+.addr-map{
+    /* border: solid red 1px; */
+    font-size: 0;
+    margin-top: 30px;
 }
-
-.detail li{
-    padding-bottom: 20px;
-}
-
-
-

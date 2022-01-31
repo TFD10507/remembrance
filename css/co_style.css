@@ -7,14 +7,14 @@
     color: #333;
     font-weight: bold;
     text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
+    letter-spacing: 2px;
     padding: 10px;
     /* border: black solid 1px; */
 
     position: relative;
-    padding-top: 230px;
+    padding-top: 80px;
     margin: 0 auto;
     width: 500px;
-    height: 100px;
 }
 
 .top-text-position p::before{
@@ -27,14 +27,14 @@
     font-size: 50px;
 
     position: absolute;
-    bottom: -25px;
-    right: 15px;
+    bottom: -50px;
+    right: 0;
 }
 
 
 /* ----------------------main---------------------------- */
 
-/* 課程注意事項 */
+/* ------------ 課程須知 ----------------- */
 .course-notice{
     padding: 50px 30px;
 }
@@ -56,7 +56,7 @@
 }
 
 
-/* 詳細課程 */
+/* --------------- 詳細課程 -------------------*/
 .hand-merit{
     display: flex;
     margin: 50px;
@@ -81,7 +81,7 @@
     padding-left: 30px;
 }
 
-.hand-merit::before{
+/* .hand-merit::before{
     content: '';
     width: 100%;
     height: 200px;
@@ -97,7 +97,7 @@
     padding-top: 20px;
     padding-left: 20px;
 
-    /* border: blue solid 1px */
+    border: blue solid 1px
 }
 
 .hand-merit-text{
@@ -108,4 +108,65 @@
 .hand-merit-text p{
     width:200px;
     line-height: 2;
+} */
+
+
+  /* =================== 彈出視窗 ==================== */
+
+  .hand-merit-fade{
+      width: 60%;
+      border: rgba(211, 211, 211, .35) solid 10px;
+      border-radius: 20px;
+      position: fixed;
+      top: 5%;
+      left: 15%;
+      right: 0;
+      bottom: 5%;
+      margin: auto;
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      overflow: auto;
+      
+      display: none;
+  }
+
+  
+
+  .hand-merit-fade button{
+      float: right;
+      background-color: transparent;
+      font-weight: bold;
+      border: 0;
+      font-size: 30px;
+      opacity: .2;
+  }
+  .hand-merit-fade h2{
+      text-align: center;
+  }
+
+  .hand-merit-fade h3{
+      color:rgba(190, 190, 127, 1);
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .hand-merit-fade li{
+      margin-bottom: 10px;
+      /* border: green solid 1px; */
+  }
+
+  .hand-merit-fade li h3{
+    margin-bottom: 10px;
 }
+
+  .hand-merit-fade img{
+      width: 200px;
+      display: block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+
+  .sample-img{
+      display: flex;
+      flex-wrap: wrap;
+  } 
