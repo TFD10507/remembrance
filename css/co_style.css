@@ -36,7 +36,7 @@
 
 /* ------------ 課程須知 ----------------- */
 .course-notice{
-    padding: 50px 30px;
+    padding: 90px 0;
 }
 
 
@@ -57,58 +57,60 @@
 
 
 /* --------------- 詳細課程 -------------------*/
-.hand-merit{
-    display: flex;
-    margin: 50px;
-    
+.course-contain{
+    text-align: center;
     /* border: blue solid 1px; */
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.course-list{
+    display: flex;
+    /* border: green solid 1px; */
+    width: 100%;
+    justify-content: center;
+}
+
+.course-list li{
+    margin-right: 10px;
+    /* border: red solid 1px; */
+    width: 300px;
+    height: auto;
+    background-color: white;
+
     position: relative;
 }
 
-.hand-merit-img img{
+.course-list li:hover{
+    background-color: #e6e6e6;
+}
+
+
+.course-list a{
     display: block;
-    width: 300px;
-    height: 230px;
-    /* background-image: url('../source/手作客戶(小).jpg');
-    background-size: cover;
-    background-position: center center; */
-    /* background-repeat: no-repeat; */
-
-    /* position: absolute;
-    left: 10px;
-    top: -10px; */
-
-    padding-left: 30px;
-}
-
-/* .hand-merit::before{
-    content: '';
     width: 100%;
-    height: 200px;
-    background-color: rgba(225, 225, 197, 1);
-
-    position: absolute;
-    top: 15px;
-    z-index: -1;
-
+    /* height: 100%;  */
+    /* border: purple solid 1px; */
 }
 
-.hand-merit-title{
-    padding-top: 20px;
-    padding-left: 20px;
-
-    border: blue solid 1px
+.course-contain img{
+    display: block;
+    width: 100%;
+    height: auto;    
 }
 
-.hand-merit-text{
-    padding-top: 70px;
-    text-align: center;
+
+.course-list h3{
+    /* border: brown solid 5px; */
+    padding: 10px 0;
+    color: rgba(209, 194, 55, 1);
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
 }
 
-.hand-merit-text p{
-    width:200px;
-    line-height: 2;
-} */
+
 
 
   /* =================== 彈出視窗 ==================== */
@@ -133,7 +135,10 @@
   
 
   .hand-merit-fade button{
-      float: right;
+      /* float: right; */
+      position: fixed;
+      top: 7%;
+      right: 12.5%;
       background-color: transparent;
       font-weight: bold;
       border: 0;
@@ -142,6 +147,7 @@
   }
   .hand-merit-fade h2{
       text-align: center;
+      color:rgba(190, 190, 127, 1);
   }
 
   .hand-merit-fade h3{

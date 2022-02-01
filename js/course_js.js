@@ -17,10 +17,10 @@
         let close_bt_1 = document.getElementsByClassName("closebt")[1];
 
         link_bt_1.onclick = function () {
-            fade_in.style.display = 'block';
+            fade_in_1.style.display = 'block';
         }
         close_bt_1.onclick = function () {
-            fade_in.style.display = 'none';
+            fade_in_1.style.display = 'none';
         }
         
 
@@ -30,8 +30,8 @@
         let close_bt_2 = document.getElementsByClassName("closebt")[2];
 
         link_bt_2.onclick = function () {
-            fade_in.style.display = 'block';
+            fade_in_2.style.display = 'block';
         }
         close_bt_2.onclick = function () {
-            fade_in.style.display = 'none';
+            fade_in_2.style.display = 'none';
         }

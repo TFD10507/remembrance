@@ -1,0 +1,72 @@
+@import url('all_style.css');
+
+
+/* ------------------- top ---------------------- */
+
+.top h1{
+    line-height: 150px;
+}
+
+/* ------------------- right ------------------------ */
+
+form{
+    border:  black solid 1px;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+table{
+    /* border:  green solid 5px; */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.mem_btn input{
+    width: 200px;
+    padding: 5px;
+    border: 0;
+    background-color: rgba(108, 56, 133, 1);
+    color: white;
+}
+
+tr{
+    line-height: 40px;
+    /* border:  red solid 1px; */
+    height: 40px;
+}
+
+tr td:nth-child(2){
+    width: 300px;
+    text-align: center;
+}
+
+tr[class="input"] input{
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-bottom: #333 solid 1px;
+}
+
+
+table a{
+    text-decoration: none;
+    color: #333;
+}
+
+tr:nth-child(n+4){
+    font-size: 13px;
+}
+
+tr:nth-child(7){
+    font-size: 30px;
+}
+tr:nth-child(7) td a i{
+    margin-right: 20px;
+}
+
+
+
+
+
+
+

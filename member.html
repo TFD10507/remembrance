@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+
+    <link rel="stylesheet" href="./css/mem_style.css">
+    <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="logo">
+            <a href="index.html"><img src="./source/logo4.png" alt=""></a>
+        </div>
+
+        <ul class="main-list">
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="product.html">所有商品</a></li>
+            <li><a href="course.html">金工課程</a></li>
+            <li><a href="#">線上預約</a></li>
+            <li><a href="design.html">訂製設計</a></li>
+            <li class="search">
+                <input type="text" placeholder="search...">
+            </li>
+        </ul>
+
+        <ul class="main-icon">
+            <li>
+                <a href="member.html">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top member-bg">
+            <h1>會員登入</h1>
+        </div>
+
+
+        <!-- -----------------container------------------- -->
+        <div class="container">
+            <!--login會員登入-->
+            <form class="login" action="javascript:;" method="post">
+                <table class="member-login">
+                    <tbody>
+                        <!-- 1 帳號 -->
+                        <tr class="input">
+                            <td>電子信箱：</td>
+                            <td>
+                                <input type="username" id="username" class="username_email" name="username"
+                                    placeholder="您的電子郵件地址" required>
+                            </td>
+                        </tr>
+
+                        <!-- 2 密碼 -->
+                        <tr class="input">
+                            <td>密碼：</td>
+                            <td>
+                                <input type="password" id="password" class="password1" name="password"
+                                    placeholder="您的密碼" required>
+                            </td>
+                        </tr>
+
+                        <!-- 3 登入 -->
+                        <tr class="mem_btn">
+                            <td></td>
+                            <td>
+                                <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" />
+                            </td>
+                        </tr>
+                        <!-- 4 記住我 -->
+                        <tr>
+                            <td></td>
+                            <td id="rmbr">
+                                <input type="checkbox" id="remberme" name="remberme" required>
+                                <label for="remberme" id="remberme0">記住我</label>
+                            </td>
+                        </tr>
+                        <!-- 5 忘記密碼 -->
+                        <tr>
+                            <td></td>
+                            <td id="sign">
+                                <a href="#" id="member_btn">忘記密碼？</a>
+                                |
+                                <a href="#" id="register">註冊</a>
+                            </td>
+                        </tr>
+                        <!-- 6 其他登入方式 -->
+                        <tr>
+                            <td></td>
+                            <td class="member_btn">用以下帳號密碼登入為會員</td>
+                        </tr>
+                        <!-- 7 icon -->
+                        <tr>
+                            <td></td>
+                            <td class="other-sign">
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-line"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- ------------------footer---------------- -->
+        <div class="footer">
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <section>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路112號</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </section>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="text">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
+                參考資源：https://www.zocrafttw.com/、http://minifeast.tw/index.php
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
