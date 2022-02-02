@@ -10,7 +10,7 @@
 /* -------------------story--------------------- */
 
 .story{
-    padding: 130px 0;
+    padding: 70px 0;
     /* border: solid black 1px; */
 }
 
@@ -44,7 +44,9 @@
     position: relative;
 }
 
-
+.addr h2{
+    padding-bottom: 70px;
+}
 
 .addr-text ul:first-child{
     /* border: solid red 1px; */
@@ -60,7 +62,7 @@
 
     z-index: -1;
     position: absolute;
-    top: 107px;
+    top: 147px;
     left: 0;
 }
 

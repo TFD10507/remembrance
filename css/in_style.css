@@ -152,6 +152,7 @@
 .news-img img{
     width: 400px;
     border-radius: 10px;
+    display: block;
     position: relative;
     left: 15%;
     top: 15%;
