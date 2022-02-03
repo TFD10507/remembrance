@@ -3,7 +3,7 @@
 
 /* ---------------------- banner ---------------------- */
 .banner{
-    border: red solid 1px;
+    /* border: red solid 1px; */
     padding-top: 50px;
 }
 
@@ -11,7 +11,7 @@
 .flex-design{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -20,46 +20,51 @@
     border-radius: 10px;
     display: block;
     position: relative;
-    left: 15%;
-    top: 15%;
+    left: 30px;
 }
+
 .design-title{
     padding-bottom: 30px;
-
 }
 
 .design-text{
     /* width: 400px; */
-    /* background-color: rgba(225, 225, 197, 0.6); */
     border: black solid 1px;
     padding: 30px 30px 100px 100px;
     letter-spacing: 2px;
     border-radius: 20px;
     border-bottom-right-radius: 100px;
     z-index: 1;
+
+    position: relative;
+    right: 30px;
 }
 
 
 
 /* ------------------- 服務項目 ------------------ */
 .design-service{
-    border: royalblue solid 1px;
-}
-
-.design-service h2{
+    /* border: royalblue solid 1px; */
+    padding: 90px 0 130px;
     text-align: center;
-    padding-top: 90px;
 }
 
-.design-service-item{
+.design-service-list{
+    /* width: 100%; */
+    /* border: red solid 1px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .item{
     width: 300px;
     height: 300px;
-    border: solid black 1px;
+    /* border: solid black 1px; */
+}
+
+.design-service-list .text{
+    margin-right: 100px;
 }
 
 .item1-bg{
@@ -73,3 +78,140 @@
     height: 100%;
     background-image: url('../source/圖樣印製.jpg');
 }
+
+.item p{
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* ----------------- 訂製流程 ------------------ */
+
+.process{
+    /* border: royalblue solid 1px; */
+    padding: 90px 0 130px;
+    text-align: center;
+}
+
+.process-list{
+    /* width: 100%; */
+    /* border: red solid 1px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.process-item{
+    width: 200px;
+    height: 200px;
+    /* border: solid black 1px; */
+}
+
+.process-item1-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../source/寫.jpg');
+    background-size: contain;
+}
+
+.process-item2-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../source/信.jpg');
+    background-size: contain;
+}
+
+.process-item3-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../source/禮物.jpg');
+    background-size: contain;
+}
+
+.process-item p{
+    padding-top: 10px;
+    /* color: rgba(209, 194, 55, 1); */
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+
+/* ----------------- 表單 ------------------ */
+
+.demand{
+    /* border: saddlebrown solid 1px; */
+}
+
+.demand-form{
+    border: black solid 1px;
+    padding: 20px;
+}
+
+.demand-table{
+    width: 100%;
+    /* border: red solid 1px; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.demand-table tr td:nth-child(even){
+    /* width: 600px; */
+    /* border: black solid 1px; */
+}
+
+.demand-table tr td:nth-child(odd){
+    width: 100px;
+    /* border: blue solid 1px; */
+}
+
+.demand-table tr{
+    /* line-height: 40px; */
+    height: 40px;
+}
+
+.demand-table td{
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.demand input{
+    padding: 10px;
+}
+
+/*  電子信箱輸入框長度  */
+.demand tr:nth-child(3) input{
+    width: 300px;
+}
+
+.demand select{
+    height: 40px;
+}
+
+.demand textarea{
+    width: 300px;
+    height: 200px;
+    resize: none;
+    display: block;
+}
+
+
+
+/*  提交按鈕   */
+.demand_btn{
+    width: 100px;
+    height: 40px;
+    /* margin: 20px 0; */
+    border: 0;
+    background-color: rgb(178,144,193);
+    color: white;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.demand_btn:hover{
+    background-color: rgba(108, 56, 133, 1);
+}
+

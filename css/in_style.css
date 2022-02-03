@@ -114,15 +114,15 @@
     display: block;
     width: 100px;
     height: 40px;
-    background-color: rgb(124, 87, 141);
+    background-color: rgb(178,144,193);
     text-align: center;
     line-height: 40px;
     
     /* box-shadow: 2px 2px black; */
 
     position: absolute;
-    bottom: 3px;
-    right: 3px;
+    bottom: 2px;
+    right: 2px;
 
     transition: .5s;
 }

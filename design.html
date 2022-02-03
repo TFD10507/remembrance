@@ -14,14 +14,14 @@
     <!-- -----------left-------------- -->
     <nav class="main-sel">
         <div class="logo">
-            <a href="index.html"><img src="./source/logo4.png" alt=""></a>
+            <a href="index.html"><img src="./source/logo3.png" alt=""></a>
         </div>
 
         <ul class="main-list">
             <li><a href="about.html">關於我們</a></li>
             <li><a href="product.html">所有商品</a></li>
             <li><a href="course.html">金工課程</a></li>
-            <li><a href="#">線上預約</a></li>
+            <li><a href="course.html">線上預約</a></li>
             <li><a href="design.html">訂製設計</a></li>
             <li class="search">
                 <input type="text" placeholder="search...">
@@ -70,55 +70,120 @@
                 </div>
             </div>
 
-            
+
 
             <!-- -------------- 服務項目 --------------- -->
             <div class="design-service">
                 <h2>服務項目</h2>
-                <div class="design-service-item">
-                    <div class="item">
-                        <div class="item1-bg">
-                            <h2>刻字服務</h2>
-                        </div>
-                        
+                <div class="design-service-list">
+                    <div class="item text">
+                        <div class="item1-bg"></div>
+                        <p>刻字服務</p>
                     </div>
-                    <div class="item">
-                        <div class="item2-bg">
-                            <h2>圖樣印製</h2>
-                        </div>
-                        
+                    <div class="item pattern">
+                        <div class="item2-bg"></div>
+                        <p>圖樣印製</p>
                     </div>
                 </div>
             </div>
 
-            <!-- --------------course-------------------- -->
-            <!-- <div class="index-course">
-                <h2>金工課程</h2>
-                <ul class="index-course-item-transition">
-                    <li class="index-ring"></li>
-                    <li class="index-pendant"></li>
-                    <li class="index-bracelet"></li>
-                </ul>
-                <p>從諮詢到製作，敬業的工作人員將細心提供您們任何協助以貼近每位客人人生中想要紀念的感情時刻。
-                </p>
-                <div class="btn"></div>
-                <a href="#">線上預約</a>
-
-            </div> -->
-            <!-- ------------------news------------------ -->
-            <!-- <div class="news">
-                <h2 class="news-title">最新消息</h2>
-                <div class="flex-news">
-                    <div class="news-img">
-                        <img src="./source/news.jpg" alt="">
+            <!-- -------------- 訂製流程 ----------------- -->
+            <div class="process">
+                <h2>訂製流程</h2>
+                <div class="process-list">
+                    <div class="process-item">
+                        <div class="process-item1-bg"></div>
+                        <p>填寫訂製需求</p>
                     </div>
-                    <div class="news-text">
-                        <p>今年情人節想好怎麼慶祝了嗎？<br>2022/2/1 ~ 2022/2/14
-                            <br>一起來留憶金工留下屬於你們的情人節回憶吧！不管是朋友、情侶或是家人，不分性別，手作金工課程只要兩人同行就能獲得9折優惠！<br><br>沒有時間結伴前往？，沒關係！現在飾品全品項限時兩件85折優惠！
-                        </p>
+                    <div class="process-item">
+                        <div class="process-item2-bg"></div>
+                        <p>信件確認設計圖</p>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-item3-bg"></div>
+                        <p>收取禮物</p>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <!-- ---------------- 表單 ---------------- -->
+            <div class="demand">
+                <h2>寫下禮物需求</h2>
+                <form class="demand-form" action="" method="">
+                    <table class="demand-table">
+                        <tbody>
+                            <!-- 1 商品種類 -->
+                            <tr>
+                                <td>商品種類</td>
+                                <td>
+                                    <select>
+                                        <option>戒指</option>
+                                        <option>手環</option>
+                                        <option>墜飾</option>
+                                    </select>
+                                </td>
+                                <td>姓名</td>
+                                <td>
+                                    <input type="name" id="name" class="user-name" name="name">
+                                </td>
+                            </tr>
+
+                            <!-- 2 尺寸 -->
+                            <tr>
+                                <td>尺寸</td>
+                                <td>
+                                    <select>
+                                        <option>#5</option>
+                                        <option>#6</option>
+                                        <option>#7</option>
+                                        <option>#8</option>
+                                        <option>#9</option>
+                                        <option>#10</option>
+                                        <option>#11</option>
+                                        <option>#12</option>
+                                        <option>#13</option>
+                                        <option>#14</option>
+                                        <option>#15</option>
+                                        <option>#16</option>
+                                        <option>#17</option>
+                                        <option>#18</option>
+                                    </select>
+                                </td>
+                                <td>聯絡電話</td>
+                                <td>
+                                    <input type="phone" id="phone" class="user-phone" name="phone">
+                                </td>
+                            </tr>
+
+                            <!-- 3 服務項目 -->
+                            <tr>
+                                <td>服務項目</td>
+                                <td>
+                                    <select>
+                                        <option>刻字服務</option>
+                                        <option>圖樣印製</option>
+                                    </select>
+                                </td>
+                                <td>電子信箱</td>
+                                <td>
+                                    <input type="useremail" id="useremail" class="user-email" name="useremail">
+                                </td>
+                            </tr>
+                            <!-- 4 指定樣式說明 -->
+                            <tr>
+                                <td>指定樣式說明</td>
+                                <td>
+                                    <textarea placeholder="請盡量詳細的描述圖樣、位置等，若有指定的商品樣式，請一併寫下。"></textarea>
+                                </td>
+                                <td colspan="2">
+                                    ※ ️我們會在確認定案設計圖後，才與您收取費用。<br><br>※ ️客製化商品，因依照個人專屬需求製作，經最終確認開始製作後，恕不接受修改訂單與取消訂單。
+                                    <button class="demand_btn">提交</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
         </div>
 
 

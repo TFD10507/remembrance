@@ -21,12 +21,17 @@ table{
     border-collapse: collapse;
 }
 
-.mem_btn input{
+.mem_btn .btn{
     width: 200px;
-    padding: 5px;
+    height: 40px;
+    margin: 20px 0;
     border: 0;
-    background-color: rgba(108, 56, 133, 1);
+    background-color: rgb(178,144,193);
     color: white;
+}
+
+.mem_btn .btn:hover{
+    background-color: rgba(108, 56, 133, 1);
 }
 
 tr{
@@ -57,6 +62,7 @@ tr:nth-child(n+4){
     font-size: 13px;
 }
 
+/*    其他登入方式     */
 tr:nth-child(7){
     font-size: 30px;
 }
