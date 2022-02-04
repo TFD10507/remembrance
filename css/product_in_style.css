@@ -1,0 +1,212 @@
+@import url('all_style.css');
+
+/* ------------------top---------------------- */
+.top{
+    padding: 30px 0;
+    /* border: red solid 1px; */
+    width: 100%;
+    height: auto;
+}
+
+
+/* ----------------麵包屑-------------------- */
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+.breadcrumb{
+    padding-bottom: 20px;
+}
+
+/* --------------------商品-------------------- */
+.product-in-main{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    /* border: orange solid 1px; */
+}
+
+/* ----------商品照片------------ */
+.product-in-photo{
+    width: 50%;
+    display: block;
+    /* border: blue solid 1px; */
+}
+
+.photo-large img{
+    width: 400px;
+    height: 400px;
+    display: block;
+}
+
+.photo-thumbs{
+    width: 400px;
+    display: block;
+    padding-top: 30px;
+    position: relative;
+}
+
+.photo-thumbs ul{
+    display: flex;
+    overflow: hidden;
+}
+
+.photo-small{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.photo-thumbs img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.photo-thumbs .fa{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(190, 190, 127, 1);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5em;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .fa:hover{
+    background-color: #666;
+  }
+  
+  .fa-angle-left{
+    left: -40px;
+  }
+  
+  .fa-angle-right{
+    right: -40px;
+  }
+
+  /* ----------商品購買------------ */
+  .product-in-buy{
+      width: 50%;
+      padding-left: 20px;
+      /* border: green solid 1px; */
+  }
+
+  /* 價錢顏色 */
+  .product-in-buy li:nth-child(2){
+      color: rgba(209, 194, 55, 1);
+  }
+
+  /* 文字簡介 */
+  .product-in-buy li{
+      /* border: palegreen solid 1px; */
+      padding-bottom: 10px;;
+      letter-spacing: 1px;
+  }
+
+  /* 下拉式選單 */
+  .product-in-buy select{
+      height: 40px;
+  }
+
+  /* 選擇數量尺寸 */
+
+  .product-in-buy tr{
+      /* border: firebrick solid 1px; */
+  }
+
+  .product-in-buy li table td{
+    padding: 10px 0;
+  }
+  .product-in-buy li table td:first-child{
+      padding-right: 10px;
+  }
+
+  /* 收藏 */
+  .product-in-buy i{
+      font-size: 30px;
+      padding-left: 5px;
+      /* border: teal solid 1px; */
+      vertical-align: middle;
+  }
+
+  /* 購物車 */
+  .product-in-buy a{
+      text-decoration: none;
+      color: white;
+      display: block;
+      width: 200px;
+      height: 40px;
+      background-color: rgb(178,144,193);
+      line-height: 40px;
+      text-align: center;
+  }
+
+  .product-in-buy a:hover{
+    background-color: rgba(108, 56, 133, 1);
+  }
+
+
+
+  /* --------------------商品介紹-------------------- */
+
+  .product-basic hr{
+      border: 1px solid #333;
+      background-color: #333;
+  }
+
+  .product-basic-info h2{
+      color: rgba(190, 190, 127, 1);
+      padding-top: 40px;
+  }
+
+
+  .product-basic-info-1 img{
+      width: 400px;
+      margin: 20px 0;
+  }
+
+  .product-basic-info-1 a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: rgb(178,144,193);
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 5px;
+  }
+  
+  .product-basic-info-1 a:hover{
+    background-color: rgba(108, 56, 133, 1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

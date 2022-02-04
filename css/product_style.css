@@ -66,13 +66,13 @@
 
 .product-class ol li a{
     background-color: rgba(255, 255, 255, 0.6);
-    color: black;
+    color: #333;
 }
   
   /*  主分類hover */
 .product-class li a:hover{
     background-color: rgba(190, 190, 127, 1);
-    color: black;
+    color: #333;
     font-weight: bold;
 }
 
@@ -83,7 +83,7 @@
 /* 子分類hover */
 .product-class ol li a:hover{
     background-color: rgba(190, 190, 127, .6);
-    color: black;
+    color: #333;
     font-weight: bold;
 }
 
