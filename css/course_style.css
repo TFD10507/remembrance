@@ -36,7 +36,7 @@
 
 /* ------------ 課程須知 ----------------- */
 .course-notice{
-    padding: 70px 0;
+    padding-top: 70px;
 }
 
 
@@ -60,9 +60,12 @@
 .course-contain{
     text-align: center;
     /* border: blue solid 1px; */
+    padding-top: 70px;
     width: 100%;
-    
     overflow: hidden;
+}
+.course-contain h2{
+    text-align: left;
 }
 
 .course-list{
@@ -132,8 +135,7 @@
       display: none;
   }
 
-  
-
+    /* 叉叉 */
   .hand-merit-fade button{
       /* float: right; */
       position: fixed;
@@ -165,6 +167,7 @@
     margin-bottom: 10px;
 }
 
+/* 示範照片 */
   .hand-merit-fade img{
       width: 200px;
       display: block;
@@ -176,3 +179,37 @@
       display: flex;
       flex-wrap: wrap;
   } 
+
+  /* 預約資訊 */
+  .hand-merit-fade tr{
+      height: 40px;
+      line-height: 40px;
+  }
+
+  .hand-merit-fade input{
+      padding: 10px;
+  }
+
+  .hand-merit-fade td{
+    padding: 5px;
+    padding-right: 10px;
+  }
+        /* 時段 */
+  .hand-merit-fade select{
+      height: 40px;
+  }
+
+  /* 提交 */
+  .submit{
+      display: block;
+      width: 100px;
+      height: 40px;
+      border: 0;
+      background-color: rgb(178,144,193);
+      color: white;
+      margin-top: 10px;
+  }
+
+  .submit:hover{
+    background-color: rgba(108, 56, 133, 1);
+  }
