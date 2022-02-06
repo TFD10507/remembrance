@@ -1,0 +1,67 @@
+@import url(../css/all_style.css);
+
+/* ================= 修改資料 ==================== */
+.personal-revise{
+    padding: 70px 0;
+    /* border: orange solid 1px; */
+}
+
+.flex-personal-revise{
+    display: flex;
+    justify-content: space-between;
+}
+
+.revise{
+    width: 45%;
+    position: relative;
+    /* border: red solid 1px; */
+    padding-bottom: 50px;
+}
+
+.revise td{
+    padding-bottom: 10px;
+}
+
+.revise td:nth-child(2){
+    padding-left: 10px;
+}
+
+.revise input{
+    width: 250px;
+    padding: 10px;
+}
+
+.revise button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* ================= 訂單明細 ======================= */
+
+.order-info ul{
+    height: 40px;
+    background-color: rgba(190, 190, 127, 1);
+    color: white;
+    line-height: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.order-info li{
+    width: 20%;
+}
+
+.order-info table{
+    width: 100%;
+}
+.order-info td{
+    width: 20%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.order-info tr:nth-child(odd){
+    background-color: rgba(225, 225, 197, 1);
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+
+    <link rel="stylesheet" href="./css/member_info_style.css">
+    <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="logo">
+            <a href="index.html"><img src="./source/logo3.png" alt=""></a>
+        </div>
+
+        <ul class="main-list">
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="product.html">所有商品</a></li>
+            <li><a href="course.html">金工課程</a></li>
+            <li><a href="course.html#reserve">線上預約</a></li>
+            <li><a href="design.html">訂製設計</a></li>
+            <li class="search">
+                <input type="text" placeholder="search...">
+            </li>
+        </ul>
+
+        <ul class="main-icon">
+            <li>
+                <a href="member.html">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top member-bg">
+            <h1>會員中心</h1>
+        </div>
+
+
+        <!-- -----------------container----------------- -->
+        <div class="container">
+            <!-- ----------- 會員資料 ---------- -->
+            
+            <!-- 修改密碼 -->
+            <div class="personal-revise">
+                <div class="personal-title">
+                    <h2>| 會員資料 |</h2>
+                </div>
+                <div class="flex-personal-revise">
+                    <div class="revise">
+                        <p>修改密碼</p>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>電子郵件</td>
+                                <td>
+                                    <input type="useremail" name="useremail">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>舊密碼</td>
+                                <td>
+                                    <input type="oldpassword" name="oldpassword">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>新密碼</td>
+                                <td>
+                                    <input type="newpassword" name="newpassword">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>新密碼確認</td>
+                                <td>
+                                    <input type="checkpassword" name="checkpassword">
+                                </td>
+                            </tr>
+                        </table>
+                        <button>提交</button>
+                    </div>
+    
+                    <!-- 修改個資 -->
+                    <div class="revise">
+                        <p>修改會員資料</p>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>姓名</td>
+                                <td>
+                                    <input type="name" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>電話</td>
+                                <td>
+                                    <input type="phone" name="phone">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>電子郵件</td>
+                                <td>
+                                    <input type="useremail" name="useremail">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>地址</td>
+                                <td>
+                                    <input type="address" name="address">
+                                </td>
+                            </tr>
+                        </table>
+                        <button>提交</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 訂單資訊 -->
+            <div class="order-info">
+                <h2>| 訂單資訊 |</h2>
+                <ul>
+                    <li>訂單日期</li>
+                    <li>訂單編號</li>
+                    <li>訂單狀態</li>
+                    <li>總金額</li>
+                </ul>
+
+                <table>
+                    <tr>
+                        <td>2022/01/24</td>
+                        <td>#24843212</td>
+                        <td>已出貨</td>
+                        <td>NT$2160</td>
+                        <td>
+                            <button>訂單明細</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021/12/01</td>
+                        <td>#24841982</td>
+                        <td>已完成</td>
+                        <td>NT$1480</td>
+                        <td>
+                            <button>訂單明細</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021/01/01</td>
+                        <td>#24843212</td>
+                        <td>已完成</td>
+                        <td>NT$1280</td>
+                        <td>
+                            <button>訂單明細</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+        <!-- ------------------footer---------------- -->
+        <div class="footer">
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <section>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路112號</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </section>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="text">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br> 參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

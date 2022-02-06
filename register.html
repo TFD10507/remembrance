@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
 
-    <link rel="stylesheet" href="./css/member_style.css">
+    <link rel="stylesheet" href="./css/register_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
 </head>
 
@@ -58,78 +58,84 @@
 
         <!-- -----------------container------------------- -->
         <div class="container">
-            <!--login會員登入-->
+            <!--註冊-->
             <form>
-                <table class="member-login">
-                    <tbody>
-                        <!-- 1 帳號 -->
-                        <tr class="input">
-                            <td>電子信箱：</td>
-                            <td>
-                                <input type="username" id="username" class="username_email" name="username"
-                                    placeholder="您的電子郵件地址" required>
-                            </td>
-                        </tr>
+                <table class="register">
+                    <!-- 1 帳號 -->
+                    <tr class="input">
+                        <td>電子信箱：</td>
+                        <td>
+                            <input type="username" id="username" class="username_email" name="username"
+                                placeholder="您的電子郵件地址" required>
+                        </td>
+                    </tr>
 
-                        <!-- 2 密碼 -->
-                        <tr class="input">
-                            <td>密碼：</td>
-                            <td>
-                                <input type="password" id="password" class="password1" name="password"
-                                    placeholder="您的密碼" required>
-                            </td>
-                        </tr>
+                    <!-- 2 密碼 -->
+                    <tr class="input">
+                        <td>密碼：</td>
+                        <td>
+                            <input type="password" class="password1" name="password" placeholder="您的密碼" required>
+                        </td>
+                    </tr>
+                    <!-- 3 確認密碼 -->
+                    <tr class="input">
+                        <td>確認密碼：</td>
+                        <td>
+                            <input type="password" class="password1" name="password" placeholder="請再一次輸入您的密碼" required>
+                        </td>
+                    </tr>
 
-                        <!-- 3 登入 -->
-                        <tr class="mem_btn">
-                            <td></td>
-                            <td>
-                                <!-- <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" /> -->
-                                <a href="member_info.html" class="btn">登入
-                                </a>
-                                
-                            </td>
-                        </tr>
-                        <!-- 4 記住我 -->
-                        <tr>
-                            <td></td>
-                            <td id="rmbr">
-                                <input type="checkbox" id="remberme" name="remberme" required>
-                                <label for="remberme" id="remberme0">記住我</label>
-                            </td>
-                        </tr>
-                        <!-- 5 忘記密碼 -->
-                        <tr>
-                            <td></td>
-                            <td id="sign">
-                                <a href="#" id="member_btn">忘記密碼？</a>
-                                |
-                                <a href="register.html" id="register">註冊</a>
-                            </td>
-                        </tr>
-                        <!-- 6 其他登入方式 -->
-                        <tr>
-                            <td></td>
-                            <td class="member_btn">用以下帳號密碼登入為會員</td>
-                        </tr>
-                        <!-- 7 icon -->
-                        <tr>
-                            <td></td>
-                            <td class="other-sign">
-                                <a href="https://www.google.com/">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="https://www.facebook.com/">
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
-                                <a href="https://line.me/zh-hant/">
-                                    <i class="fab fa-line"></i>
-                                </a>
-                            </td>
-                        </tr>
+                    <!-- 4 姓名 -->
+                    <tr class="input">
+                        <td>姓名：</td>
+                        <td>
+                            <input type="name" class="name" name="name" placeholder="請輸入全名" required>
+                        </td>
+                    </tr>
+                    <!-- 5 性別 -->
+                    <tr>
+                        <td>性別：</td>
+                        <td>
+                            <input type="radio" name="sex" id="male" required>
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="female" required>
+                            <label for="female">女</label>
+                            <input type="radio" name="sex" id="none" required>
+                            <label for="none">不公開</label>
+                        </td>
+                    </tr>
 
-                    </tbody>
+                    <!-- 6 生日 -->
+                    <tr>
+                        <td>生日：</td>
+                        <td>
+                            <input type="date" name="bithday" min="1920-01-01" max="today">
+                        </td>
+                    </tr>
+
+                    <!-- 7 電話 -->
+                    <tr class="input">
+                        <td>電話：</td>
+                        <td>
+                            <input type="phone" class="phone" name="phone">
+                        </td>
+                    </tr>
+                    <!-- 8 地址 -->
+                    <tr class="input">
+                        <td>地址：</td>
+                        <td>
+                            <input type="address" class="address" name="address">
+                        </td>
+                    </tr>
+                    <!-- 9 同意 -->
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="agree" id="agree" required>
+                            <label for="agree">我已閱讀並同意《隱私權保護政策》及《定型化契約條款》。</label>
+                        </td>
+                    </tr>
                 </table>
+                <a href="member.html" class="btn">註冊</a>
             </form>
         </div>
         <!-- ------------------footer---------------- -->
