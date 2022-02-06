@@ -1,0 +1,28 @@
+@import url(all_style.css);
+
+
+.container ul{
+    text-align: center;
+    padding-top: 100px;
+}
+.container h1{
+    color: rgba(209, 194, 55, 1);
+    padding-bottom: 50px;
+}
+.container h2{
+    padding-bottom: 100px;
+}
+
+/* 訂單紀錄&返回購物 */
+.container ul li:nth-child(3) a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    padding-bottom: 30px;
+}
+
+.container ul li:nth-child(3) i{
+    line-height: 26px;
+    padding-right: 5px;
+}
