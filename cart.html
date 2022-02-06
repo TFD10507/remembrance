@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
 
-    <link rel="stylesheet" href="./css/member_style.css">
+    <link rel="stylesheet" href="./css/cart_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
 </head>
 
@@ -52,83 +52,177 @@
     <div class="right">
         <!---------------- top ----------------->
         <div class="top member-bg">
-            <h1>會員登入</h1>
+            <h1>購物車</h1>
         </div>
 
 
         <!-- -----------------container------------------- -->
         <div class="container">
-            <!--login會員登入-->
-            <form class="login" action="" method="post">
-                <table class="member-login">
-                    <tbody>
-                        <!-- 1 帳號 -->
-                        <tr class="input">
-                            <td>電子信箱：</td>
-                            <td>
-                                <input type="username" id="username" class="username_email" name="username"
-                                    placeholder="您的電子郵件地址" required>
-                            </td>
-                        </tr>
+            <!-- ----------- cart list ---------- -->
+            <form action="">
+                <div class="cart-list">
+                    <ul class="cart-header">
+                        <li></li>
+                        <li>商品名稱</li>
+                        <li>尺寸</li>
+                        <li>售價</li>
+                        <li>數量</li>
+                        <li>合計</li>
+                        <li>操作</li>
+                    </ul>
+                    <ul class="cart-content">
+                        <li>
+                            <img src="./source/商品/戒指/寬素面.jpg" alt="">
+                        </li>
+                        <li>寬邊素面</li>
+                        <li>#16</li>
+                        <li>NT$1480</li>
+                        <li>
+                            <div class="count">
+                                <div><span class="num-jian">-</span></div>
+                                <div><input type="text" class="input-num" value="1" /></div>
+                                <div><span class="num-jia">+</span></div>
+                            </div>
+                        </li>
+                        <li>NT$1480</li>
+                        <li class="operate">
+                            <a href="#">刪除</a>
+                            <a href="#">移至收藏</a>
+                        </li>
+                    </ul>
 
-                        <!-- 2 密碼 -->
-                        <tr class="input">
-                            <td>密碼：</td>
-                            <td>
-                                <input type="password" id="password" class="password1" name="password"
-                                    placeholder="您的密碼" required>
-                            </td>
-                        </tr>
-
-                        <!-- 3 登入 -->
-                        <tr class="mem_btn">
-                            <td></td>
-                            <td>
-                                <!-- <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" /> -->
-                                <button class="btn">登入</button>
-                            </td>
-                        </tr>
-                        <!-- 4 記住我 -->
-                        <tr>
-                            <td></td>
-                            <td id="rmbr">
-                                <input type="checkbox" id="remberme" name="remberme" required>
-                                <label for="remberme" id="remberme0">記住我</label>
-                            </td>
-                        </tr>
-                        <!-- 5 忘記密碼 -->
-                        <tr>
-                            <td></td>
-                            <td id="sign">
-                                <a href="#" id="member_btn">忘記密碼？</a>
-                                |
-                                <a href="#" id="register">註冊</a>
-                            </td>
-                        </tr>
-                        <!-- 6 其他登入方式 -->
-                        <tr>
-                            <td></td>
-                            <td class="member_btn">用以下帳號密碼登入為會員</td>
-                        </tr>
-                        <!-- 7 icon -->
-                        <tr>
-                            <td></td>
-                            <td class="other-sign">
-                                <a href="https://www.google.com/">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="https://www.facebook.com/">
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
-                                <a href="https://line.me/zh-hant/">
-                                    <i class="fab fa-line"></i>
-                                </a>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
+                    <ul class="cart-content">
+                        <li>
+                            <img src="./source/商品/戒指/細六角形.jpg" alt="">
+                        </li>
+                        <li>平行六角形</li>
+                        <li>#7</li>
+                        <li>NT$1480</li>
+                        <li>
+                            <div class="count">
+                                <div><span class="num-jian">-</span></div>
+                                <div><input type="text" class="input-num" value="1" /></div>
+                                <div><span class="num-jia">+</span></div>
+                            </div>
+                        </li>
+                        <li>NT$1480</li>
+                        <li class="operate">
+                            <a href="#">刪除</a>
+                            <a href="#">移至收藏</a>
+                        </li>
+                    </ul>
+                </div>
             </form>
+            <div class="cart-middle">
+                <div class="cart-coupon">
+                    <div class="coupon">
+                        <button class="coupon_btn">折價券</button>
+                        <input class="coupon_num">
+                    </div>
+                    <div class="delivery">
+                        <span>運送方式</span>
+                        <span>宅配NT$80</span>
+                    </div>
+                </div>
+
+                <div class="cart-total-price">
+                    <table>
+                        <tr>
+                            <td>商品總計</td>
+                            <td>NT$2960</td>
+                        </tr>
+                        <tr>
+                            <td>折抵總計</td>
+                            <td>NT$0</td>
+                        </tr>
+                        <tr>
+                            <td>運費</td>
+                            <td>NT$80</td>
+                        </tr>
+                        <tr>
+                            <td>總金額</td>
+                            <td>NT$3040</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="cart-bottom">
+                <div class="buyer-info">
+                    <div class="buyer-info-title">
+                        收件資訊
+                    </div>
+                    <table>
+                        <tr>
+                            <td>收件人：</td>
+                            <td>
+                                <input type="name" class="user-name" name="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手機號碼：</td>
+                            <td>
+                                <input type="phone" class="phone" name="phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>收件地址：</td>
+                            <td>
+                                <input type="address" class="address" name="address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>備註：</td>
+                            <td>
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-method-title">
+                        付款方式
+                    </div>
+                    <div class="payment-method-content">
+                        <ul class="method-choose">
+                            <li>
+                                <input type="radio" name="method-choose" id="ATM" required>
+                                <label for="ATM">ATM轉帳</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="method-choose"  id="credit-card" required>
+                                <label for="credit-card">輸入信用卡卡號付款</label>
+                            </li>
+                        </ul>
+                        
+                        <ul>
+                            <li>信用卡卡號</li>
+                            <li>
+                                <input type="text" class="credit-card-num" placeholder="0000">
+                                <input type="text" class="credit-card-num" placeholder="0000">
+                                <input type="text" class="credit-card-num" placeholder="0000">
+                                <input type="text" class="credit-card-num" placeholder="0000">
+                            </li>
+                        </ul>
+                        <div class="flex-verify">
+                            <div class="verify">
+                                <p>有效日期</p>
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                            <div class="verify">
+                                <p>驗證碼</p>
+                                <input type="text" placeholder="000">
+                            </div>
+                        </div>
+                        <a href="checkout.html">
+                            <button>確認付款</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
         <!-- ------------------footer---------------- -->
         <div class="footer">
@@ -170,8 +264,7 @@
             </div>
             <hr>
             <p class="text">
-                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br>
-                參考資源：https://ringram.jp/course/engraving/
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br> 參考資源：https://ringram.jp/course/engraving/
             </p>
         </div>
     </div>
@@ -180,6 +273,42 @@
 
 
     <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+
+    <script>
+        var num_jia = document.getElementsByClassName("num-jia")[0];
+        var num_jian = document.getElementsByClassName("num-jian")[0];
+        var input_num = document.getElementsByClassName("input-num")[0];
+
+        num_jia.addEventListener("click", function () {
+            input_num.value = parseInt(input_num.value) + 1;
+        });
+
+        num_jian.addEventListener("click", function () {
+            if (input_num.value <= 1) {
+                input_num.value = 1;
+            } else {
+
+                input_num.value = parseInt(input_num.value) - 1;
+            }
+        });
+
+        var num_jia_1 = document.getElementsByClassName("num-jia")[1];
+        var num_jian_1 = document.getElementsByClassName("num-jian")[1];
+        var input_num_1 = document.getElementsByClassName("input-num")[1];
+
+        num_jia_1.addEventListener("click", function () {
+            input_num_1.value = parseInt(input_num_1.value) + 1;
+        });
+
+        num_jian_1.addEventListener("click", function () {
+            if (input_num_1.value <= 1) {
+                input_num_1.value = 1;
+            } else {
+
+                input_num_1.value = parseInt(input_num_1.value) - 1;
+            }
+        });
+    </script>
 </body>
 
 </html>

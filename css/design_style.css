@@ -199,12 +199,12 @@
 
 /*  提交按鈕   */
 .demand_btn{
-    width: 100px;
-    height: 40px;
+    /* width: 100px;
+    height: 40px; */
     /* margin: 20px 0; */
-    border: 0;
+    /* border: 0;
     background-color: rgb(178,144,193);
-    color: white;
+    color: white; */
     border-radius: 5px;
     
     position: absolute;
@@ -213,6 +213,6 @@
 }
 
 .demand_btn:hover{
-    background-color: rgba(108, 56, 133, 1);
+    /* background-color: rgba(108, 56, 133, 1); */
 }
 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+
+    <link rel="stylesheet" href="./css/cart_style.css">
+    <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- -----------left-------------- -->
+    <nav class="main-sel">
+        <div class="logo">
+            <a href="index.html"><img src="./source/logo3.png" alt=""></a>
+        </div>
+
+        <ul class="main-list">
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="product.html">所有商品</a></li>
+            <li><a href="course.html">金工課程</a></li>
+            <li><a href="course.html.#reserve">線上預約</a></li>
+            <li><a href="design.html">訂製設計</a></li>
+            <li class="search">
+                <input type="text" placeholder="search...">
+            </li>
+        </ul>
+
+        <ul class="main-icon">
+            <li>
+                <a href="member.html">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ---------------left end---------------- -->
+    <div class="right">
+        <!---------------- top ----------------->
+        <div class="top member-bg">
+            <h1>購物車</h1>
+        </div>
+
+
+        <!-- -----------------container------------------- -->
+        <div class="container">
+            <!--login會員登入-->
+            <form action="">
+                <table class="cart-table">
+                    <tbody>
+                        <!-- 1 header -->
+                        <tr class="cart-header">
+                            <td></td>
+                            <td>商品名稱</td>
+                            <td>尺寸</td>
+                            <td>售價</td>
+                            <td>數量</td>
+                            <td>合計</td>
+                            <td>操作</td>
+                        </tr>
+
+                        <!-- 2 -->
+                        <tr>
+                            <td>
+                                <!-- <img src="./source/商品/戒指/寬素面.jpg" alt=""> -->
+                            </td>
+                            <td>寬邊素面</td>
+                            <td>#7</td>
+                            <td>NT$1480</td>
+                            <td>
+                                <ul class="count">
+                                    <li><span id="num-jian" class="num-jian">-</span></li>
+                                    <li><input type="text" class="input-num" id="input-num" value="0" /></li>
+                                    <li><span id="num-jia" class="num-jia">+</span></li>
+                                </ul>
+                            </td>
+                            <td>NT$1480</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <a href="#">刪除</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">移至收藏</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- ------------------footer---------------- -->
+        <div class="footer">
+            <div class="footer-contain">
+                <div class="footer-text">
+                    <section>
+                        <i class="fas fa-phone"></i>
+                        <span>電話：02-4898937</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>地址：新北市新莊區樹新路112號</span>
+                    </section>
+
+                    <section>
+                        <i class="fas fa-envelope"></i>
+                        <span>客服信箱：remebrance22@gmail.com</span>
+                    </section>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <p class="text">
+                本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br> 參考資源：https://ringram.jp/course/engraving/
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+
+    <script>
+        var num_jia = document.getElementById("num-jia");
+        var num_jian = document.getElementById("num-jian");
+        var input_num = document.getElementById("input-num");
+
+        num_jia.addEventListener("click", function () {
+            input_num.value = parseInt(input_num.value) + 1;
+        });
+
+        num_jian.addEventListener("click", function () {
+            if (input_num.value <= 0) {
+                input_num.value = 0;
+            } else {
+
+                input_num.value = parseInt(input_num.value) - 1;
+            }
+        });
+    </script>
+</body>
+
+</html>

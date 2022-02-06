@@ -252,3 +252,16 @@ body h2{
 
     /* position: relative; */
 }
+
+
+button{
+    width: 100px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(178,144,193);
+    color: white;
+}
+
+button:hover{
+    background-color: rgba(108, 56, 133, 1);
+}

@@ -1,0 +1,270 @@
+@import url('all_style.css');
+
+/* ------------------- top ---------------------- */
+
+.top h1 {
+    line-height: 150px;
+}
+
+
+/* --------------- cart-top ---------------- */
+
+form{
+    width: 100%;
+    padding-top: 70px;
+    /* border: red solid 1px; */
+}
+
+
+.cart-list {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cart-header{
+    background-color: rgba(190, 190, 127, 1);
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+.cart-header li{
+    width: 14%;
+    padding-right: 10px;
+}
+
+.cart-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: red solid 1px; */
+    margin: 10px 0;
+
+}
+
+.cart-content li{
+    width: 14%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-right: 10px;
+    /* border: blue solid 1px; */
+}
+
+/* 商品縮圖 */
+
+.cart-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 5px;
+}
+
+
+/* 數量按鈕 */
+.cart-content .count{
+    display: flex;
+    justify-content: center;
+}
+.cart-content .count div{
+    font-size: 13px;
+    color: #808080;
+}
+.cart-content .num-jian,.input-num,.num-jia {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+.cart-content .input-num {
+    width: 28px;
+    height: 22px;
+    color: #333;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+/* 操作 */
+.cart-content .operate a{
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    justify-content: center;
+}
+
+
+/* ------------------ cart-middle ------------------- */
+.cart-middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/* 折抵 */
+.cart-coupon{
+    /* border: blue solid 1px; */
+}
+
+
+.cart-coupon input{
+    width: 200px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 0;
+    border-bottom: #333 solid 1px;
+}
+
+.delivery{
+    padding-top: 40px;
+}
+
+.delivery span:nth-child(2){
+    padding-left: 60px;
+}
+
+
+/* 購物車總價 */
+.cart-total-price{
+    width: 360px;
+    /* height: 160px; */
+    padding: 20px 0 0 40px;
+    border: #333 solid 1px;
+    background-color: rgba(225, 225, 197, 1);
+}
+
+.cart-total-price table{
+    /* margin: 0 auto; */
+}
+.cart-total-price tr:nth-child(1) td{
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.cart-total-price tr:nth-child(even) td{
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.cart-total-price tr:nth-child(3) td{
+    padding-bottom: 40px;
+    padding-right: 20px;
+}
+
+
+/* ------------------ cart-bottom ------------------- */
+
+
+.cart-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+}
+
+
+/* 收件資訊 */
+.buyer-info{
+    width: 45%;
+}
+
+.buyer-info-title{
+    background-color: rgba(190, 190, 127, 1);
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: white;
+}
+
+.buyer-info input{
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+
+.buyer-info .address{
+    width: 300px;
+    /* width: 100%; */
+}
+.buyer-info textarea{
+    width: 200px;
+    height: 100px;
+    resize: none;
+    display: block;
+}
+
+.buyer-info tr:nth-child(1) td{
+    padding-top: 30px;
+}
+.buyer-info td{
+    padding-bottom: 20px;
+    padding-left: 5px;
+    /* border: firebrick solid 1px; */
+}
+
+
+/* 付款方式 */
+.payment-method{
+    width: 45%;
+    position: relative;
+}
+.payment-method-title{
+    background-color: rgba(190, 190, 127, 1);
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: white;
+}
+
+.payment-method-content{
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+/* choose */
+.method-choose li{
+    padding-bottom: 20px;
+    /* border: firebrick solid 1px; */
+}
+
+/* 信用卡卡號 */
+.payment-method-content ul:nth-child(2) input{
+    padding: 10px;
+    width: 70px;
+}
+.payment-method-content ul:nth-child(2) li:nth-child(1){
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+
+/* 驗證碼&有效日期 */
+.flex-verify{
+    display: flex;
+    padding-top: 20px;
+}
+
+.flex-verify .verify{
+    margin-right: 20px;
+}
+
+.flex-verify .verify input{
+    padding: 10px;
+    width: 60px;
+}
+
+.flex-verify .verify p{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+/* 確認付款 */
+.payment-method-content button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

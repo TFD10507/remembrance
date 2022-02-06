@@ -23,15 +23,7 @@ table{
 
 .mem_btn .btn{
     width: 200px;
-    height: 40px;
     margin: 20px 0;
-    border: 0;
-    background-color: rgb(178,144,193);
-    color: white;
-}
-
-.mem_btn .btn:hover{
-    background-color: rgba(108, 56, 133, 1);
 }
 
 tr{
