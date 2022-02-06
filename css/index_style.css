@@ -12,7 +12,32 @@
 .banner-video{
     object-fit: cover;
 }
+.banner i{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 40px;
+    animation: viewmore 1s linear infinite;
+}
 
+@keyframes viewmore {
+    0%{
+        bottom: 10px;
+    }
+    50%{
+        bottom: 25px;
+    }
+    100%{
+        bottom: 10px;
+    }
+}
+.banner a{
+    color: white;
+}
+
+.banner a:hover{
+    color: rgba(225, 225, 197, 1);
+}
 
 /* ======================= container ===================== */
 /* ---------------memory------------------ */
