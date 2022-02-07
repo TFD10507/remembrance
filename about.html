@@ -8,6 +8,7 @@
     <title>留憶金工</title>
     <link rel="stylesheet" href="./css/about_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,9 +62,9 @@
         <div class="container">
             <!-- -------------story--------------- -->
             <div class="story">
-                <h2>品牌故事</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800">品牌故事</h2>
                 <div class="flex-story">
-                    <div class="story-text">
+                    <div class="story-text" data-aos="fade-left" data-aos-duration="1000">
                         <p>留憶 Remembrance ———
                             <br>
                             留下回憶、記憶 / 留意身邊的人事物。
@@ -78,12 +79,12 @@
             </div>
             <!-- ----------------營業資訊--------------- -->
             <div class="addr">
-                <h2>營業資訊</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800">營業資訊</h2>
                 <div class="flex-addr">
-                    <div class="addr-img">
+                    <div class="addr-img" data-aos="fade-left" data-aos-duration="1000">
                         <img src="./source/店鋪.jpg" alt="">
                     </div>
-                    <div class="addr-text">
+                    <div class="addr-text" data-aos="fade-left" data-aos-duration="1000">
                         <ul>
                             <li>週一到週五<br>10:00 ~ 19:00</li>
                             <li>週六/週日/國定假日10:00 ~ 21:00</li>
@@ -95,7 +96,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="addr-map">
+                <div class="addr-map" data-aos="fade-up" data-aos-duration="1000">
                     <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.0604135703256!2d121.42776041423771!3d24.998063045886777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681d46ea872957%3A0xd6069785c69af076!2zMjM45paw5YyX5biC5qi55p6X5Y2A5qi55paw6LevMTEy6Jmf!5e0!3m2!1szh-TW!2stw!4v1642946432820!5m2!1szh-TW!2stw"
                     width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -153,6 +154,11 @@
         <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

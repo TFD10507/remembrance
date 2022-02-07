@@ -8,10 +8,18 @@
     <title>留憶金工</title>
     <link rel="stylesheet" href="./css/index_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
+        <div class="loading_block" id="loading">
+            <div class="loading-dot">
+                <span class="dot -dot1"></span>
+                <span class="dot -dot2"></span>
+                <span class="dot -dot3"></span>
+            </div>
+        </div>
         <!-- -----------left-------------- -->
         <nav class="main-sel">
             <div class="logo">
@@ -58,7 +66,7 @@
                 <video src="./source/banner-video.mp4" autoplay muted loop type="video/mp4" height="100%" width="100%"
                     class="banner-video">
                 </video>
-                
+
                 <button onclick="run();" class="view-bottom">
                     <i class="fas fa-angle-double-down"></i>
                 </button>
@@ -67,33 +75,35 @@
             <!-- -------------內容------------- -->
             <div class="container">
                 <!-- --------------memory--------------- -->
-                <div class="memory">
+                <div class="memory" data-aos="zoom-in" data-aos-duration="1000">
                     <p>紀念，可以是一個人、一件事、一段經歷、一個只有你懂的記號或是達成的階段目標，將那些想被記住的生活瑣事成為具象的物品，把屬於你(妳)的人生故事做成紀念品，送給自己或是送給別人都格外有意義。</p>
                 </div>
 
                 <!-- --------------course-------------------- -->
                 <div class="index-course">
-                    <h2>金工課程</h2>
-                    <ul class="index-course-item-transition">
+                    <h2 data-aos="fade-down" data-aos-duration="800">金工課程</h2>
+                    <ul class="index-course-item-transition" data-aos="zoom-in" data-aos-duration="900">
                         <li class="index-ring"></li>
                         <li class="index-pendant"></li>
                         <li class="index-bracelet"></li>
                     </ul>
-                    <p>從諮詢到製作，敬業的工作人員將細心提供您們任何協助以貼近每位客人人生中想要紀念的感情時刻。
+                    <p data-aos="zoom-in" data-aos-duration="1000">從諮詢到製作，敬業的工作人員將細心提供您們任何協助以貼近每位客人人生中想要紀念的感情時刻。
                     </p>
-                    <div class="btn"></div>
-                    <a href="course.html#reserve">線上預約</a>
+                    <div class="btn" data-aos="flip-left" data-aos-duration="1000"></div>
+                    <a href="course.html#reserve" data-aos="zoom-in" data-aos-duration="1000">線上預約</a>
 
                 </div>
                 <!-- ------------------news------------------ -->
                 <div class="news">
-                    <h2 class="news-title">最新消息</h2>
+                    <h2 class="news-title" data-aos="fade-down" data-aos-duration="800">最新消息</h2>
                     <div class="flex-news">
-                        <div class="news-img">
+                        <div class="news-img" data-aos="fade-right" data-aos-duration="700">
                             <img src="./source/news.jpg" alt="">
                         </div>
-                        <div class="news-text">
-                            <p>今年情人節想好怎麼慶祝了嗎？<br>2022/2/1 ~ 2022/2/14 <br>一起來留憶金工留下屬於你們的情人節回憶吧！不管是朋友、情侶或是家人，不分性別，手作金工課程只要兩人同行就能獲得9折優惠！<br><br>沒有時間結伴前往？，沒關係！現在飾品全品項限時兩件85折優惠！</p>
+                        <div class="news-text" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+                            <p>今年情人節想好怎麼慶祝了嗎？<br>2022/2/1 ~ 2022/2/14
+                                <br>一起來留憶金工留下屬於你們的情人節回憶吧！不管是朋友、情侶或是家人，不分性別，手作金工課程只要兩人同行就能獲得9折優惠！<br><br>沒有時間結伴前往？，沒關係！現在飾品全品項限時兩件85折優惠！
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -150,15 +160,32 @@
         </div>
     </div>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
-        function run(){
+        function run() {
             window.scrollTo({
-                top:600,
-                behavior:"smooth"
+                top: 600,
+                behavior: "smooth"
             });
         }
 
+        AOS.init();
+        // 載入畫面
+        var $loading = $('#loading');
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                $loading.fadeOut(1000);
+            }, 1000);
+            setTimeout(function () {
+                document.getElementsByClassName("loading")[0].remove();
+            }, 2000);
+        });
     </script>
+
 </body>
 
 </html>

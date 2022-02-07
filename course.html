@@ -8,6 +8,7 @@
     <title>留憶金工</title>
     <link rel="stylesheet" href="./css/course_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -63,9 +64,9 @@
             <!-- -----------------main------------------- -->
             <div class="container">
                 <div class="course-notice">
-                    <h2>課程須知</h2>
-                    <hr>
-                    <ul>
+                    <h2 data-aos="fade-down" data-aos-duration="800">課程須知</h2>
+                    <hr data-aos="fade-right" data-aos-duration="1000">
+                    <ul data-aos="fade-right" data-aos-duration="1000">
                         <li>採小班制教學，每次每個時段學生最多10位。</li>
                         <li>進入工作室內請全程配戴口罩，請勿攜帶外食。</li>
                         <li>報到採實名制，請配合量測體溫及酒精消毒。</li>
@@ -76,8 +77,8 @@
                 <!-----------詳細課程-------------------- -->
                 <div><a name='reserve' id="reserve"></a></div>
                 <div class="course-contain">
-                    <h2>立即預約</h2>
-                    <ul class="course-list">
+                    <h2 data-aos="fade-down" data-aos-duration="800">立即預約</h2>
+                    <ul class="course-list" data-aos="fade-left" data-aos-duration="1000">
                         <li>
                             <a href="javascript:void(0)" class="linkbt">
                                 <img src="./source/商品/戒指/v3.jpg" alt="">
@@ -454,6 +455,10 @@
     </div>
 
     <script src="./js/course_js.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

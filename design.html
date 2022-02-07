@@ -8,6 +8,7 @@
     <title>留憶金工</title>
     <link rel="stylesheet" href="./css/design_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,7 +56,7 @@
         <!-- -------------內容------------- -->
         <div class="container">
             <!------------ banner ------------>
-            <div class="banner">
+            <div class="banner" data-aos="fade-up" data-aos-duration="1000">
                 <div class="flex-design">
                     <div class="design-img">
                         <img src="./source/商品/墜飾/厚方牌3.jpg" alt="">
@@ -74,13 +75,13 @@
 
             <!-- -------------- 服務項目 --------------- -->
             <div class="design-service">
-                <h2>服務項目</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800">服務項目</h2>
                 <div class="design-service-list">
-                    <div class="item text">
+                    <div class="item text" data-aos="zoom-in" data-aos-duration="800">
                         <div class="item1-bg"></div>
                         <p>刻字服務</p>
                     </div>
-                    <div class="item pattern">
+                    <div class="item pattern" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                         <div class="item2-bg"></div>
                         <p>圖樣印製</p>
                     </div>
@@ -89,17 +90,19 @@
 
             <!-- -------------- 訂製流程 ----------------- -->
             <div class="process">
-                <h2>訂製流程</h2>
+                <h2 data-aos="fade-down" data-aos-duration="800">訂製流程</h2>
                 <div class="process-list">
-                    <div class="process-item">
+                    <div class="process-item" data-aos="fade-left" data-aos-duration="800">
                         <div class="process-item1-bg"></div>
                         <p>填寫訂製需求</p>
                     </div>
-                    <div class="process-item">
+                    <div class="process-item" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-delay="500">
                         <div class="process-item2-bg"></div>
                         <p>信件確認設計圖</p>
                     </div>
-                    <div class="process-item">
+                    <div class="process-item" data-aos="fade-left" data-aos-duration="800"
+                    data-aos-delay="1000">
                         <div class="process-item3-bg"></div>
                         <p>收取禮物</p>
                     </div>
@@ -107,8 +110,8 @@
             </div>
             <!-- ---------------- 表單 ---------------- -->
             <div class="demand">
-                <h2>寫下禮物需求</h2>
-                <form class="demand-form" action="" method="">
+                <h2 data-aos="fade-down" data-aos-duration="800">寫下禮物需求</h2>
+                <form class="demand-form" action="" method="" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
                     <table class="demand-table">
                         <tbody>
                             <!-- 1 商品種類 -->
@@ -235,6 +238,11 @@
         <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

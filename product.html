@@ -8,6 +8,7 @@
     <title>留憶金工</title>
     <link rel="stylesheet" href="./css/product_style.css">
     <link rel="icon" href="./source/R頁籤.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,7 +87,7 @@
             </ul>
             <!-- -------商品------- -->
             <div class="container">
-                <ul class="product-list">
+                <ul class="product-list" data-aos="fade-up" data-aos-duration="1000">
                     <li>
                         <a href="product_in.html">
                             <img src="./source/商品/戒指/迴轉.jpg" alt="">
@@ -266,6 +267,11 @@
 
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
