@@ -190,11 +190,11 @@
                                 <label for="ATM">ATM轉帳</label>
                             </li>
                             <li>
-                                <input type="radio" name="method-choose"  id="credit-card" required>
+                                <input type="radio" name="method-choose" id="credit-card" required>
                                 <label for="credit-card">輸入信用卡卡號付款</label>
                             </li>
                         </ul>
-                        
+
                         <ul>
                             <li>信用卡卡號</li>
                             <li>
@@ -274,41 +274,7 @@
 
     <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
 
-    <script>
-        var num_jia = document.getElementsByClassName("num-jia")[0];
-        var num_jian = document.getElementsByClassName("num-jian")[0];
-        var input_num = document.getElementsByClassName("input-num")[0];
-
-        num_jia.addEventListener("click", function () {
-            input_num.value = parseInt(input_num.value) + 1;
-        });
-
-        num_jian.addEventListener("click", function () {
-            if (input_num.value <= 1) {
-                input_num.value = 1;
-            } else {
-
-                input_num.value = parseInt(input_num.value) - 1;
-            }
-        });
-
-        var num_jia_1 = document.getElementsByClassName("num-jia")[1];
-        var num_jian_1 = document.getElementsByClassName("num-jian")[1];
-        var input_num_1 = document.getElementsByClassName("input-num")[1];
-
-        num_jia_1.addEventListener("click", function () {
-            input_num_1.value = parseInt(input_num_1.value) + 1;
-        });
-
-        num_jian_1.addEventListener("click", function () {
-            if (input_num_1.value <= 1) {
-                input_num_1.value = 1;
-            } else {
-
-                input_num_1.value = parseInt(input_num_1.value) - 1;
-            }
-        });
-    </script>
+    <script src="./js/num_jia_jian_js.js"></script>
 </body>
 
 </html>
