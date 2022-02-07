@@ -239,9 +239,12 @@ body h2{
     background-image: url('../source/課程_top.jpg');
 }
 
-
 .member-bg{
     background-image: url('../source/會員_top.jpg');
+}
+
+.member-bg h1{
+    line-height: 150px;
 }
 
 /* ===================== container ======================= */
