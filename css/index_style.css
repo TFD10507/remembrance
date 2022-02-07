@@ -19,6 +19,9 @@
     font-size: 40px;
     animation: viewmore 1s linear infinite;
 }
+.banner i:hover{
+    color: rgba(190, 190, 127, 1);
+}
 
 @keyframes viewmore {
     0%{
@@ -31,12 +34,9 @@
         bottom: 10px;
     }
 }
-.banner a{
-    color: white;
-}
 
-.banner a:hover{
-    color: rgba(225, 225, 197, 1);
+.banner .view-bottom{
+    background-color: transparent;
 }
 
 /* ======================= container ===================== */
