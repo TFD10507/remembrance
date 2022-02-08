@@ -28,6 +28,10 @@ tr[class="input"] input{
     border-bottom: #333 solid 1px;
 }
 
+tr:nth-child(6) input{
+    padding: 5px;
+}
+
 form a{
     text-decoration: none;
     color: white;
