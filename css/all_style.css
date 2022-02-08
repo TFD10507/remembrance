@@ -150,8 +150,8 @@ body h2{
 
 
 
-/* ======================== footer ======================== */
-.footer{
+/* ======================== footer ===================== */
+footer{
     /* border: black solid 1px; */
     width: 100%;
     background-color: rgba(190, 190, 127, .6);
@@ -175,16 +175,16 @@ body h2{
 }
 
 /* 右側 */
-.footer ul{
+footer ul{
     float: right;
     padding-top: 50px;
 }
 
-.footer li{
+footer li{
     float: left;
 }
 
-.footer ul i{
+footer ul i{
     color: white;
     font-size: 30px;
     margin-right: 25px;
@@ -192,12 +192,12 @@ body h2{
 
 
 /* 最下方 */
-.footer .text{
+footer .text{
     text-align: center;
     padding: 20px 0;
 }
 
-.footer hr{
+footer hr{
     padding-top: 50px;
     display: block;
     border: 0;
@@ -229,19 +229,19 @@ body h2{
 
 
 .about-bg{
-    background-image: url('../source/關於_bg.jpg');
+    background-image: url('../source/top_about.jpg');
 }
 
 .product-bg{
-    background-image: url('../source/商品_top.jpg');
+    background-image: url('../source/top_product.jpg');
 }
 
 .course-bg{
-    background-image: url('../source/課程_top.jpg');
+    background-image: url('../source/top_course.jpg');
 }
 
 .member-bg{
-    background-image: url('../source/會員_top.jpg');
+    background-image: url('../source/top_member.jpg');
 }
 
 .member-bg h1{

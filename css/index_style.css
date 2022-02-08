@@ -98,17 +98,17 @@
 }
 
 .index-ring{
-    background-image: url('../source/商品/戒指/圓邊4.jpg');
+    background-image: url('../source/product/ring/four_ring.jpg');
     flex-grow: 3;
 }
 
 .index-pendant{
-    background-image: url('../source/商品/墜飾/厚方牌3.jpg');
+    background-image: url('../source/product/pendant/square.jpg');
     flex-grow: 1.5;
 }
 
 .index-bracelet{
-    background-image: url('../source/商品/手環/螺旋.jpg');
+    background-image: url('../source/product/bracelet/twist.jpg');
     flex-grow: 2;
 }
 
