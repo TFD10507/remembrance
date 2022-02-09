@@ -1,9 +1,12 @@
 @import url('all_style.css');
 
-.main-list .nav-course{
+
+.-on{
     font-weight: bold;
     border-left: 3px solid rgba(190, 190, 127, 1);
 }
+
+
 
 
 /* -------------------top--------------------- */
@@ -63,14 +66,14 @@
 
 
 /* --------------- 詳細課程 -------------------*/
-.course-contain{
+.course-container{
     text-align: center;
     /* border: blue solid 1px; */
     padding-top: 70px;
     width: 100%;
     overflow: hidden;
 }
-.course-contain h2{
+.course-container h2{
     text-align: left;
 }
 
@@ -103,7 +106,7 @@
     /* border: purple solid 1px; */
 }
 
-.course-contain img{
+.course-container img{
     display: block;
     width: 100%;
     height: auto;    
