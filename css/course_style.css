@@ -124,7 +124,7 @@
       border-radius: 20px;
       position: fixed;
       top: 5%;
-      left: 15%;
+      left: 0;
       right: 0;
       bottom: 5%;
       margin: auto;
@@ -132,15 +132,15 @@
       background-color: rgb(255, 255, 255);
       overflow: auto;
       
-      display: none;
+      
   }
 
     /* 叉叉 */
   .hand-merit-fade button{
-      /* float: right; */
       position: fixed;
-      top: 7%;
-      right: 12.5%;
+      top: 10%;
+      right: 20%;
+      margin: auto;
       background-color: transparent;
       font-weight: bold;
       border: 0;
@@ -213,4 +213,15 @@
 
   .submit:hover{
     background-color: rgba(108, 56, 133, 1);
+  }
+
+  .black{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0 , 0, 0, .5);
+
+      display: none;
   }

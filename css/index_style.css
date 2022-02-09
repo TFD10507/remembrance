@@ -12,11 +12,11 @@
 .banner-video{
     object-fit: cover;
 }
-.banner i{
+.banner img{
     position: absolute;
-    bottom: 10px;
+    /* bottom: 10px; */
     left: 50%;
-    font-size: 40px;
+    width: 30px;
     animation: viewmore 1s linear infinite;
 }
 .banner i:hover{
@@ -25,13 +25,13 @@
 
 @keyframes viewmore {
     0%{
-        bottom: 10px;
+        bottom: 20px;
     }
     50%{
-        bottom: 25px;
+        bottom: 35px;
     }
     100%{
-        bottom: 10px;
+        bottom: 20px;
     }
 }
 
@@ -78,7 +78,7 @@
 
 
 .index-course h2{
-    text-align: center;
+    /* text-align: center; */
     /* border: solid black 1px; */
 }
 
@@ -119,7 +119,6 @@
 .index-course p{
     /* border: solid black 1px; */
     width: 500px;
-    font-size: 13px;
     padding-top: 30px;
 }
 
@@ -149,14 +148,26 @@
     bottom: 2px;
     right: 2px;
 
-    transition: .5s;
+    /* transition: 2s; */
+    animation: 1.1s 1s index_btn infinite;
+    /* animation: 3s index_btn; */
 }
 
+@keyframes index_btn{
+    0%{
+        transform:translate(0px,0px);
+    }
+	50%{
+        transform:translate(-3px,-3px);
+    }
+	100%{
+        transform:translate(0px,0px);
+    }
+}
 
 .index-course a:hover{
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+    transform:translate(0px,0px);
+    background-color: rgba(108, 56, 133, 1);
 }
 
 /* ----------最新消息----------- */
@@ -185,12 +196,10 @@
 
 .news-text{
     /* width: 400px; */
-    background-color: rgba(225, 225, 197, 0.6);
+    background-color: rgba(225,225,197,.4);
     padding: 100px 30px 100px 100px;
     letter-spacing: 2px;
     border-radius: 20px;
-    border-bottom-right-radius: 100px;
-
     z-index: -1;
 }
 

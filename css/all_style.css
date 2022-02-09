@@ -55,7 +55,7 @@ body h2{
     position: fixed;
     left: 0;
 
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 
@@ -154,20 +154,21 @@ body h2{
 footer{
     /* border: black solid 1px; */
     width: 100%;
-    background-color: rgba(190, 190, 127, .6);
-    /* background-color: rgba(225, 225, 197, 1); */
-    color: white;
+    /* background:linear-gradient(white 0%, rgba(225,225,197,.3)  20%); */
+    background-color: rgba(225,225,197,.4);
+    letter-spacing: 1px;
     font-size: 13px;
     padding-top: 20px;
-
-    clear: both;
+}
+.footer-contain{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* 左側 */
  .footer-text{
-    float: left;
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .footer-text section{
@@ -176,23 +177,24 @@ footer{
 
 /* 右側 */
 footer ul{
-    float: right;
-    padding-top: 50px;
+    display: flex;
+    padding-top: 70px;
+    /* border: #333 solid 1px; */
 }
 
 footer li{
-    float: left;
+    /* border: black solid 1px; */
+    margin-right: 25px;
 }
 
 footer ul i{
-    color: white;
+    color: #333;
     font-size: 30px;
-    margin-right: 25px;
 }
 
 
 /* 最下方 */
-footer .text{
+footer .reference{
     text-align: center;
     padding: 20px 0;
 }
@@ -201,7 +203,7 @@ footer hr{
     padding-top: 50px;
     display: block;
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #333;
     width: 80%;
 }
 
