@@ -1,5 +1,10 @@
 @import url('all_style.css');
 
+.main-list .nav-product{
+    font-weight: bold;
+    border-left: 3px solid rgba(190, 190, 127, 1);
+}
+
 /* ==================== top ======================== */
 
 .top{
@@ -10,7 +15,7 @@
     text-align: right;
     color: white;
     font-weight: bold;
-    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
+    text-shadow: rgba(0, 0, 0, 0.774) 2px 2px 2px;
     float: right;
     padding-top: 80px;
     letter-spacing: 3px;

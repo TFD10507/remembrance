@@ -20,11 +20,11 @@
             </div>
 
             <ul class="main-list">
-                <li><a href="about.html">關於我們</a></li>
-                <li><a href="product.html">所有商品</a></li>
-                <li><a href="course.html">金工課程</a></li>
-                <li><a href="course.html#reserve">線上預約</a></li>
-                <li><a href="design.html">訂製設計</a></li>
+                <li><a href="about.html" class="nav-about">關於我們</a></li>
+                <li><a href="product.html" class="nav-product">所有商品</a></li>
+                <li><a href="course.html" class="nav-course">金工課程</a></li>
+                <li><a href="course.html#reserve" class="nav-reserve">線上預約</a></li>
+                <li><a href="design.html" class="nav-design">訂製設計</a></li>
                 <li class="search">
                     <input type="text" placeholder="search...">
                 </li>
@@ -111,7 +111,7 @@
 
                         <section>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>地址：新北市新莊區樹新路112號</span>
+                            <span>地址：新北市新莊區樹新路</span>
                         </section>
 
                         <section>
@@ -191,18 +191,19 @@
                                 <img src="./source/product/ring/wave.jpg" alt="">
                             </div>
                         </li>
-                        <!-- 6 -->
+                        <!-- 6 預約資訊table-->
                         <li>
                             <h3>預約資訊</h3>
                             <form action="">
                                 <table>
                                     <tbody>
-                                        <!-- 1 姓名 -->
+                                        <!-- 1 姓名&日期 -->
                                         <tr>
                                             <td>姓名</td>
                                             <td>
                                                 <input type="name" class="user-name" name="name">
                                             </td>
+
                                             <td>預約時間</td>
                                             <td>
                                                 <label for="meeting-time"></label>
@@ -212,7 +213,7 @@
                                             </td>
                                         </tr>
 
-                                        <!-- 2 電話 -->
+                                        <!-- 2 電話&時段 -->
                                         <tr>
                                             <td>聯絡電話</td>
                                             <td>

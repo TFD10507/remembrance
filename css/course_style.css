@@ -1,5 +1,11 @@
 @import url('all_style.css');
 
+.main-list .nav-course{
+    font-weight: bold;
+    border-left: 3px solid rgba(190, 190, 127, 1);
+}
+
+
 /* -------------------top--------------------- */
 
 .top p {
@@ -131,8 +137,6 @@
       padding: 20px;
       background-color: rgb(255, 255, 255);
       overflow: auto;
-      
-      
   }
 
     /* 叉叉 */
@@ -181,10 +185,10 @@
       flex-wrap: wrap;
   } 
 
-  /* 預約資訊 */
+  /* 6 預約資訊 */
   .hand-merit-fade tr{
-      height: 40px;
-      line-height: 40px;
+      height: 60px;
+      line-height: 60px;
   }
 
   .hand-merit-fade input{
@@ -194,8 +198,12 @@
   .hand-merit-fade td{
     padding: 5px;
     padding-right: 10px;
+    /* border: #333 solid 1px; */
   }
-        /* 時段 */
+  .hand-merit-fade tr td:nth-child(3){
+      padding-left: 50px;
+  }
+/* 時段 */
   .hand-merit-fade select{
       height: 40px;
   }
@@ -215,6 +223,7 @@
     background-color: rgba(108, 56, 133, 1);
   }
 
+/* 燈箱遮罩 */
   .black{
       position: fixed;
       top: 0;

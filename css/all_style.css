@@ -231,15 +231,16 @@ footer hr{
 
 
 .about-bg{
-    background-image: url('../source/top_about.jpg');
+    background-image: url('../source/top_about2.jpg');
 }
 
 .product-bg{
-    background-image: url('../source/top_product.jpg');
+    background-image: url('../source/top_product2.jpg');
 }
 
 .course-bg{
-    background-image: url('../source/top_course.jpg');
+    background-image: url('../source/top_course5.jpg');
+    /* background-position: center center; */
 }
 
 .member-bg{

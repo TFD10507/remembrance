@@ -3,6 +3,10 @@
 
 /* -======================== right ======================= */
 /* ------banner-------- */
+html{
+    scroll-behavior: smooth;
+  }
+
 .banner{
     position: relative;
     height: 100vh;
@@ -12,15 +16,12 @@
 .banner-video{
     object-fit: cover;
 }
+
 .banner img{
     position: absolute;
-    /* bottom: 10px; */
     left: 50%;
     width: 30px;
     animation: viewmore 1s linear infinite;
-}
-.banner i:hover{
-    color: rgba(190, 190, 127, 1);
 }
 
 @keyframes viewmore {
@@ -35,9 +36,6 @@
     }
 }
 
-.banner .view-bottom{
-    background-color: transparent;
-}
 
 /* ======================= container ===================== */
 /* ---------------memory------------------ */
@@ -183,6 +181,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* background-color: rgba(225,225,197,.4); */
 }
 
 .news-img img{
@@ -191,16 +191,16 @@
     display: block;
     position: relative;
     left: 15%;
-    top: 15%;
 }
 
 .news-text{
-    /* width: 400px; */
     background-color: rgba(225,225,197,.4);
-    padding: 100px 30px 100px 100px;
+    padding: 70px 30px 70px 100px;
     letter-spacing: 2px;
     border-radius: 20px;
     z-index: -1;
+    position: relative;
+    top: 70px;
 }
 
 /* ================= loading ================= */

@@ -1,5 +1,10 @@
 @import url('all_style.css');
 
+.main-list .nav-design{
+    font-weight: bold;
+    border-left: 3px solid rgba(190, 190, 127, 1);
+}
+
 
 /* ---------------------- banner ---------------------- */
 .banner{
