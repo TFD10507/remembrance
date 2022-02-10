@@ -16,7 +16,7 @@
 .flex-design{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,7 +38,7 @@
     padding: 30px 30px 100px 100px;
     letter-spacing: 2px;
     border-radius: 20px;
-    border-bottom-right-radius: 100px;
+    /* border-bottom-right-radius: 100px; */
     z-index: 1;
 
     position: relative;
@@ -58,7 +58,7 @@
     /* width: 100%; */
     /* border: red solid 1px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -109,6 +109,7 @@
 .process-item{
     width: 200px;
     height: 200px;
+    padding-left: 20px;
     /* border: solid black 1px; */
 }
 
