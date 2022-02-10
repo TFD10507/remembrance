@@ -142,6 +142,10 @@
       overflow: auto;
   }
 
+  .hand-merit-fade-body{
+      margin-left: 20px;
+  }
+
     /* 叉叉 */
   .hand-merit-fade button{
       position: fixed;
