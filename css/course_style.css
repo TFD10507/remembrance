@@ -10,35 +10,40 @@
 
 
 /* -------------------top--------------------- */
-
-.top p {
-    text-align: center;
-    color: #333;
-    font-weight: bold;
-    text-shadow: rgba(211, 211, 211, 0.774) 2px 2px 2px;
-    letter-spacing: 2px;
-    padding: 10px;
-    /* border: black solid 1px; */
-
-    position: relative;
-    padding-top: 80px;
+.top{
+    width:700px;
+    height: 100px;
     margin: 0 auto;
-    width: 500px;
+    position: relative;
+    border-bottom: 80px solid rgba(225,225,197,.4);
+}
+.top h1{
+    width: 100%;
 }
 
-.top-text-position p::before{
-    content: '“';
-    font-size: 50px;
+.top span{
+    line-height: 200px;
 }
 
-.top-text-position p::after{
-    content: '”';
-    font-size: 50px;
-
-    position: absolute;
-    bottom: -50px;
-    right: 0;
+.top span:nth-child(2)::before{
+    display: block;
+	content: "";
+	width: 120px;
+	height: 1px;
+	background: #d0d0d0;
+    /* background: rgba(190, 190, 127, 1); */
+	position: absolute;
+	top: 100px;
+	left: 45%;
+	transform: rotate(-60deg);
 }
+
+.top h1 span:nth-child(2) span{
+    font-weight: normal;
+    padding-left: 50px;
+    font-size: 28px;
+}
+
 
 
 /* ----------------------main---------------------------- */

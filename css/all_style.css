@@ -3,8 +3,8 @@
 
 
 body{
-    /* font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體"; */
-    font-family: 'Noto Sans TC',Arial,"微軟正黑體";
+    font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體";
+    /* font-family: 'Noto Sans TC',Arial,"微軟正黑體"; */
     font-size: 16px;
     line-height: 1.5;
     color: #333;
@@ -159,7 +159,6 @@ img{
 footer{
     /* border: black solid 1px; */
     width: 100%;
-    /* background:linear-gradient(white 0%, rgba(225,225,197,.3)  20%); */
     background-color: rgba(225,225,197,.4);
     letter-spacing: 1px;
     font-size: 13px;
@@ -219,7 +218,6 @@ footer hr{
 
 /* =============== top ==================== */
 
-
 .top {
     width: 100%;
     height: 200px;
@@ -236,7 +234,8 @@ footer hr{
 
 
 .about-bg{
-    /* background-image: url('../source/top_about3.jpg'); */
+    /* background-image: url('../source/gray-oil-paint-textured-background.jpg'); */
+    
 }
 
 .product-bg{
@@ -244,12 +243,12 @@ footer hr{
 }
 
 .course-bg{
-    background-image: url('../source/top_course5.jpg');
+    /* background-image: url('../source/top_course5.jpg'); */
     /* background-position: center center; */
 }
 
 .member-bg{
-    background-image: url('../source/top_member.jpg');
+    /* background-image: url('../source/top_member.jpg'); */
 }
 
 .member-bg h1{

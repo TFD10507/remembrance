@@ -17,8 +17,8 @@ form{
 }
 
 .cart-header{
-    background-color: rgba(144, 146, 127, .6);
-    /* background-color: rgba(189, 194, 137, 1); */
+    /* background-color: rgba(144, 146, 127, .6); */
+    background-color: rgba(190, 190, 127, 1);
     color: white;
     display: flex;
     padding: 5px;
@@ -140,9 +140,6 @@ form{
     background-color: rgba(225, 225, 197, .4);
 }
 
-.cart-total-price table{
-    /* margin: 0 auto; */
-}
 .cart-total-price tr:nth-child(1) td{
     padding-bottom: 20px;
     padding-right: 20px;
@@ -173,7 +170,7 @@ form{
 }
 
 .buyer-info-title{
-    background-color: rgba(144, 146, 127, .6);
+    background-color: rgba(190, 190, 127, 1);
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
@@ -185,6 +182,7 @@ form{
     border: #333 solid 1px;
     margin-top: 20px;
     border-collapse: separate;
+    padding: 0 10px;
 }
 
 .buyer-info input{
@@ -221,7 +219,7 @@ form{
 }
 
 .payment-method-title{
-    background-color: rgba(144, 146, 127, .6);
+    background-color: rgba(190, 190, 127, 1);
     height: 40px;
     line-height: 40px;
     padding-left: 10px;

@@ -10,14 +10,18 @@
 /* -------------------top--------------------- */
 
 .top{
+    width:700px;
+    height: 100px;
+    margin: 0 auto;
     position: relative;
+    border-bottom: 80px solid rgba(225,225,197,.4);
 }
+.top h1{
+    width: 100%;
+}
+
 .top span{
-    /* line-height: 200px; */
-}
-.top .h1{
-    font-size: 36px;
-    font-weight: bold;
+    line-height: 200px;
 }
 
 .top span:nth-child(2)::before{
@@ -26,10 +30,17 @@
 	width: 120px;
 	height: 1px;
 	background: #d0d0d0;
+    /* background: rgba(190, 190, 127, 1); */
 	position: absolute;
-	top: 50px;
-	left: 0px;
-	transform: rotate(-45deg);
+	top: 100px;
+	left: 48%;
+	transform: rotate(-60deg);
+}
+
+.top h1 span:nth-child(2) span{
+    font-weight: normal;
+    padding-left: 50px;
+    font-size: 28px;
 }
 
 /* -------------------story--------------------- */

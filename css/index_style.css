@@ -17,6 +17,23 @@ html{
     object-fit: cover;
 }
 
+.banner-text-position{
+    text-align: center;
+    color: white;
+    /* background-color: rgba(255, 255, 255, .3); */
+    /* color: #333; */
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    /* border: black solid 1px; */
+    border-bottom: 1px solid white;
+
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
 .banner img{
     position: absolute;
     left: 50%;
