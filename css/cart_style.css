@@ -17,7 +17,8 @@ form{
 }
 
 .cart-header{
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgba(144, 146, 127, .6);
+    /* background-color: rgba(189, 194, 137, 1); */
     color: white;
     display: flex;
     padding: 5px;
@@ -104,16 +105,21 @@ form{
 
 /* 折抵 */
 .cart-coupon{
+    width: 30%;
     /* border: blue solid 1px; */
 }
 
-
+.coupon{
+    width: 100%;
+    height: 40px;
+    /* border: #333 solid 1px; */
+    display: flex;
+}
 .cart-coupon input{
-    width: 200px;
-    margin-left: 10px;
-    padding: 10px;
-    border: 0;
-    border-bottom: #333 solid 1px;
+    width: 100%;
+    max-height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
 }
 
 .delivery{
@@ -131,7 +137,7 @@ form{
     /* height: 160px; */
     padding: 20px 0 0 40px;
     border: #333 solid 1px;
-    background-color: rgba(225, 225, 197, 1);
+    background-color: rgba(225, 225, 197, .4);
 }
 
 .cart-total-price table{
@@ -167,11 +173,18 @@ form{
 }
 
 .buyer-info-title{
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgba(144, 146, 127, .6);
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
     color: white;
+}
+
+.buyer-info table{
+    width: 100%;
+    border: #333 solid 1px;
+    margin-top: 20px;
+    border-collapse: separate;
 }
 
 .buyer-info input{
@@ -204,10 +217,11 @@ form{
 /* 付款方式 */
 .payment-method{
     width: 45%;
-    position: relative;
+    /* border: red solid 1px; */
 }
+
 .payment-method-title{
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgba(144, 146, 127, .6);
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
@@ -215,8 +229,12 @@ form{
 }
 
 .payment-method-content{
+    margin-top: 20px;
     padding-top: 30px;
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-bottom: 70px;
+    border: #333 solid 1px;
+    position: relative;
 }
 
 /* choose */
@@ -257,8 +275,17 @@ form{
 }
 
 /* 確認付款 */
-.payment-method-content button{
+.payment_btn{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(178,144,193);
+    color: white;
+}
+
+.payment_btn:hover{
+    background-color: rgba(108, 56, 133, 1);
 }
