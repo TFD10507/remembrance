@@ -1,5 +1,13 @@
 @import url(all_style.css);
 
+.top span:nth-child(2)::before{
+	position: absolute;
+	top: 100px;
+	left: 43%;
+}
+
+
+/* ========= 內容 =========== */
 
 .container ul{
     text-align: center;

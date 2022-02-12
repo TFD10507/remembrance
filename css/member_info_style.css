@@ -1,6 +1,11 @@
 @import url(../css/all_style.css);
 
 
+.top span:nth-child(2)::before{
+	position: absolute;
+	top: 100px;
+	left: 43%;
+}
 
 /* ================= 修改資料 ==================== */
 .personal-revise{

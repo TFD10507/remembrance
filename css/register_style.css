@@ -1,5 +1,10 @@
 @import url('all_style.css');
 
+.top span:nth-child(2)::before{
+	position: absolute;
+	top: 100px;
+	left: 40%;
+}
 /* ------------------- right ------------------------ */
 
 form{

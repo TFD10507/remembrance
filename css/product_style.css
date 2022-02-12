@@ -7,11 +7,18 @@
 
 /* ==================== top ======================== */
 
-.top{
+
+
+.product-bg{
+    background-image: url('../source/top_product2.jpg');
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
     clear: both;
 }
 
-.top p {
+.product-bg p {
     text-align: right;
     color: white;
     font-weight: bold;
