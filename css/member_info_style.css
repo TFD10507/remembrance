@@ -70,5 +70,5 @@
 }
 
 .order-info tr:nth-child(odd){
-    background-color: rgba(225, 225, 197, 1);
+    background-color: rgba(225, 225, 197, .5);
 }

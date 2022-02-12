@@ -7,6 +7,12 @@ html{
     scroll-behavior: smooth;
   }
 
+
+@media (max-width:767.98px) {
+    .banner{
+        padding-top: 62px;
+    }
+}
 .banner{
     position: relative;
     height: 100vh;
@@ -25,13 +31,24 @@ html{
     font-weight: bold;
     letter-spacing: 2px;
     padding-right: 30px;
-    padding-bottom: 10px;
-    /* border: black solid 1px; */
-    border-bottom: 1px solid white;
+    /* padding-bottom: 10px; */
+    /* border-bottom: 1px solid white; */
 
     position: absolute;
     top: 10%;
     right: 5%;
+}
+
+.banner-text-position span::before{
+    display: block;
+	content: "";
+	width: 60px;
+	height: 1px;
+	background: #d0d0d0;
+	position: absolute;
+	top: 10px;
+	left: -50px;
+	transform: rotate(-60deg);
 }
 
 .banner img{
