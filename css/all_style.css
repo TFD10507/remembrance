@@ -44,23 +44,56 @@ body h2{
     background:rgba(190, 190, 127, 1);
 }
 
+@media (max-width:767.98px) {
+    body{
+        font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體";
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+        /* letter-spacing: 2px; */
+        box-sizing: border-box;
+    }
+    
+     body h1{
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+     }
+    
+    body h2{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+}
+
+
 /* ======================== left ======================== */
 /* -------主選單-------- */
     .main-sel{
         font-size: 20px;
         width: 15%;
-        height: 100%;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
         background-image: url('../source/nav_bg.jpg');
         background-size: cover;
         
         position: fixed;
         left: 0;
+        top: 0;
         /* z-index: 1; */
     } 
+
+    .main-sel-inner{
+        max-height: 100%;
+    }
     /* ---logo----- */
     .logo{
         /* border: black solid 1px; */
-        padding-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 30px;
         width: 50px;
         height: 80px;
         margin: 0 auto;
@@ -71,7 +104,6 @@ body h2{
         display: block;
     }
 
-
     .logo img{
         max-height: 100%;
         display: block; 
@@ -79,13 +111,16 @@ body h2{
     /* -----選單選項---- */
     .main-list{
         width: 100%;
+        height: 360px;
         text-align: center;
-        padding-top: 20px;
+        position: relative;
+        margin: auto 0;
+        /* padding-top: 20px; */
         /* border: black solid 1px;  */
     }
 
     .main-list li{
-        margin: 10px 0;
+        /* margin: 10px 0; */
         line-height: 60px;
     }
     .main-list a{
@@ -115,14 +150,14 @@ body h2{
     .main-icon{
         display: flex;
         width: 100%;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
 
-        position: absolute;
+        /* position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        margin: auto;
+        margin: auto; */
     }
     .main-icon li{
         margin: 10px;
@@ -147,18 +182,23 @@ body h2{
         font-size: 20px;
         background-image: url('../source/nav_bg.jpg');
         background-size: cover;
-        position: fixed;
+        display: block;
+        /* position: fixed; */
+        position: sticky;
         top: 0;
         left: 0;
         z-index: 5;
     }
-    .main-sel-bg{
+    .main-sel-transparent{
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        padding-top: 10px;
         background-image: url('../source/nav_bg.jpg');
         background-size: cover;
         opacity: .9;
         display: none;
+        position: relative;
+        top: 0;
     }
 
      /* ---logo----- */
@@ -178,7 +218,7 @@ body h2{
 
 
 
-/* ======================== right ======================== */
+/* ================== right & wrapper ===================== */
 
 @media (min-width: 768px) {
     .right{
@@ -189,11 +229,10 @@ body h2{
     }
 }
 
+/* ========= 手機版 ==========*/
 @media (max-width: 767.98px){ 
     .right{
         width: 100%;
-        margin-right: 0;
-        margin-left: auto;
         overflow: hidden;
     }
 }
