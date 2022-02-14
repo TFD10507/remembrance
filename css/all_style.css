@@ -12,6 +12,7 @@ body{
     box-sizing: border-box;
 }
 
+
  body h1{
     font-size: 36px;
     font-weight: bold;
@@ -44,28 +45,8 @@ body h2{
     background:rgba(190, 190, 127, 1);
 }
 
-@media (max-width:767.98px) {
-    body{
-        font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體";
-        font-size: 14px;
-        line-height: 1.5;
-        color: #333;
-        /* letter-spacing: 2px; */
-        box-sizing: border-box;
-    }
-    
-     body h1{
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-     }
-    
-    body h2{
-        font-size: 24px;
-        font-weight: bold;
-        padding-bottom: 30px;
-    }
-}
+
+
 
 
 /* ======================== left ======================== */
@@ -174,42 +155,7 @@ body h2{
 
 
 
-/* ========= 手機版 ==========*/
-@media (max-width: 767.98px){ 
-    .main-sel{
-        width: 100%;
-        height: 80px;
-        font-size: 20px;
-        background-image: url('../source/nav_bg.jpg');
-        background-size: cover;
-        display: block;
-        /* position: fixed; */
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 5;
-    }
-    .main-sel-transparent{
-        width: 100%;
-        height: 100%;
-        padding-top: 10px;
-        background-image: url('../source/nav_bg.jpg');
-        background-size: cover;
-        opacity: .9;
-        display: none;
-        position: relative;
-        top: 0;
-    }
 
-     /* ---logo----- */
-     .logo{
-         padding: 0;
-         width: 50px;
-         height: 60px;
-         padding-top: 10px;
-         margin-left: 10px;
-     }
-}
 
 
 
@@ -220,7 +166,7 @@ body h2{
 
 /* ================== right & wrapper ===================== */
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .right{
         width: 85%;
         margin-right: 0;
@@ -229,13 +175,7 @@ body h2{
     }
 }
 
-/* ========= 手機版 ==========*/
-@media (max-width: 767.98px){ 
-    .right{
-        width: 100%;
-        overflow: hidden;
-    }
-}
+
 
 
 
@@ -362,3 +302,70 @@ button{
 button:hover{
     background-color: rgba(108, 56, 133, 1);
 }
+
+
+
+
+/* 小於768 */
+@media (max-width:768.98px) {
+    body{
+        font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體";
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+        /* letter-spacing: 2px; */
+        box-sizing: border-box;
+    }
+    
+     body h1{
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+     }
+    
+    body h2{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+
+    /* nav */
+    .main-sel{
+        width: 100%;
+        height: 80px;
+        font-size: 20px;
+        background-image: url('../source/nav_bg.jpg');
+        background-size: cover;
+        display: block;
+        /* position: fixed; */
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    .main-sel-transparent{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        background-image: url('../source/nav_bg.jpg');
+        background-size: cover;
+        opacity: .9;
+        display: none;
+        position: relative;
+        top: 0;
+    }
+
+     /* ---logo----- */
+     .logo{
+         padding: 0;
+         width: 50px;
+         height: 60px;
+         padding-top: 10px;
+         margin-left: 10px;
+     }
+
+}
+
+    
+

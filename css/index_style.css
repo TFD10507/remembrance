@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .banner{
         position: relative;
         height: 100vh;
@@ -136,9 +136,11 @@ html{
     background-image: url('../source/product/bracelet/twist.jpg');
     flex-grow: 2;
 }
-
-.index-course li:hover{
-    flex-grow: 5;
+/* ---------- 大於769px ----------- */
+@media (min-width:769px) {
+    .index-course li:hover{
+        flex-grow: 5;
+    }
 }
 
 .index-course p{
@@ -202,33 +204,35 @@ html{
     padding-top: 130px;
 }
 
-
-.flex-news{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* background-color: rgba(225,225,197,.4); */
+/* --------- 大於769px ---------- */
+@media (min-width:769px) {
+    .flex-news{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* background-color: rgba(225,225,197,.4); */
+    }
+    .news-img img{
+        width: 400px;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+        left: 15%;
+    }
+    .news-text{
+        background-color: rgba(225,225,197,.4);
+        padding: 70px 30px 70px 100px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 70px;
+    }
+    
 }
 
-.news-img img{
-    width: 400px;
-    border-radius: 10px;
-    display: block;
-    position: relative;
-    left: 15%;
-}
-
-.news-text{
-    background-color: rgba(225,225,197,.4);
-    padding: 70px 30px 70px 100px;
-    letter-spacing: 2px;
-    border-radius: 20px;
-    z-index: -1;
-    position: relative;
-    top: 70px;
-}
 
 /* ================= loading ================= */
 /* 
@@ -285,10 +289,10 @@ span.dot{
   } */
 
 
-/* ===================== 小於767.98 ====================== */
-  @media (max-width:767.98px) {
+/* ================ 小於575.98 =============== */
+@media (max-width:575.98px) {
       /* ----- banner ----- */
-    .banner{
+      .banner{
         width: 100%;
         height: calc(100vh - 80px);
         position: relative;
@@ -364,8 +368,118 @@ span.dot{
     }
 
     /* ----------- news ----------- */
-    .news{
+    .flex-news{
+        background-color: rgba(225,225,197,.4);
+    }
+    .news-img{
+         width: 100%;
+    }
+    .news img{
+        max-width: 100%;
+        display: block;
+    }
+    .news-text{
+        padding: 30px;
+        letter-spacing: 2px;
+        /* border-radius: 20px; */
+        z-index: -1;
+    }
+}
 
+/* ================= 576 ~ 768.98 ================== */
+@media (min-width:576px) and (max-width:768.98px) {
+      /* ----- banner ----- */
+    .banner{
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: relative;
+    }
+    .banner-text-position{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 70%;
     }
 
+
+    /* -------- memory ------- */
+    .memory p{
+        height: 330px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .memory p::before{
+        content: '“';
+        font-size: 40px;
+    
+        position: absolute;
+        top: 190px;
+        left: -30px;
+    }
+    
+    .memory p::after{
+        content: '”';
+        font-size: 40px;
+    
+        position: absolute;
+        bottom: 180px;
+        right: -30px;
+    }
+
+    /* --------- index-course --------- */
+    .index-course ul{
+        height: 800px;
+
+        flex-direction:column
+        /* border: solid white 3px; */
+    }
+    
+    .index-ring{
+        flex-grow: 1;
+    }
+    
+    .index-pendant{
+        flex-grow: 1;
+    }
+    
+    .index-bracelet{
+        flex-grow: 1;
+    }
+    .index-course p{
+        width: 100%;
+    }
+    
+    .btn{
+        position: absolute;
+        bottom: -48px;
+        right: 0px;
+    }
+    
+    .index-course a{
+        position: absolute;
+        bottom: -46px;
+        right: 2px;
+        animation: 1.1s 1s index_btn infinite;
+        /* animation: 3s index_btn; */
+    }
+
+    /* ----------- news ----------- */
+    .flex-news{
+        background-color: rgba(225,225,197,.4);
+    }
+    .news-img{
+         width: 100%;
+    }
+    .news img{
+        max-width: 100%;
+        display: block;
+    }
+    .news-text{
+        padding: 30px;
+        letter-spacing: 2px;
+        /* border-radius: 20px; */
+        z-index: -1;
+    }
   }
+
