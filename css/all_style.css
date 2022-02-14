@@ -154,16 +154,6 @@ body h2{
     }
 
 
-
-
-
-
-
-
-
-
-
-
 /* ================== right & wrapper ===================== */
 
 @media (min-width: 769px) {
@@ -174,9 +164,6 @@ body h2{
         overflow: hidden;
     }
 }
-
-
-
 
 
 /* ======================== footer ===================== */
@@ -327,6 +314,10 @@ button:hover{
         font-size: 24px;
         font-weight: bold;
         padding-bottom: 30px;
+    }
+
+    .right{
+        overflow: hidden;
     }
 
 
