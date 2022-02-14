@@ -156,6 +156,8 @@ body h2{
 
 /* ================== right & wrapper ===================== */
 
+
+/* ============ 大於769px =============== */
 @media (min-width: 769px) {
     .right{
         width: 85%;
@@ -229,9 +231,30 @@ footer hr{
 
 /* =============== top ==================== */
 
+/* ========== 小於575.98 ========== */
+@media (max-width:575.98px) {
+    .top{
+        width:300px;
+    }
+}
+
+
+/* ========== 576 ~ 768.98 ========== */
+@media (min-width:576px) and (max-width:768.98px) {
+    .top{
+        width: 70%;
+    }
+}
+
+/* =============== 大於769 =============== */
+@media (min-width:769px) {
+    .top{
+        width: 70%;
+    }
+}
 
 .top{
-    width:700px;
+    /* width:700px; */
     height: 100px;
     margin: 0 auto;
     position: relative;
@@ -239,7 +262,7 @@ footer hr{
 }
 
 .top h1{
-    width: 100%;
+    max-width: 100%;
 }
 
 .top span{
@@ -253,9 +276,6 @@ footer hr{
 	height: 1px;
 	background: #d0d0d0;
     /* background: rgba(190, 190, 127, 1); */
-	position: absolute;
-	top: 100px;
-	left: 47%;
 	transform: rotate(-60deg);
 }
 
@@ -293,27 +313,18 @@ button:hover{
 
 
 
-/* 小於768 */
+/*================== 小於768 ==============================*/
 @media (max-width:768.98px) {
     body{
-        font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體";
         font-size: 14px;
-        line-height: 1.5;
-        color: #333;
-        /* letter-spacing: 2px; */
-        box-sizing: border-box;
     }
     
      body h1{
         font-size: 32px;
-        font-weight: bold;
-        text-align: center;
      }
     
     body h2{
         font-size: 24px;
-        font-weight: bold;
-        padding-bottom: 30px;
     }
 
     .right{
