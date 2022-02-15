@@ -27,29 +27,29 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     /* border: orange solid 1px; */
 }
 
 /* ----------商品照片------------ */
 .product-in-photo{
-    width: 470px;
+    width: 45%;
     /* border: blue solid 1px; */
 }
 
 .photo-large{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .photo-large img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: auto;
     display: block;
 }
 
 .photo-thumbs{
-    width: 400px;
+    width: 100%;
     display: block;
     padding-top: 30px;
     position: relative;
@@ -102,68 +102,63 @@
     right: -40px;
   }
 
-  /* ----------商品購買------------ */
-  .product-in-buy{
-      width: 50%;
+  /* ---------- 商品介紹右邊 ------------ */
+  
+  .product-in-right{
+      width: 45%;
       padding-left: 20px;
       /* border: green solid 1px; */
   }
 
   /* 價錢顏色 */
-  .product-in-buy li:nth-child(2){
+  .product-in-text li:nth-child(2){
       color: rgba(209, 194, 55, 1);
   }
 
   /* 文字簡介 */
-  .product-in-buy li{
+  .product-in-text li{
       /* border: palegreen solid 1px; */
-      padding-bottom: 10px;;
+      padding-bottom: 20px;
       letter-spacing: 1px;
   }
-
+  .product-in-buy li:nth-child(even){
+      padding-bottom: 10px;
+  }
   /* 下拉式選單 */
   .product-in-buy select{
       height: 40px;
+      width: 150px;
+      border: 0;
+      border-bottom: 1px solid #333;
   }
 
-  /* 選擇數量尺寸 */
 
-  .product-in-buy tr{
-      /* border: firebrick solid 1px; */
-  }
-
-  .product-in-buy li table td{
-    padding: 10px 0;
-  }
-  .product-in-buy li table td:first-child{
-      padding-right: 10px;
-  }
-
-  /* 收藏 */
-  .product-in-buy i{
-      font-size: 30px;
-      padding-left: 5px;
-      /* border: teal solid 1px; */
-      vertical-align: middle;
-  }
-
-  /* 購物車 */
+  /* 加入購物車 */
   .product-in-buy a{
       text-decoration: none;
       color: white;
-      display: block;
-      width: 200px;
+      display: inline-block;
+      width: 150px;
       height: 40px;
       background-color: rgb(178,144,193);
       line-height: 40px;
       text-align: center;
+      margin-right: 10px;
   }
-
   .product-in-buy a:hover{
     background-color: rgba(108, 56, 133, 1);
   }
 
+  .product-in-buy .fa-shopping-cart{
+    font-size: 16px;
+    padding-right: 10px;
+  }
 
+  /* 收藏 */
+  .fa-heart{
+      font-size: 30px;
+      display: inline;
+  }
 
   /* --------------------商品介紹-------------------- */
 
