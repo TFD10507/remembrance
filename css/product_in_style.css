@@ -6,6 +6,7 @@
     /* border: red solid 1px; */
     width: 100%;
     height: auto;
+    border: 0;
 }
 
 
@@ -76,7 +77,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgb(153, 153, 139);
     color: white;
     border-radius: 50%;
     text-align: center;
@@ -173,6 +174,7 @@
 
   .product-basic-info h2{
       color: rgba(190, 190, 127, 1);
+      /* color: rgba(209, 194, 55, 1); */
       padding-top: 40px;
   }
 
@@ -191,7 +193,6 @@
       height: 40px;
       line-height: 40px;
       text-align: center;
-      border-radius: 5px;
   }
   
   .product-basic-info-1 a:hover{
