@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+
 body {
     font-family: 'Noto Serif TC', serif, Arial, "微軟正黑體";
     /* font-family: 'Noto Sans TC',Arial,"微軟正黑體"; */
@@ -24,28 +25,21 @@ body h2 {
 
 
 /* 網頁捲軸【寬度】 */
-
  ::-webkit-scrollbar {
     width: 15px;
 }
 
-
 /* 網頁捲軸【背景】顏色 */
-
  ::-webkit-scrollbar-track {
     background: transparent;
 }
 
-
 /* 網頁捲軸【把手】顏色 */
-
  ::-webkit-scrollbar-thumb {
     background: rgba(225, 225, 197, 1);
 }
 
-
 /* 網頁捲軸【滑過時】把手的顏色 */
-
  ::-webkit-scrollbar-thumb:hover {
     background: rgba(190, 190, 127, 1);
 }
@@ -54,8 +48,7 @@ body h2 {
 /* ======================== left ======================== */
 
 
-/* -------主選單-------- */
-
+/* -------共用主選單-------- */
 .main-sel {
     font-size: 20px;
     width: 15%;
@@ -74,8 +67,6 @@ body h2 {
 .main-sel-inner {
     max-height: 100%;
 }
-
-
 /* ---logo----- */
 
 .logo {
@@ -138,6 +129,11 @@ body h2 {
     padding: 10px;
 }
 
+/* 漢堡checkbox */
+#meun_control{
+    display: none;
+}
+
 
 /* ---------功能icon---------- */
 
@@ -165,22 +161,6 @@ body h2 {
 .main-icon i:hover {
     color: rgb(178, 144, 193);
 }
-
-
-/* ================== right & wrapper ===================== */
-
-
-/* ============ 大於769px =============== */
-
-@media (min-width: 769px) {
-    .right {
-        width: 85%;
-        margin-right: 0;
-        margin-left: auto;
-        overflow: hidden;
-    }
-}
-
 
 /* ======================== footer ===================== */
 
@@ -246,7 +226,7 @@ footer hr {
 }
 
 
-/* =============== top ==================== */
+/* =============== 每頁的top ==================== */
 
 
 /* ========== 小於575.98 ========== */
@@ -265,16 +245,20 @@ footer hr {
         width: 70%;
     }
 }
-
-
-/* =============== 大於769 =============== */
-
+/* ========= 大於769px ============ */
 @media (min-width:769px) {
+    .right {
+        width: 85%;
+        margin-right: 0;
+        margin-left: auto;
+        overflow: hidden;
+    }
     .top {
         width: 70%;
     }
 }
 
+/* ============ 共用top ============ */
 .top {
     /* width:700px; */
     height: 100px;
@@ -330,7 +314,7 @@ button:hover {
 }
 
 
-/*================== 小於768 =========================*/
+/*================== 小於769 =========================*/
 
 @media (max-width:768.98px) {
     body {
@@ -371,7 +355,7 @@ button:hover {
         /* top: 60px;
         left: -100%; */
         top: 60px;
-        left: 0;
+        left: -100%;
         opacity: 0;
         transition: 1s;
     }
@@ -417,12 +401,8 @@ button:hover {
 
     /* ------- checkbox ------- */
     #meun_control:checked + div + div{
-        /* top: 60px; */
-        /* left: 0; */
+        left: 0;
         opacity: .9;
-    }
-    #meun_control{
-        display: none;
     }
     #meun_control:checked + div > label > span:nth-child(1){
         transform: translateY(6px) rotate(45deg);
