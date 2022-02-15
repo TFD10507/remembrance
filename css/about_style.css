@@ -4,7 +4,7 @@
 
 .main-list .nav-about{
     font-weight: bold;
-    border-left: 3px solid rgba(190, 190, 127, 1);
+    border-left: 3px solid rgb(153, 153, 139);
 }
 
 /* -------------------top--------------------- */
@@ -22,20 +22,29 @@
         left: 120px;
     }
 
-    /* ----------- story ----------- */
-    .flex-story{
+    /* ----------- story & addr ----------- */
+    .story,.addr{
+        padding-top: 70px;
+    }
+    .flex-story,.flex-addr{
         display: block;
     }
-    .story-img{
+    .story-img,.addr-img{
         width: 100%;
     }
-    .story-text{
+    .story-text,.addr-text{
         width: 100%;
+        padding-bottom: 20px;
     }
-    .story-img img{
+    .story-img img,.addr-img img{
         max-width: 100%;
     }
-
+    .addr-text{
+        padding-top: 20px;
+    }
+    .addr-text li{
+        padding-bottom: 10px;
+    }
 }
 
 
@@ -45,6 +54,7 @@
     .top{
         width: 70%;
     }
+
     .top span:nth-child(2)::before{
         position: absolute;
         top: 100px;
@@ -53,16 +63,16 @@
 
 
     /* ----------- story ----------- */
-    .story{
+    .story,.addr{
         width: 100%;
-        padding: 70px 0;
-        border: solid black 1px;
+        padding-top: 70px;
+        /* border: solid black 1px; */
     }
     
-    .flex-story {
+    .flex-story,.flex-addr{
         max-width: 100%;
         display: flex;
-        border: solid red 1px;
+        /* border: solid red 1px; */
         justify-content: center;   
         align-items: center;
     }
@@ -100,16 +110,16 @@
 
 
     /* ----------- story ----------- */
-    .story{
+    .story,.addr{
         width: 100%;
-        padding: 70px 0;
-        border: solid black 1px;
+        padding-top: 70px;
+        /* border: solid black 1px; */
     }
     
-    .flex-story {
+    .flex-story,.flex-addr{
         max-width: 100%;
         display: flex;
-        border: solid red 1px;
+        /* border: solid red 1px; */
         justify-content: center;   
         align-items: center;
     }
@@ -134,69 +144,13 @@
 }
 
 
-
-/* -------------------story--------------------- */
-
-/* .story{
-    width: 100%;
-    padding: 70px 0;
-    border: solid black 1px;
-}
-
-.flex-story {
-    max-width: 100%;
-    display: flex;
-    border: solid red 1px;
-    justify-content: center;   
-    align-items: center;
-}
-
-
-.story-text ,.addr-text{
-    width: 50%;
-    padding-left: 50px;
-    padding-right: 30px;
-    letter-spacing:3px;
-}
-
-.story-img, .addr-img{
-    width: 50%;
-    display: block;
-}
-
-.story-img img, .addr-img img{
-    max-width: 100%;
-    display: block;
-} */
-
-
-/* --------------------營業資訊----------------------- */
-
-.addr h2{
-    padding-bottom: 70px;
-}
+/* ------------------ 營業資訊addr --------------------- */
 
 .addr-text ul:first-child{
     /* border: solid red 1px; */
     margin-bottom: 30px;
 }
 
-.flex-addr{
-    display: flex;
-    align-items: center;
-}
-
-/* .flex-addr::after{
-    content: '';
-    width: 100%;
-    height: 270px;
-    background-color: rgba(225, 225, 197, 0.6);
-
-    z-index: -1;
-    position: absolute;
-    top: 147px;
-    left: 0;
-} */
 
 .addr-map{
     /* border: solid red 1px; */

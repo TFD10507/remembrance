@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員中心 | 留憶金工</title>
 
-    <link rel="stylesheet" href="./css/member_info_style.css">
+    <link rel="stylesheet" href="./css/member_center_style.css">
     <link rel="icon" href="./source/R.ico" type="image/x-icon">
 </head>
 
@@ -70,7 +70,7 @@
         <!-- -----------------container----------------- -->
         <div class="container">
             <!-- ----------- 會員資料 ---------- -->
-            
+
             <!-- 修改密碼 -->
             <div class="personal-revise">
                 <div class="personal-title">
@@ -79,8 +79,29 @@
                 <div class="flex-personal-revise">
                     <div class="revise">
                         <p>修改密碼</p>
-                        <hr>
-                        <table>
+                        <!-- <hr> -->
+                        <ul>
+                            <li>電子信箱</li>
+                            <li>
+                                <input type="useremail" name="useremail" placeholder="您的電子信箱...">
+                            </li>
+                            <li>舊密碼</li>
+                            <li>
+                                <input type="oldpassword" name="oldpassword" placeholder="您的舊密碼...">
+                            </li>
+                            <li>新密碼</li>
+                            <li>
+                                <input type="newpassword" name="newpassword" placeholder="您的新密碼...">
+                            </li>
+                            <li>新密碼確認</li>
+                            <li>
+                                <input type="checkpassword" name="checkpassword" placeholder="請再次輸入您的新密碼...">
+                            </li>
+                            <li>
+                                <input type="submit" value="提交" class="revise_btn">
+                            </li>
+                        </ul>
+                        <!-- <table>
                             <tr>
                                 <td>電子郵件</td>
                                 <td>
@@ -106,40 +127,34 @@
                                 </td>
                             </tr>
                         </table>
-                        <button>提交</button>
+                        <button>提交</button> -->
                     </div>
-    
+
                     <!-- 修改個資 -->
                     <div class="revise">
                         <p>修改會員資料</p>
-                        <hr>
-                        <table>
-                            <tr>
-                                <td>姓名</td>
-                                <td>
-                                    <input type="name" name="name">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>電話</td>
-                                <td>
-                                    <input type="phone" name="phone">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>電子郵件</td>
-                                <td>
-                                    <input type="useremail" name="useremail">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>地址</td>
-                                <td>
-                                    <input type="address" name="address">
-                                </td>
-                            </tr>
-                        </table>
-                        <button>提交</button>
+                        <!-- <hr> -->
+                        <ul>
+                            <li>姓名</li>
+                            <li>
+                                <input type="name" name="name" placeholder="您的姓名...">
+                            </li>
+                            <li>電話</li>
+                            <li>
+                                <input type="phone" name="phone" placeholder="您的電話...">
+                            </li>
+                            <li>電子信箱</li>
+                            <li>
+                                <input type="useremail" name="useremail" placeholder="您的電子信箱...">
+                            </li>
+                            <li>地址</li>
+                            <li>
+                                <input type="address" name="address" placeholder="您的地址...">
+                            </li>
+                            <li>
+                                <input type="submit" value="提交" class="revise_btn">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -237,9 +252,9 @@
 
 
 
-    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
 
-    
+
 </body>
 
 </html>

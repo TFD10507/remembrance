@@ -25,8 +25,8 @@ form{
 }
 
 .cart-header{
-    /* background-color: rgba(144, 146, 127, .6); */
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgb(153, 153, 139);
+    /* background-color: rgba(190, 190, 127, 1); */
     color: white;
     display: flex;
     padding: 5px;
@@ -178,7 +178,7 @@ form{
 }
 
 .buyer-info-title{
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgb(153, 153, 139);
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
@@ -227,7 +227,7 @@ form{
 }
 
 .payment-method-title{
-    background-color: rgba(190, 190, 127, 1);
+    background-color: rgb(153, 153, 139);
     height: 40px;
     line-height: 40px;
     padding-left: 10px;

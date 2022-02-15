@@ -112,7 +112,8 @@ body h2{
     }
 
     .main-list a:hover{
-        background-color: rgba(190, 190, 127, 1);
+        /* background-color: rgba(190, 190, 127, 1); */
+        background-color: rgb(153, 153, 139);
         color: white;
         font-weight: bold;
     }
