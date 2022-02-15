@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/course_style.css">
     <link rel="icon" href="./source/R.ico" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -153,7 +154,8 @@
                 </p>
             </footer>
 
-            <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+            <!-- <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script> -->
+            <script src="https://kit.fontawesome.com/10f319606c.js" crossorigin="anonymous"></script>
 
         </div>
 
@@ -204,62 +206,54 @@
                         <li>
                             <h3>預約資訊</h3>
                             <form action="">
-                                <table>
-                                    <tbody>
-                                        <!-- 1 姓名&日期 -->
-                                        <tr>
-                                            <td>姓名</td>
-                                            <td>
-                                                <input type="name" class="user-name" name="name">
-                                            </td>
+                                <ul>
 
-                                            <td>預約時間</td>
-                                            <td>
-                                                <label for="meeting-time"></label>
+                                    <!-- 1 姓名 -->
+                                    <li>姓名</li>
+                                    <li>
+                                        <input type="name" class="user-name" name="name">
+                                    </li>
+                                    <!-- 2 電話 -->
+                                    <li>聯絡電話</li>
+                                    <li>
+                                        <input type="phone" class="user-phone" name="phone">
+                                    </li>
 
-                                                <input type="date" name="meeting-time" min="2022-02-01"
-                                                    max="2022-12-31">
-                                            </td>
-                                        </tr>
+                                    <!-- 3 信箱 -->
+                                    <li>電子信箱</li>
+                                    <li>
+                                        <input type="email" class="user-email" name="useremail">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <!-- 4 時間 -->
+                                    <li>預約時間</li>
+                                    <li>
+                                        <label for="meeting-time"></label>
 
-                                        <!-- 2 電話&時段 -->
-                                        <tr>
-                                            <td>聯絡電話</td>
-                                            <td>
-                                                <input type="phone" class="user-phone" name="phone">
-                                            </td>
+                                        <input type="date" name="meeting-time" min="2022-02-01" max="2022-12-31">
+                                    </li>
 
-                                            <td>時段</td>
-                                            <td>
-                                                <select name="time">
-                                                    <option>
-                                                        上午10:00
-                                                    </option>
-                                                    <option>
-                                                        下午14:00
-                                                    </option>
-                                                    <option>
-                                                        下午16:30
-                                                    </option>
-                                                </select>
-                                            </td>
-                                        </tr>
-
-                                        <!-- 3 信箱 -->
-                                        <tr>
-                                            <td>電子信箱</td>
-                                            <td>
-                                                <input type="email" class="user-email" name="useremail">
-                                            </td>
-                                        </tr>
-                                        <!-- 4 提交 -->
-                                        <tr>
-                                            <td>
-                                                <input type="submit" value="提交" class="submit">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <!-- 5時段 -->
+                                    <li>時段</li>
+                                    <li>
+                                        <select name="time">
+                                            <option>
+                                                上午10:00
+                                            </option>
+                                            <option>
+                                                下午14:00
+                                            </option>
+                                            <option>
+                                                下午16:30
+                                            </option>
+                                        </select>
+                                    </li>
+                                    <!-- 6 提交 -->
+                                    <li>
+                                        <input type="submit" value="提交" class="submit">
+                                    </li>
+                                </ul>
                             </form>
                         </li>
                     </ul>
@@ -306,61 +300,53 @@
                         <li>
                             <h3>預約資訊</h3>
                             <form action="">
-                                <table>
-                                    <tbody>
-                                        <!-- 1 姓名 -->
-                                        <tr>
-                                            <td>姓名</td>
-                                            <td>
-                                                <input type="name" class="user-name" name="name">
-                                            </td>
-                                            <td>預約時間</td>
-                                            <td>
-                                                <label for="meeting-time"></label>
+                                <ul>
+                                    <!-- 1 姓名 -->
+                                    <li>姓名</li>
+                                    <li>
+                                        <input type="name" class="user-name" name="name">
+                                    </li>
+                                    <!-- 2 電話 -->
+                                    <li>聯絡電話</li>
+                                    <li>
+                                        <input type="phone" class="user-phone" name="phone">
+                                    </li>
 
-                                                <input type="date" name="meeting-time" min="2022-02-01"
-                                                    max="2022-12-31">
-                                            </td>
-                                        </tr>
+                                    <!-- 3 信箱 -->
+                                    <li>電子信箱</li>
+                                    <li>
+                                        <input type="email" class="user-email" name="useremail">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <!-- 4 時間 -->
+                                    <li>預約時間</li>
+                                    <li>
+                                        <label for="meeting-time"></label>
 
-                                        <!-- 2 電話 -->
-                                        <tr>
-                                            <td>聯絡電話</td>
-                                            <td>
-                                                <input type="phone" class="user-phone" name="phone">
-                                            </td>
+                                        <input type="date" name="meeting-time" min="2022-02-01" max="2022-12-31">
+                                    </li>
 
-                                            <td>時段</td>
-                                            <td>
-                                                <select name="time">
-                                                    <option>
-                                                        上午10:00
-                                                    </option>
-                                                    <option>
-                                                        下午14:00
-                                                    </option>
-                                                    <option>
-                                                        下午16:30
-                                                    </option>
-                                                </select>
-                                            </td>
-                                        </tr>
-
-                                        <!-- 3 信箱 -->
-                                        <tr>
-                                            <td>電子信箱</td>
-                                            <td>
-                                                <input type="email" class="user-email" name="useremail">
-                                            </td>
-                                        </tr>
-                                        <!-- 4 提交 -->
-                                        <tr>
-                                            <td>
-                                                <input type="submit" value="提交" class="submit">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <!-- 5時段 -->
+                                    <li>時段</li>
+                                    <li>
+                                        <select name="time">
+                                            <option>
+                                                上午10:00
+                                            </option>
+                                            <option>
+                                                下午14:00
+                                            </option>
+                                            <option>
+                                                下午16:30
+                                            </option>
+                                        </select>
+                                    </li>
+                                    <!-- 6 提交 -->
+                                    <li>
+                                        <input type="submit" value="提交" class="submit">
+                                    </li>
+                                </ul>
                             </form>
                         </li>
                     </ul>
@@ -410,61 +396,54 @@
                         <li>
                             <h3>預約資訊</h3>
                             <form action="">
-                                <table>
-                                    <tbody>
-                                        <!-- 1 姓名 -->
-                                        <tr>
-                                            <td>姓名</td>
-                                            <td>
-                                                <input type="name" class="user-name" name="name">
-                                            </td>
-                                            <td>預約時間</td>
-                                            <td>
-                                                <label for="meeting-time"></label>
+                                <ul>
 
-                                                <input type="date" name="meeting-time" min="2022-02-01"
-                                                    max="2022-12-31">
-                                            </td>
-                                        </tr>
+                                    <!-- 1 姓名 -->
+                                    <li>姓名</li>
+                                    <li>
+                                        <input type="name" class="user-name" name="name">
+                                    </li>
+                                    <!-- 2 電話 -->
+                                    <li>聯絡電話</li>
+                                    <li>
+                                        <input type="phone" class="user-phone" name="phone">
+                                    </li>
 
-                                        <!-- 2 電話 -->
-                                        <tr>
-                                            <td>聯絡電話</td>
-                                            <td>
-                                                <input type="phone" class="user-phone" name="phone">
-                                            </td>
+                                    <!-- 3 信箱 -->
+                                    <li>電子信箱</li>
+                                    <li>
+                                        <input type="email" class="user-email" name="useremail">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <!-- 4 時間 -->
+                                    <li>預約時間</li>
+                                    <li>
+                                        <label for="meeting-time"></label>
 
-                                            <td>時段</td>
-                                            <td>
-                                                <select name="time">
-                                                    <option>
-                                                        上午10:00
-                                                    </option>
-                                                    <option>
-                                                        下午14:00
-                                                    </option>
-                                                    <option>
-                                                        下午16:30
-                                                    </option>
-                                                </select>
-                                            </td>
-                                        </tr>
+                                        <input type="date" name="meeting-time" min="2022-02-01" max="2022-12-31">
+                                    </li>
 
-                                        <!-- 3 信箱 -->
-                                        <tr>
-                                            <td>電子信箱</td>
-                                            <td>
-                                                <input type="email" class="user-email" name="useremail">
-                                            </td>
-                                        </tr>
-                                        <!-- 4 提交 -->
-                                        <tr>
-                                            <td>
-                                                <input type="submit" value="提交" class="submit">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <!-- 5時段 -->
+                                    <li>時段</li>
+                                    <li>
+                                        <select name="time">
+                                            <option>
+                                                上午10:00
+                                            </option>
+                                            <option>
+                                                下午14:00
+                                            </option>
+                                            <option>
+                                                下午16:30
+                                            </option>
+                                        </select>
+                                    </li>
+                                    <!-- 6 提交 -->
+                                    <li>
+                                        <input type="submit" value="提交" class="submit">
+                                    </li>
+                                </ul>
                             </form>
                         </li>
                     </ul>
@@ -474,7 +453,7 @@
         </div>
     </div>
 
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/course_js.js"></script>

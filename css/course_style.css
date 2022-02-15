@@ -118,6 +118,9 @@
       background-color: rgb(255, 255, 255);
       overflow: auto;
   }
+  .hand-merit-fade-header{
+      position: relative;
+  }  
 
   .hand-merit-fade-body{
       margin-left: 20px;
@@ -125,9 +128,9 @@
 
     /* 叉叉 */
   .hand-merit-fade button{
-      position: fixed;
-      top: 10%;
-      right: 20%;
+      position: absolute;
+      top: -20px;
+      right: -20px;
       margin: auto;
       background-color: transparent;
       font-weight: bold;
@@ -135,7 +138,9 @@
       font-size: 30px;
       opacity: .2;
       color: #333;
+      width: 40px;
   }
+  
   .hand-merit-fade h2{
       text-align: center;
       color:rgba(190, 190, 127, 1);
@@ -170,24 +175,26 @@
   } 
 
   /* 6 預約資訊 */
-  .hand-merit-fade tr{
-      height: 60px;
-      line-height: 60px;
+  .hand-merit-fade-body form{
+      border: #333 solid 1px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      position: relative;
+  }
+  .hand-merit-fade-body form ul{
+      width: 50%;
   }
 
+  .hand-merit-fade-body li:nth-child(6) li{
+      width: 100%;
+  }
   .hand-merit-fade input{
       padding: 10px;
+      max-width: 100%;
+      /* width: 80%; */
   }
-
-  .hand-merit-fade td{
-    padding: 5px;
-    padding-right: 10px;
-    /* border: #333 solid 1px; */
-  }
-  .hand-merit-fade tr td:nth-child(3){
-      padding-left: 50px;
-  }
-/* 時段 */
+  /* 時段 */
   .hand-merit-fade select{
       height: 40px;
   }
@@ -201,6 +208,9 @@
       background-color: rgb(178,144,193);
       color: white;
       margin-top: 10px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
   }
 
   .submit:hover{
