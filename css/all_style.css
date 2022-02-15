@@ -1,9 +1,7 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
-
-
-body{
-    font-family: 'Noto Serif TC', serif,Arial,"微軟正黑體";
+body {
+    font-family: 'Noto Serif TC', serif, Arial, "微軟正黑體";
     /* font-family: 'Noto Sans TC',Arial,"微軟正黑體"; */
     font-size: 16px;
     line-height: 1.5;
@@ -12,155 +10,170 @@ body{
     box-sizing: border-box;
 }
 
-
- body h1{
+body h1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
- }
+}
 
-body h2{
+body h2 {
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 30px;
 }
 
-  /* 網頁捲軸【寬度】 */
-  ::-webkit-scrollbar {
+
+/* 網頁捲軸【寬度】 */
+
+ ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  /* 網頁捲軸【背景】顏色 */
-  ::-webkit-scrollbar-track {
+}
+
+
+/* 網頁捲軸【背景】顏色 */
+
+ ::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  /* 網頁捲軸【把手】顏色 */
-  ::-webkit-scrollbar-thumb {
-    background:rgba(225, 225, 197, 1);
-}
-  
-  /* 網頁捲軸【滑過時】把手的顏色 */
-  ::-webkit-scrollbar-thumb:hover {
-    background:rgba(190, 190, 127, 1);
 }
 
 
+/* 網頁捲軸【把手】顏色 */
 
+ ::-webkit-scrollbar-thumb {
+    background: rgba(225, 225, 197, 1);
+}
+
+
+/* 網頁捲軸【滑過時】把手的顏色 */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(190, 190, 127, 1);
+}
 
 
 /* ======================== left ======================== */
+
+
 /* -------主選單-------- */
-    .main-sel{
-        font-size: 20px;
-        width: 15%;
-        height: 100vh;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-image: url('../source/nav_bg.jpg');
-        background-size: cover;
-        
-        position: fixed;
-        left: 0;
-        top: 0;
-        /* z-index: 1; */
-    } 
 
-    .main-sel-inner{
-        max-height: 100%;
-    }
-    /* ---logo----- */
-    .logo{
-        /* border: black solid 1px; */
-        padding-top: 10px;
-        padding-bottom: 30px;
-        width: 50px;
-        height: 80px;
-        margin: 0 auto;
-    }
-    .logo a{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
+.main-sel {
+    font-size: 20px;
+    width: 15%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: url('../source/nav_bg.jpg');
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* z-index: 1; */
+}
 
-    .logo img{
-        max-height: 100%;
-        display: block; 
-    }
-    /* -----選單選項---- */
-    .main-list{
-        width: 100%;
-        height: 360px;
-        text-align: center;
-        position: relative;
-        margin: auto 0;
-        /* padding-top: 20px; */
-        /* border: black solid 1px;  */
-    }
-
-    .main-list li{
-        /* margin: 10px 0; */
-        line-height: 60px;
-    }
-    .main-list a{
-        display: inline-block;
-        text-decoration: none;
-        color: #333;
-        width: 80%;
-    }
-
-    .main-list a:hover{
-        /* background-color: rgba(190, 190, 127, 1); */
-        background-color: rgb(153, 153, 139);
-        color: white;
-        font-weight: bold;
-    }
-
-    .search input{
-        width: 50%;
-        background: none;
-        border:0 none;
-        border-bottom: black solid 1px;
-        padding: 10px;
-    }
+.main-sel-inner {
+    max-height: 100%;
+}
 
 
-    /* ---------功能icon---------- */
+/* ---logo----- */
 
-    .main-icon{
-        display: flex;
-        width: 100%;
-        align-items: flex-end;
-        justify-content: center;
+.logo {
+    /* border: black solid 1px; */
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 50px;
+    height: 80px;
+    margin: 0 auto;
+}
 
-        /* position: absolute;
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.logo img {
+    max-height: 100%;
+    display: block;
+}
+
+
+/* -----選單選項---- */
+
+.main-list {
+    width: 100%;
+    height: 360px;
+    text-align: center;
+    position: relative;
+    margin: auto 0;
+    /* padding-top: 20px; */
+    /* border: black solid 1px;  */
+}
+
+.main-list li {
+    /* margin: 10px 0; */
+    line-height: 60px;
+}
+
+.main-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    width: 80%;
+}
+
+.main-list a:hover {
+    /* background-color: rgba(190, 190, 127, 1); */
+    background-color: rgb(153, 153, 139);
+    color: white;
+    font-weight: bold;
+}
+
+.search input {
+    width: 50%;
+    background: none;
+    border: 0 none;
+    border-bottom: black solid 1px;
+    padding: 10px;
+}
+
+
+/* ---------功能icon---------- */
+
+.main-icon {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    /* position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto; */
-    }
-    .main-icon li{
-        margin: 10px;
-    }
+}
 
-    .main-icon i{
-        color: #333;
-        font-size: 20px;
-    }
+.main-icon li {
+    margin: 10px;
+}
 
-    .main-icon i:hover{
-        color: rgb(178,144,193);
-    }
+.main-icon i {
+    color: #333;
+    font-size: 20px;
+}
+
+.main-icon i:hover {
+    color: rgb(178, 144, 193);
+}
 
 
 /* ================== right & wrapper ===================== */
 
 
 /* ============ 大於769px =============== */
+
 @media (min-width: 769px) {
-    .right{
+    .right {
         width: 85%;
         margin-right: 0;
         margin-left: auto;
@@ -170,54 +183,61 @@ body h2{
 
 
 /* ======================== footer ===================== */
-footer{
+
+footer {
     /* border: black solid 1px; */
     width: 100%;
-    background-color: rgba(225,225,197,.4);
+    background-color: rgba(225, 225, 197, .4);
     letter-spacing: 1px;
     font-size: 13px;
     padding-top: 20px;
 }
-.footer-contain{
+
+.footer-contain {
     display: flex;
     justify-content: space-between;
 }
 
+
 /* 左側 */
- .footer-text{
+
+.footer-text {
     padding-left: 30px;
     padding-top: 50px;
 }
 
-.footer-text section{
+.footer-text section {
     padding-bottom: 10px;
 }
 
+
 /* 右側 */
-footer ul{
+
+footer ul {
     display: flex;
     padding-top: 70px;
     /* border: #333 solid 1px; */
 }
 
-footer li{
+footer li {
     /* border: black solid 1px; */
     margin-right: 25px;
 }
 
-footer ul i{
+footer ul i {
     color: #333;
     font-size: 30px;
 }
 
 
 /* 最下方 */
-footer .reference{
+
+footer .reference {
     text-align: center;
     padding: 20px 0;
 }
 
-footer hr{
+footer hr {
     padding-top: 50px;
     display: block;
     border: 0;
@@ -226,149 +246,182 @@ footer hr{
 }
 
 
-
-
-
-
 /* =============== top ==================== */
 
+
 /* ========== 小於575.98 ========== */
+
 @media (max-width:575.98px) {
-    .top{
-        width:300px;
+    .top {
+        width: 300px;
     }
 }
 
 
 /* ========== 576 ~ 768.98 ========== */
+
 @media (min-width:576px) and (max-width:768.98px) {
-    .top{
+    .top {
         width: 70%;
     }
 }
+
 
 /* =============== 大於769 =============== */
+
 @media (min-width:769px) {
-    .top{
+    .top {
         width: 70%;
     }
 }
 
-.top{
+.top {
     /* width:700px; */
     height: 100px;
     margin: 0 auto;
     position: relative;
-    border-bottom: 80px solid rgba(225,225,197,.4);
+    border-bottom: 80px solid rgba(225, 225, 197, .4);
 }
 
-.top h1{
+.top h1 {
     max-width: 100%;
 }
 
-.top span{
+.top span {
     line-height: 200px;
 }
 
-.top span:nth-child(2)::before{
+.top span:nth-child(2)::before {
     display: block;
-	content: "";
-	width: 120px;
-	height: 1px;
-	background: #d0d0d0;
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: #d0d0d0;
     /* background: rgba(190, 190, 127, 1); */
-	transform: rotate(-60deg);
+    transform: rotate(-60deg);
 }
 
-.top h1 span:nth-child(2) span{
+.top h1 span:nth-child(2) span {
     font-weight: normal;
     padding-left: 50px;
     font-size: 28px;
 }
 
 
+/* ===================== container =================== */
 
-
-/* ===================== container ======================= */
-.container{
+.container {
     width: 85%;
     margin: 0 auto;
     padding-bottom: 130px;
-
     /* position: relative; */
 }
 
-
-button{
+button {
     width: 100px;
     height: 40px;
     border: 0;
-    background-color: rgb(178,144,193);
+    background-color: rgb(178, 144, 193);
     color: white;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(108, 56, 133, 1);
 }
 
 
+/*================== 小於768 =========================*/
 
-
-/*================== 小於768 ==============================*/
 @media (max-width:768.98px) {
-    body{
+    body {
         font-size: 14px;
     }
-    
-     body h1{
+    body h1 {
         font-size: 32px;
-     }
-    
-    body h2{
+    }
+    body h2 {
         font-size: 24px;
     }
-
-    .right{
+    .right {
         overflow: hidden;
     }
-
-
-    /* nav */
-    .main-sel{
+    /* ------ nav 最上方 ---------- */
+    .main-sel {
         width: 100%;
-        height: 80px;
+        height: 60px;
         font-size: 20px;
         background-image: url('../source/nav_bg.jpg');
         background-size: cover;
         display: block;
-        /* position: fixed; */
         position: sticky;
         top: 0;
         left: 0;
         z-index: 5;
     }
-    .main-sel-transparent{
+
+    /* -------- nav 出現介面 ------------ */
+    .main-sel-transparent {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         padding-top: 10px;
         background-image: url('../source/nav_bg.jpg');
         background-size: cover;
-        opacity: .9;
-        display: none;
-        position: relative;
-        top: 0;
+        /* opacity: .9; */
+        position: absolute;
+        /* top: 60px;
+        left: -100%; */
+        top: 60px;
+        left: 0;
+        opacity: 0;
+        transition: 1s;
     }
 
-     /* ---logo----- */
-     .logo{
-         padding: 0;
-         width: 50px;
-         height: 60px;
-         padding-top: 10px;
-         margin-left: 10px;
-     }
-
-}
-
+    /* ---logo----- */
+    .logo {
+        padding: 0;
+        width: auto;
+        height: 40px;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
     
+    /* ------ 漢堡 ----- */
+    .hamburger {
+        margin: 0;
+        position: fixed;
+        top: 5px;
+        right: 20px;
+        display: block;
+        width: 25px;
+        height: 50px;
+    }
+    .hamburger label {
+        display: flex;
+        width: 25px;
+        height: 50px;
+        flex-direction: column;
+        padding-top: 10px;
+        position: relative;
+    }
+    .hamburger span {
+        background-color: #333;
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin: 3px 0;
+        transition: 0.3s ease;
+    }
+    .hamburger span:nth-child(3) {
+        width: 18px;
+    }
 
+    /* ------- checkbox ------- */
+    #meun_control:checked ~ .main-sel-transparent{
+        /* top: 60px; */
+        /* left: 0; */
+        opacity: .9;
+    }
+    #meun_control{
+        display: none;
+    }
+}

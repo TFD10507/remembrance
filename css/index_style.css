@@ -288,7 +288,7 @@ span.dot{
       /* ----- banner ----- */
       .banner{
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 60px);
         position: relative;
     }
     .banner-text-position{
@@ -385,7 +385,7 @@ span.dot{
       /* ----- banner ----- */
     .banner{
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 60px);
         position: relative;
     }
     .banner-text-position{
