@@ -114,7 +114,7 @@
 
 /* ================= 訂單明細 ======================= */
 
-.order-info ul{
+.order-info h2 + ul{
     height: 40px;
     background-color: rgb(153, 153, 139);
     color: white;
@@ -123,20 +123,15 @@
     text-align: center;
 }
 
+.order-info ol{
+    display: flex;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+
 .order-info li{
     width: 20%;
-}
-
-.order-info table{
-    width: 100%;
-}
-.order-info td{
-    width: 20%;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.order-info tr{
-    /* background-color: rgba(225, 225, 197, .5); */
-    border-bottom: 1px solid #333;
 }
