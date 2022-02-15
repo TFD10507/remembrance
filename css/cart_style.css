@@ -96,10 +96,10 @@ form{
 
 /* 操作 */
 .cart-content .operate a{
-    display: flex;
     text-decoration: none;
     color: #333;
-    justify-content: center;
+    display: inline-block;
+    width: 25px;
 }
 
 
