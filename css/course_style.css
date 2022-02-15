@@ -192,11 +192,16 @@
   .hand-merit-fade input{
       padding: 10px;
       max-width: 100%;
+      border: 0;
+      border-bottom: 1px solid #333;
       /* width: 80%; */
   }
   /* 時段 */
   .hand-merit-fade select{
+      width: 100px;
       height: 40px;
+      border: 0;
+      border-bottom: 1px solid #333;
   }
 
   /* 提交 */
