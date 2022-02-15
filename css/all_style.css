@@ -384,7 +384,7 @@ button:hover {
         padding-top: 10px;
         margin-left: 10px;
     }
-    
+
     /* ------ 漢堡 ----- */
     .hamburger {
         margin: 0;
@@ -416,12 +416,21 @@ button:hover {
     }
 
     /* ------- checkbox ------- */
-    #meun_control:checked ~ .main-sel-transparent{
+    #meun_control:checked + div + div{
         /* top: 60px; */
         /* left: 0; */
         opacity: .9;
     }
     #meun_control{
         display: none;
+    }
+    #meun_control:checked + div > label > span:nth-child(1){
+        transform: translateY(6px) rotate(45deg);
+    }
+    #meun_control:checked + div > label > span:nth-child(2){
+        transform: translateY(-1px) rotate(-45deg);
+    }
+    #meun_control:checked + div > label > span:nth-child(3){
+        transform: scale(0);
     }
 }
