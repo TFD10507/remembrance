@@ -72,8 +72,8 @@ body h2 {
 .logo {
     /* border: black solid 1px; */
     padding-top: 10px;
-    padding-bottom: 30px;
-    width: 50px;
+    padding-bottom: 60px;
+    width: 100px;
     height: 80px;
     margin: 0 auto;
 }
@@ -84,9 +84,14 @@ body h2 {
     display: block;
 }
 
-.logo img {
-    max-height: 100%;
+.pc-logo{
+    max-width: 100%;
+    /* max-height: 100%; */
     display: block;
+}
+
+.sp-logo{
+    display: none;
 }
 
 
@@ -363,12 +368,21 @@ button:hover {
     /* ---logo----- */
     .logo {
         padding: 0;
-        width: auto;
-        height: 40px;
-        padding-top: 10px;
+        /* width: auto;
+        height: 40px; */
+        width: 120px;
+        padding-top: 20px;
         margin-left: 10px;
+        /* background-image: url("../source/logo3.png"); */
     }
-
+    .sp-logo{
+        /* max-height: 100%; */
+        max-width: 100%;
+        display: block;
+    }
+    .pc-logo{
+        display: none;
+    }
     /* ------ 漢堡 ----- */
     .hamburger {
         margin: 0;
@@ -386,6 +400,7 @@ button:hover {
         flex-direction: column;
         padding-top: 10px;
         position: relative;
+        cursor: pointer;
     }
     .hamburger span {
         background-color: #333;
@@ -399,7 +414,7 @@ button:hover {
         width: 18px;
     }
 
-    /* ------- checkbox ------- */
+    /* ------- 當點擊checkbox後 ------- */
     #meun_control:checked + div + div{
         left: 0;
         opacity: .9;
