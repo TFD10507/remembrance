@@ -11,18 +11,17 @@
 
 /* -------------------top--------------------- */
 @media (max-width:575.98px) {
+    .top{
+        width:340px;
+    }
     .top span:nth-child(2)::before{
         position: absolute;
         top: 100px;
-        left: 120px;
+        left: 100px;
     }
 }
 
 @media (min-width:576px) and (max-width:768.98px) {
-    .top{
-        width: 70%;
-    }
-
     .top span:nth-child(2)::before{
         position: absolute;
         top: 100px;
@@ -31,9 +30,6 @@
 }
 
 @media (min-width:769px) {
-    .top{
-        width: 70%;
-    }
     .top span:nth-child(2)::before{
         position: absolute;
         top: 100px;
@@ -42,21 +38,12 @@
 } 
 
 
-
-/* .top span:nth-child(2)::before{
-	position: absolute;
-	top: 100px;
-	left: 42%;
-} */
-
-
 /* ----------------------main---------------------------- */
 
 /* ------------ 課程須知 ----------------- */
 .course-notice{
     padding-top: 70px;
 }
-
 
 
 .course-notice hr{
@@ -98,15 +85,12 @@
     /* border: red solid 1px; */
     width: 300px;
     height: auto;
-    background-color: white;
-
     position: relative;
 }
 
 .course-list li:hover{
     background-color: #e6e6e6;
 }
-
 
 .course-list a{
     display: block;
@@ -117,7 +101,7 @@
 
 .course-container img{
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;    
 }
 
@@ -129,6 +113,17 @@
     /* font-size: 20px; */
     font-weight: bold;
     width: 100%;
+}
+
+@media (max-width:575.98px) {
+    .course-list{
+        display: inline-block;
+        width: 85%;
+    }
+    .course-list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 
