@@ -18,6 +18,8 @@
     }
     .top span:nth-child(2)::before{
         position: absolute;
+        /* top: 80px;
+        left: 100px; */
         top: 100px;
         left: 120px;
     }
@@ -35,6 +37,7 @@
     .story-text,.addr-text{
         width: 100%;
         padding-bottom: 20px;
+        letter-spacing: 2px;
     }
     .story-img img,.addr-img img{
         max-width: 100%;
