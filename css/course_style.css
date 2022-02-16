@@ -130,7 +130,6 @@
 
 
   /* =================== 彈出視窗 ==================== */
-
   .hand-merit-fade{
       width: 60%;
       border: rgba(211, 211, 211, .35) solid 10px;
@@ -145,12 +144,21 @@
       background-color: rgb(255, 255, 255);
       overflow: auto;
   }
+
+  @media (max-width:768.98px) {
+    div.hand-merit-fade{
+        top: 100px;
+    }
+  }
+
+
   .hand-merit-fade-header{
       position: relative;
   }  
 
   .hand-merit-fade-body{
-      margin-left: 20px;
+      width: 100%;
+      /* margin-left: 20px; */
   }
 
     /* 叉叉 */
@@ -180,6 +188,7 @@
   }
 
   .hand-merit-fade li{
+      width: 100%;
       margin-bottom: 10px;
       /* border: green solid 1px; */
   }
@@ -223,6 +232,17 @@
       border-bottom: 1px solid #333;
       /* width: 80%; */
   }
+
+
+  @media (max-width:768.98px) {
+    .hand-merit-fade-body form{
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+  }
+
+
   /* 時段 */
   .hand-merit-fade select{
       width: 100px;
