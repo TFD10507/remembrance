@@ -1,9 +1,12 @@
 @import url('all_style.css');
 
+/* 主選單強調 */
 .main-list .nav-product{
     font-weight: bold;
     border-left: 3px solid rgb(153, 153, 139);
 }
+
+
 
 /* ================ 小於768.98 =================== */
 @media (max-width:768.98px) {
@@ -13,6 +16,7 @@
     }
     .product-bg p{
         padding-top: 10px;
+        letter-spacing: 2px;
     }
 }
 
@@ -24,7 +28,9 @@
     }
     .product-bg p{
         padding-top: 80px;
+        letter-spacing: 3px;
     }
+
 }
 
 .product-bg{
@@ -41,7 +47,6 @@
     font-weight: bold;
     text-shadow: rgba(0, 0, 0, 0.774) 2px 2px 2px;
     float: right;
-    letter-spacing: 3px;
 }
 
 
@@ -50,19 +55,22 @@
 
 /* ------------- 主分類------------- */
 .product-class {
+    /* border: #333 solid 1px; */
     margin: 0 auto;
-    width: 540px;
-    height: 40px;
+    width: 80%;
+    /* width: 540px; */
+    /* height: 40px; */
     padding-top: 70px;
     z-index: 2;
+    display: flex;
 }
-  
-.product-class li{
-    float: left;
-    margin-right: 20px;
-    width: 160px;
-
+.product-class > li{
+    width: calc((100% - 20px) / 3); 
+    margin-right: 10px;
     position: relative;
+}
+.product-class > li:nth-child(3){
+    margin-right: 0;
 }
   
 .product-class li a{
@@ -77,13 +85,13 @@
 
   /* ------------- 子分類 ------------- */
 .product-class ol{
-    width: 160px;
+    width: 100%;
+    /* width: 160px; */
     position: absolute;
     display: none;
 
     z-index: 2;
 }
-  
   
 .product-class li > ol{
     top: 40px;
@@ -118,7 +126,7 @@
     font-weight: bold;
 }
 
-/* ----------------------商品----------------------- */
+/* ======================= 商品 ========================== */
 
 .container{
     text-align: center;
@@ -126,30 +134,7 @@
 
 .product-list{
     padding-top: 30px;
-    display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-
-.product-list li{
-    padding-bottom: 30px;
-    width: 90%;
-    /* border: blue solid 1px; */
-}
-
-
-/* .product-list{
-    border: black solid 1px;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.product-list li{
-    border: blue solid 1px;
-    padding: 30px 30px 30px 0;
-    margin: 0 auto;
-}
-*/
 
 .product-list img{
     max-width: 100%;
@@ -160,4 +145,36 @@
     color: rgba(209, 194, 55, 1);
     font-weight: bold;
 }
+/* ================ 大於769 =================== */
+@media (min-width:769px) {
+    .product-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    
+    .product-list li{
+        padding-bottom: 30px;
+        width: 90%;
+        /* border: blue solid 1px; */
+    }
+}
+
+/* ================ 小於768.98 =================== */
+@media (max-width:768.98px) {
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product-list li{
+        width: calc((100% - 20px) / 2);
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    .product-list li:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+
 
