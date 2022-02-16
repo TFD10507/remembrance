@@ -13,9 +13,6 @@
 @media (max-width:575.98px) {
 
     /* ----------- top ----------- */
-    .top{
-        width:300px;
-    }
     .top span:nth-child(2)::before{
         position: absolute;
         /* top: 80px;

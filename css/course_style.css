@@ -10,12 +10,44 @@
 
 
 /* -------------------top--------------------- */
- 
-.top span:nth-child(2)::before{
+@media (max-width:575.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 120px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top{
+        width: 70%;
+    }
+
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 38%;
+    }
+}
+
+@media (min-width:769px) {
+    .top{
+        width: 70%;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 42%;
+    }
+} 
+
+
+
+/* .top span:nth-child(2)::before{
 	position: absolute;
 	top: 100px;
 	left: 42%;
-}
+} */
 
 
 /* ----------------------main---------------------------- */

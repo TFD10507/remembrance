@@ -240,6 +240,9 @@ footer hr {
     .top {
         width: 300px;
     }
+    .top h1 span:nth-child(2) span {
+        padding-left: 20px;
+    }
 }
 
 
@@ -248,6 +251,9 @@ footer hr {
 @media (min-width:576px) and (max-width:768.98px) {
     .top {
         width: 70%;
+    }
+    .top h1 span:nth-child(2) span {
+        padding-left: 40px;
     }
 }
 /* ========= 大於769px ============ */
@@ -260,6 +266,9 @@ footer hr {
     }
     .top {
         width: 70%;
+    }
+    .top h1 span:nth-child(2) span {
+        padding-left: 50px;
     }
 }
 
@@ -295,7 +304,6 @@ footer hr {
 
 .top h1 span:nth-child(2) span {
     font-weight: normal;
-    padding-left: 50px;
     font-size: 28px;
 }
 
