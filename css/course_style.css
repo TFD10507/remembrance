@@ -60,6 +60,14 @@
     padding-bottom: 5px;
 }
 
+@media (max-width:575.98px) {
+    .course-notice ul{
+        padding-left: 0;
+    }
+    .course-notice li{
+        padding-bottom: 8px;
+    }
+}
 
 /* --------------- 詳細課程 -------------------*/
 .course-container{

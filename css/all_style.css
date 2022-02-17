@@ -330,12 +330,22 @@ button:hover {
 }
 
 
+@media (max-width:575.98px) {
+    body h1 {
+        font-size: 28px;
+    }
+    body h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
 /*================== 小於769 =========================*/
 
 @media (max-width:768.98px) {
-    body {
-        font-size: 14px;
-    }
     body h1 {
         font-size: 32px;
     }
