@@ -223,10 +223,10 @@
                         <ul>
                             <li>信用卡卡號</li>
                             <li>
-                                <input type="text" class="credit-card-num" placeholder="0000">
-                                <input type="text" class="credit-card-num" placeholder="0000">
-                                <input type="text" class="credit-card-num" placeholder="0000">
-                                <input type="text" class="credit-card-num" placeholder="0000">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
+                                <input type="text" class="credit-card-num" placeholder="0000" maxlength="4">
                             </li>
                         </ul>
                         <div class="flex-verify">
@@ -299,8 +299,51 @@
 
 
         <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
-
         <script src="./js/num_jia_jian_js.js"></script>
+
+        <script>
+            // 針對信用卡卡號介面調整
+            document.addEventListener("DOMContentLoaded", function () {
+                let cards = document.getElementsByClassName("credit-card-num");
+                // console.log(cards);
+                for (i = 0; i < cards.length; i++) {
+
+                    // ----- 跨欄位刪除 & 只能輸入數字及刪除鍵 ---------//
+                    cards[i].addEventListener("keydown", function (e) {
+                        // console.log(e.which);  //e.which轉換成代碼
+
+                        // 除了數字0-9及刪除鍵外，不得輸入其他字
+                        if ((e.which >= 48 && e.which <= 57) || e.which == 8) {
+
+                            // 刪除鍵可以跨欄位刪除
+                            if (e.target.value.length == 0 && e.which == 8) {
+                                let previous_el = this.previousElementSibling;
+                                previous_el.focus();
+                            }
+                        } else {
+                            e.preventDefault();
+                        }
+                    });
+                    // ----- 跨欄位輸入 & 中文字不能輸入 ------------//
+                    cards[i].addEventListener("keyup", function (e) {
+                        // 解決中文字可以輸入的情形
+                        // 使用正規式：所有非數字字元\D，g所有
+                        let str = (e.target.value).replace(/\D/g, "");
+                        // console.log(str);
+                        e.target.value = str; //將中文輸入值用空字串取代
+
+                        // 希望使用者可以一直輸入下去
+                        // console.log(str.length);
+                        if (str.length == 4) {
+                            let next_el = this.nextElementSibling;
+                            if (next_el != null) {
+                                next_el.focus();
+                            }
+                        }
+                    });
+                }
+            });
+        </script>
 </body>
 
 </html>

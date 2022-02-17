@@ -13,16 +13,16 @@
 }
 
 .flex-design{
-    /* border: blue solid 1px; */
+    border: blue solid 1px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .design-img{
-    width: 45%;
+    width: 50%;
     height: auto;
-    /* border: orange solid 1px; */
+    border: orange solid 1px;
     position: relative;
     left: 30px;
 }
@@ -40,7 +40,7 @@
 .design-text{
     width: 45%;
     border: black solid 1px;
-    padding: 30px 30px 100px 100px;
+    padding: 30px 30px 100px 80px;
     letter-spacing: 2px;
     border-radius: 10px;
     /* border-bottom-right-radius: 100px; */
@@ -52,7 +52,21 @@
 
 @media (max-width:768.98px) {
     .flex-design{
-        display: inline-block;
+        flex-direction: column;
+    }
+    .design-text{
+        width: 100%;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        padding: 10px;
+        order: 1;
+    }
+    .design-img{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        order: 2;
     }
 }
 
