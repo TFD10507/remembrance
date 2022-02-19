@@ -230,6 +230,16 @@ footer hr {
     width: 80%;
 }
 
+@media (max-width:575.98px) {
+    footer ul{
+        display: block;
+        padding: 50px;
+    }
+    footer li{
+        margin-bottom: 10px;
+    }
+}
+
 
 /* =============== 每頁的top ==================== */
 
@@ -453,4 +463,9 @@ button:hover {
     #meun_control:checked + div > label > span:nth-child(3){
         transform: scale(0);
     }
+}
+
+
+select{
+    background-color: transparent;
 }

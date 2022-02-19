@@ -1,13 +1,34 @@
 @import url('all_style.css');
 
+
 .top span:nth-child(2)::before{
 	position: absolute;
 	top: 100px;
 	left: 45%;
 }
+
+@media (max-width:575.98px) {
+    .top{
+        width:340px;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 130px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 39%;
+    }
+}
+
 /* ------------------- right ------------------------ */
 
-form{
+form.pc-form{
     border:  black solid 1px;
     margin-top: 50px;
     padding: 50px 0;
@@ -20,8 +41,10 @@ table{
 }
 
 .mem_btn .btn{
-    display: block;
+    display: inline-block;
     width: 200px;
+    height: 40px;
+    line-height: 40px;
     margin: 0 auto;
     
     background-color: rgb(178,144,193);
@@ -47,15 +70,21 @@ tr td:nth-child(2){
     text-align: center;
 }
 
-tr[class="input"] input{
+form input{
     width: 300px;
     padding: 10px;
     border: 0;
     border-bottom: #333 solid 1px;
 }
 
+#remberme{
+    width: auto;
+}
+#remberme1{
+    width: auto;
+}
 
-table a{
+form a{
     text-decoration: none;
     color: #333;
 }
@@ -64,12 +93,51 @@ tr:nth-child(n+4){
     font-size: 13px;
 }
 
+.sp-form ul li:nth-child(n+4){
+    font-size: 13px;
+}
+
 /*    其他登入方式     */
-tr:nth-child(7){
+.other-signin a i{
+    margin-right: 20px;
     font-size: 30px;
 }
-tr:nth-child(7) td a i{
-    margin-right: 20px;
+
+form.sp-form{
+    display: none;
+}
+
+@media (max-width:768.98px) {
+    form.pc-form{
+        display: none;
+    }
+    form.sp-form{
+        display: block;
+        width: 100%;
+        border: #333 solid 1px;
+        margin-top: 50px;
+    }
+    form.sp-form ul{
+        width: 300px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    form.sp-form li{
+        padding-bottom: 10px;
+    }
+    form.sp-form li:nth-child(n+5){
+        text-align: center;
+    }
+    
+}
+
+@media (max-width:575.98px) {
+    form input{
+        width: 200px;
+    }
+    form.sp-form ul{
+        width: 250px;
+    }
 }
 
 

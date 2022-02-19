@@ -83,7 +83,7 @@
         <!-- -----------------container------------------- -->
         <div class="container">
             <!--login會員登入-->
-            <form>
+            <form class="pc-form">
                 <table class="member-login">
                     <tbody>
                         <!-- 1 帳號 -->
@@ -137,7 +137,7 @@
                             <td class="member_btn">用以下帳號密碼登入為會員</td>
                         </tr>
                         <!-- 7 icon -->
-                        <tr>
+                        <tr class="other-signin">
                             <td></td>
                             <td class="other-sign">
                                 <a href="https://www.google.com/">
@@ -154,6 +154,55 @@
 
                     </tbody>
                 </table>
+            </form>
+            <form action="" class="sp-form">
+                <ul>
+                    <!-- 1 帳號 -->
+                        <li>電子信箱：</li>
+                        <li>
+                            <input type="username" id="username" class="username_email" name="username"
+                                placeholder="您的電子郵件地址" required>
+                        </li>
+
+                    <!-- 2 密碼 -->
+                        <li>密碼：</li>
+                        <li>
+                            <input type="password" id="password" class="password1" name="password"
+                                placeholder="您的密碼" required>
+                        </li>
+
+                    <!-- 3 登入 -->
+                        <li class="mem_btn">
+                            <!-- <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()" /> -->
+                            <a href="member_center.html" class="btn">登入
+                            </a>
+                        </li>
+                    <!-- 4 記住我 -->
+                        <li id="rmbr1">
+                            <input type="checkbox" id="remberme1" name="remberme" required>
+                            <label for="remberme1" id="remberme0">記住我</label>
+                        </li>
+                    <!-- 5 忘記密碼 -->
+                        <li id="sign">
+                            <a href="#" id="member_btn">忘記密碼？</a>
+                            |
+                            <a href="register.html" id="register">註冊</a>
+                        </li>
+                    <!-- 6 其他登入方式 -->
+                        <li class="member_btn">用以下帳號密碼登入為會員</li>
+                    <!-- 7 icon -->
+                        <li class="other-signin">
+                            <a href="https://www.google.com/">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://line.me/zh-hant/">
+                                <i class="fab fa-line"></i>
+                            </a>
+                        </li>
+                    </ul>
             </form>
         </div>
         <!-- ------------------footer---------------- -->
