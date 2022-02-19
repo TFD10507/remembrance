@@ -99,8 +99,11 @@ tr:nth-child(n+4){
 
 /*    其他登入方式     */
 .other-signin a i{
-    margin-right: 20px;
     font-size: 30px;
+    margin-right: 20px;
+}
+.other-signin a:nth-child(3) i{
+    margin-right: 0;
 }
 
 form.sp-form{
@@ -133,10 +136,17 @@ form.sp-form{
 
 @media (max-width:575.98px) {
     form input{
-        width: 200px;
+        /* width: 200px; */
+        width: calc(100% - 20%);
     }
     form.sp-form ul{
         width: 250px;
+    }
+    form.sp-form li{
+        width: 100%;
+    }
+    form.sp-form li input{
+        width: calc(100% - 10%);
     }
 }
 
