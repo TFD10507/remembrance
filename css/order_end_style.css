@@ -6,6 +6,26 @@
 	left: 43%;
 }
 
+@media (max-width:575.98px) {
+    .top{
+        width:340px;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 120px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 39%;
+    }
+}
+
+
 
 /* ========= 內容 =========== */
 
