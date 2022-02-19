@@ -84,7 +84,7 @@
         <!-- -----------------container------------------- -->
         <div class="container">
             <!--註冊-->
-            <form>
+            <form class="pc-form">
                 <table class="register">
                     <!-- 1 帳號 -->
                     <tr class="input">
@@ -162,6 +162,66 @@
                 </table>
                 <a href="member.html" class="btn">註冊</a>
             </form>
+
+            <form action="" class="sp-form">
+                <ul class="register">
+                    <!-- 1 帳號 -->
+                    <li>電子信箱：</li>
+                    <li class="input">
+                        <input type="username" id="username" class="username_email" name="username"
+                            placeholder="您的電子郵件地址" required>
+                    </li>
+
+                    <!-- 2 密碼 -->
+                    <li>密碼：</li>
+                    <li class="input">
+                        <input type="password" class="password1" name="password" placeholder="您的密碼" required>
+                    </li>
+                    <!-- 3 確認密碼 -->
+                    <li>確認密碼：</li>
+                    <li class="input">
+                        <input type="password" class="password1" name="password" placeholder="請再一次輸入您的密碼" required>
+                    </li>
+
+                    <!-- 4 姓名 -->
+                    <li>姓名：</li>
+                    <li class="input">
+                        <input type="name" class="name" name="name" placeholder="請輸入全名" required>
+                    </li>
+                    <!-- 5 性別 -->
+                    <li>性別：</li>
+                    <li>
+                        <input type="radio" name="sex" id="male1" required>
+                        <label for="male1">男</label>
+                        <input type="radio" name="sex" id="female1" required>
+                        <label for="female1">女</label>
+                        <input type="radio" name="sex" id="none1" required>
+                        <label for="none1">不公開</label>
+                    </li>
+
+                    <!-- 6 生日 -->
+                    <li>生日：</li>
+                    <li class="birthday">
+                        <input type="date" name="bithday" min="1920-01-01" max="today">
+                    </li>
+
+                    <!-- 7 電話 -->
+                    <li>電話：</li>
+                    <li class="input">
+                        <input type="phone" class="phone" name="phone">
+                    </li>
+                    <!-- 8 地址 -->
+                    <li>地址：</li>
+                    <li class="input">
+                        <input type="address" class="address" name="address">
+                    </li>
+                    <!-- 9 同意 -->
+                    <li>
+                        <input type="checkbox" name="agree" id="agree1" required>
+                        <label for="agree1">我已閱讀並同意《隱私權保護政策》及《定型化契約條款》。</label>
+                    </li>
+                    <a href="member.html" class="btn">註冊</a>
+            </form>
         </div>
         <!-- ------------------footer---------------- -->
         <footer>
@@ -211,7 +271,7 @@
 
 
 
-    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
