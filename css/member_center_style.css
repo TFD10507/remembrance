@@ -107,7 +107,7 @@
 
 /* ================= 訂單明細 ======================= */
 
-.order-info h2 + ul{
+.pc-order ul:nth-child(1){
     height: 40px;
     background-color: rgb(153, 153, 139);
     color: white;
@@ -116,7 +116,7 @@
     text-align: center;
 }
 
-.order-info ol{
+.pc-order ol{
     display: flex;
     height: 70px;
     line-height: 70px;
@@ -125,6 +125,30 @@
 }
 
 
-.order-info li{
+.pc-order li{
     width: 20%;
+}
+
+.sp-order{
+    display: none;
+}
+
+@media (max-width:575.98px) {
+    .sp-order{
+        display: block;
+    }
+    .pc-order{
+        display: none;
+    }
+    .sp-order ul{
+        border: #333 solid 1px;
+        padding: 10px;
+    }
+    .sp-order li{
+        /* border: #333 solid 1px; */
+        padding: 5px;
+    }
+    .bold{
+        font-weight: bold;
+    }
 }

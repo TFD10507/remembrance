@@ -7,6 +7,24 @@
 	top: 100px;
 	left: 45%;
 }
+@media (max-width:575.98px) {
+    .top{
+        width:340px;
+    }
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 130px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768.98px) {
+    .top span:nth-child(2)::before{
+        position: absolute;
+        top: 100px;
+        left: 41%;
+    }
+}
 
 
 /* --------------- cart-top ---------------- */

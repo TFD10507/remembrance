@@ -49,6 +49,13 @@
     float: right;
 }
 
+@media (max-width:575.98px) {
+    .product-bg p {
+        font-size: 14px;
+    }
+    
+}
+
 
 /* ========================= main ===================*/
 
