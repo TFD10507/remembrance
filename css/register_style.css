@@ -8,12 +8,12 @@
 
 @media (max-width:575.98px) {
     .top{
-        width:340px;
+        width:300px;
     }
     .top span:nth-child(2)::before{
         position: absolute;
         top: 100px;
-        left: 90px;
+        left: 75px;
     }
 }
 
