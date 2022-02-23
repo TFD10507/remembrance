@@ -191,7 +191,7 @@ footer {
     padding-top: 50px;
 }
 
-.footer-text section {
+.footer-text > div {
     padding-bottom: 10px;
 }
 

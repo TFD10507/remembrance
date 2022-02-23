@@ -65,6 +65,64 @@ $(document).ready(function () {
 
 
 
+function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+  
+  const sliderImages = document.querySelectorAll('.slide-in');
+  
+  function checkSlide(e) {
+    sliderImages.forEach(sliderImage => {
+      const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+      const imageBottom = sliderImage.offsetTop + sliderImage.height;
+      const isHalfShown = slideInAt > sliderImage.offsetTop;
+      const isNotScrolledPast = window.scrollY < imageBottom;
+  
+      if(isHalfShown && isNotScrolledPast) {
+        sliderImage.classList.add('active');
+      } else {
+        sliderImage.classList.remove('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', debounce(checkSlide));
+
+/*
+ // append calendar with #schedule -- schedule.js
+ if (document.getElementById('schedule') !== null) createCalendar();
+
+ let footerAbout = document.querySelectorAll('footer .col.about')[0];
+ footerAbout.addEventListener('click', function(){
+     footerAbout.style.animation = 'rotate 1s';
+ })
+ footerAbout.addEventListener('animationend', function(e){
+     // console.log(document.cookie);
+     let cookie = document.cookie.split(';');
+     if (cookie.indexOf(' footer=check') === -1) {
+         alert('找到一張9折優惠券!');
+         document.cookie = 'footer=check';
+     }
+     else {
+         alert('這裡沒有東西了!');
+     }
+     e.target.removeAttribute('style');
+ })
+
+ */
+
+
 
 
 

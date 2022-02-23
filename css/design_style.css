@@ -239,7 +239,9 @@
 .demand-table li{
     width: 100%;
 }
-
+.demand-table li:nth-child(7){
+    padding-bottom: 10px;
+}
 .demand-table li:nth-child(even){
     padding-bottom: 20px;
 }
