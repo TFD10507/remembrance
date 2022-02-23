@@ -87,22 +87,83 @@
             <!-- ----------- cart list ---------- -->
             <form action="">
                 <div class="cart-list">
-                    <ul class="cart-header">
-                        <li></li>
-                        <li>商品名稱</li>
-                        <li>尺寸</li>
-                        <li>售價</li>
+                    <ul class="pc-cart-header">
+                        <!-- <li></li> -->
+                        <li>商品資訊</li>
+                        <!-- <li>尺寸</li> -->
+                        <li>單價</li>
                         <li>數量</li>
-                        <li>合計</li>
+                        <!-- <li>合計</li> -->
                         <li>操作</li>
                     </ul>
+                    <ul class="sp-cart-header">
+                        <li>商品清單</li>
+                    </ul>
+
+
                     <ul class="cart-content">
-                        <li>
+                        <li class="cart-content-flex">
+                            <div class="img">
+                                <img src="./source/product/ring/wave.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>波浪席捲</p>
+                                <p>#16</p>
+                            </div>
+                        </li>
+                        <li class="price">
+                            <p>NT$1480</p>
+                        </li>
+                        <li class="count">
+                            <div><span class="num-jian">-</span></div>
+                            <div><input type="text" class="input-num" value="1" /></div>
+                            <div><span class="num-jia">+</span></div>
+                        </li>
+                        <li class="operate">
+                            <a href="#" class="del">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="cart-content">
+                        <li class="cart-content-flex">
+                            <div class="img">
+                                <img src="./source/product/ring/six_edge.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>平行六角形</p>
+                                <p>#7</p>
+                            </div>
+                        </li>
+                        <li class="price">
+                            <p>NT$1480</p>
+                        </li>
+                        <li class="count">
+                            <div><span class="num-jian">-</span></div>
+                            <div><input type="text" class="input-num" value="1" /></div>
+                            <div><span class="num-jia">+</span></div>
+                        </li>
+                        <li class="operate">
+                            <a href="#" class="del">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- <ul class="cart-content">
+                        <li class="inline">
                             <img src="./source/product/ring/wave.jpg" alt="">
                         </li>
-                        <li>波浪席捲</li>
-                        <li>#16</li>
-                        <li>NT$1480</li>
+                        <li class="inline name">波浪席捲</li>
+                        <li class="inline name">#16</li>
+                        <li class="inline name">NT$1480</li>
                         <li>
                             <div class="count">
                                 <div><span class="num-jian">-</span></div>
@@ -144,7 +205,7 @@
                                 <i class="far fa-heart"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </form>
             <div class="cart-middle">
