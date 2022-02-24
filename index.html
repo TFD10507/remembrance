@@ -13,7 +13,18 @@
 </head>
 
 <body>
-    
+    <div id="load">
+
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>D</div>
+        <div>A</div>
+        <div>O</div>
+        <div>L</div>
+        <img src="./source/logo3.png" alt="" class="loading-img">
+    </div>
+
     <div class="wrapper">
         <!-- -----------left-------------- -->
         <nav class="main-sel">
@@ -77,7 +88,8 @@
         <div class="right">
             <!------------ banner ------------>
             <div class="banner">
-                <video src="./source/index_video.mp4" playsinline autoplay muted loop type="video/mp4" height="100%" width="100%" class="banner-video">
+                <video src="./source/index_video.mp4" playsinline autoplay muted loop type="video/mp4" height="100%"
+                    width="100%" class="banner-video">
                 </video>
 
                 <div class="banner-text-position">
@@ -184,20 +196,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="./js/all.js"></script>
     <script>
         AOS.init();
 
         // 載入畫面
-        // var $loading = $('#loading');
-        // window.addEventListener("load", function () {
-        //     setTimeout(function () {
-        //         $loading.fadeOut(1000);
-        //     }, 1000);
-        //     setTimeout(function () {
-        //         document.getElementsByClassName("loading")[0].remove();
-        //     }, 2000);
-        // });
+        let $loading = $('#load');
+
+        window.addEventListener("load", function () {
+            $("#load img").animate({
+                "opacity": ".8"
+            }, 3000);
+            setTimeout(function () {
+                $loading.fadeOut(3000);
+            }, 3000);
+            setTimeout(function () {
+                document.getElementsById("load").remove();
+            }, 6000);
+        });
     </script>
 
 </body>
