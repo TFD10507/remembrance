@@ -143,9 +143,21 @@
     padding-top: 30px;
 }
 
+.product-list a{
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
 .product-list img{
     max-width: 100%;
+    object-fit: cover;
+    transition: .5s;
+    display: block;
 } 
+.product-list img:hover{
+    transform: scale(1.2);
+}
 
 
 .price{
