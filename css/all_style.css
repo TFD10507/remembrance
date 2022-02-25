@@ -491,10 +491,14 @@ select{
   .align-bottom.slide-in {
     transform:translateY(40%);
   }
+  .zoom-in.slide-in{
+    opacity: 0;
+    transform:scale(0.5);
+  }
 
   .slide-in.active {
     opacity: 1;
-    transform:translate(0%,0%);
+    transform:translate(0%,0%) scale(1);
   }
 
 
@@ -522,6 +526,7 @@ select{
     left: 50%;
     width: 50px;
     opacity: 0;
+    transform: translateX(-50%);
   }
 
   #load div {

@@ -99,7 +99,7 @@ html{
 .index-course{
     /* border: solid black 1px; */
     position: relative;
-
+    width: 100%;
 }
 
 .index-course ul{

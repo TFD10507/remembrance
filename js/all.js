@@ -21,7 +21,8 @@ function checkSlide() {
         // 取得圖片1/2高度的定位點（卷軸垂直位移量＋視窗高度）- 1/2圖片高度
         const slideInAt = (window.scrollY + window.innerHeight) - (sliderItem.offsetHeight / 4);
         // 取得圖片底部定位點（利用圖片頂部定位點+圖片高度取得）
-        const imageBottom = sliderItem.offsetTop + sliderItem.offsetHeight;
+        const imageBottom = sliderItem.offsetTop + sliderItem.offsetHeight + 300;
+        console.log(imageBottom);
         // 判斷視窗是否已經超過圖片高度一半
         const isHalfShown = slideInAt > sliderItem.offsetTop;
         // 判斷滾動範圍是否已經超過圖片底部（卷軸垂直位移量）
