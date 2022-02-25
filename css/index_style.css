@@ -99,11 +99,11 @@ html{
 .index-course{
     /* border: solid black 1px; */
     position: relative;
-    width: 100%;
+    max-width: 100%;
 }
 
 .index-course ul{
-    width: 100%;
+    max-width: 100%;
     height: 300px;
     margin: 0 auto;
 
@@ -115,22 +115,35 @@ html{
     background-size: cover;
     background-position: center center;
     transition: .5s;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .index-ring{
     background-image: url('../source/product/ring/four_ring.jpg');
-    flex-grow: 3;
 }
+
 
 .index-pendant{
     background-image: url('../source/product/pendant/square.jpg');
-    flex-grow: 1.5;
 }
 
 .index-bracelet{
     background-image: url('../source/product/bracelet/twist.jpg');
-    flex-grow: 2;
 }
+
+.tex {
+    background-color: rgba(153, 153, 139,.3);
+    text-align: center;
+    color: #FEF8EF;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 232px;
+    letter-spacing: 1px;
+}
+
+
+
 /* ====== 大於769px ====== */
 @media (min-width:769px) {
     .index-course li:hover{
@@ -138,7 +151,7 @@ html{
     }
 }
 
-.index-course p{
+.index-course ul + p{
     /* border: solid black 1px; */
     width: 500px;
     padding-top: 30px;
@@ -229,61 +242,6 @@ html{
 }
 
 
-/* ================= loading ================= */
-/* 
-.loading_block{
-    background-image: url(../source/loading.jpg);
-    background-size: cover;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
-
-.loading-dot{
-    position: absolute;
-  left: 51%;
-  top: 62%;
-  transform: translate(-50%, -50%);
-}
-
-span.dot{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-    position: relative;
-    top: 3px;
-    left: -3px;
-    
-    z-index: 5;
-    animation-name: twinkle;
-    animation-duration: .8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-
-  span.-dot2{
-    animation-delay: .2s;
-  }
-  span.-dot3{
-    animation-delay: .4s;
-  }
-
-  @keyframes twinkle{
-    0%{
-      opacity: .1;
-    }
-    100%{
-      opacity: 1;
-    }
-  } */
-
-
 /* ================ 小於575.98 =============== */
 @media (max-width:575.98px) {
       /* ----- banner ----- */
@@ -327,7 +285,7 @@ span.dot{
 
     /* --------- index-course --------- */
     .index-course ul{
-        height: 600px;
+        height: 900px;
 
         flex-direction:column
         /* border: solid white 3px; */
@@ -344,7 +302,7 @@ span.dot{
     .index-bracelet{
         flex-grow: 1;
     }
-    .index-course p{
+    .index-course ul + p{
         width: 100%;
     }
     
@@ -424,7 +382,7 @@ span.dot{
 
     /* --------- index-course --------- */
     .index-course ul{
-        height: 800px;
+        height: 900px;
 
         flex-direction:column
         /* border: solid white 3px; */
