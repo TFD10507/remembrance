@@ -91,7 +91,7 @@ html{
     font-size: 80px;
 
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     right: -70px;
 }
 
@@ -131,7 +131,7 @@ html{
     background-image: url('../source/product/bracelet/twist.jpg');
     flex-grow: 2;
 }
-/* ---------- 大於769px ----------- */
+/* ====== 大於769px ====== */
 @media (min-width:769px) {
     .index-course li:hover{
         flex-grow: 5;
