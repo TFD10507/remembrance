@@ -4,7 +4,7 @@
 .top span:nth-child(2)::before{
 	position: absolute;
 	top: 100px;
-	left: 45%;
+	left: 46%;
 }
 
 @media (max-width:575.98px) {
@@ -22,7 +22,7 @@
     .top span:nth-child(2)::before{
         position: absolute;
         top: 100px;
-        left: 39%;
+        left: 42%;
     }
 }
 

@@ -260,7 +260,7 @@
   }
 
   /* 提交 */
-  .submit{
+  .hand-merit-fade-body li .submit{
       display: block;
       width: 100px;
       height: 40px;
@@ -271,6 +271,7 @@
       position: absolute;
       bottom: 10px;
       right: 10px;
+      border-bottom: 0;
   }
 
   .submit:hover{
