@@ -37,5 +37,6 @@ function checkSlide() {
     });
 }
 
+window.addEventListener('load', debounce(checkSlide));
 window.addEventListener('scroll', debounce(checkSlide));
 
