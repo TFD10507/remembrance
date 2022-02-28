@@ -166,7 +166,7 @@
                     </div>
                     <div class="delivery">
                         <span>運送方式</span>
-                        <span>宅配NT$80</span>
+                        <span>宅配 NT$80</span>
                     </div>
                 </div>
 
@@ -324,7 +324,7 @@
                         // console.log(e.which);  //e.which轉換成代碼
 
                         // 除了數字0-9及刪除鍵外，不得輸入其他字
-                        if ((e.which >= 48 && e.which <= 57) || e.which == 8) {
+                        if ((e.which >= 48 && e.which <= 57) || (e.which == 8) || (e.which >= 96 && e.which <= 105)) {
 
                             // 刪除鍵可以跨欄位刪除
                             if (e.target.value.length == 0 && e.which == 8) {

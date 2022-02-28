@@ -55,61 +55,30 @@
     position: relative;
 }
 
-.photo-thumbs ul{
-    display: flex;
-    overflow: hidden;
-}
-
-/* .photo-small{
-    display: flex;
-    overflow: hidden;
-} */
-
-.photo-small{
+.photo-small img{
     width: 80px;
     height: 80px;
     flex-shrink: 0;
-    margin-right: 10px;
 }
 
-/* .photo-small img{
-    width: 80px;
-    height: 80px;
-    flex-shrink: 0;
-    margin-right: 10px;
-} */
+  /* slick套件-按鈕 */
+  .slick-next:before,
+  .slick-prev:before {
+      color: black;
+      font-weight: bold;
+  }
+  
+  .slick-next:before {
+      content: '>';
+  }
+  .slick-prev:before {
+      content: '<';
+  }
+  
+  .slick-dots li button:before {
+      font-size: 30px;
+  }
 
-.photo-thumbs img{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.photo-thumbs .fa{
-    display: block;
-    width: 25px;
-    color: rgb(153, 153, 139);
-    text-align: center;
-    line-height: 80px;
-    font-size: 1.5em;
-    position: absolute;
-    top: 30px;
-    bottom: 0;
-    margin: auto;
-    cursor: pointer;
-  }
-  
-  .fa:hover{
-    color:#666;
-  }
-  
-  .fa-angle-left{
-    left: -30px;
-  }
-  
-  .fa-angle-right{
-    right: -30px;
-  }
 
   /* ---------- 商品介紹右邊 ------------ */
   
@@ -228,7 +197,7 @@
   }
 
 
-
+ 
 
 
 
