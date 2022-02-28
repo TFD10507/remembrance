@@ -32,6 +32,9 @@ form{
     padding: 50px 0 80px;
     position: relative;
 }
+.sp-form{
+    padding: 0 0 80px;
+}
 
 table{
     /* border:  green solid 5px; */

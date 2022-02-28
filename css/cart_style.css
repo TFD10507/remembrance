@@ -51,6 +51,10 @@ form{
 
 .sp-cart-header{
     display: none;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    text-align: left;
 }
 
 .pc-cart-header li{
