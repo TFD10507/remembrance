@@ -38,12 +38,13 @@
 
 .photo-large{
     width: 100%;
-    height: auto;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
 }
 
 .photo-large img{
     max-width: 100%;
-    max-height: auto;
     display: block;
 }
 
@@ -59,12 +60,24 @@
     overflow: hidden;
 }
 
+/* .photo-small{
+    display: flex;
+    overflow: hidden;
+} */
+
 .photo-small{
     width: 80px;
     height: 80px;
     flex-shrink: 0;
     margin-right: 10px;
 }
+
+/* .photo-small img{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 10px;
+} */
 
 .photo-thumbs img{
     width: 100%;

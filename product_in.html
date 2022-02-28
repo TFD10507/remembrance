@@ -88,12 +88,18 @@
                 <div class="product-in-main">
                     <div class="product-in-photo">
                         <div class="photo-large">
-                            <img src="./source/product/ring/s.jpg" alt="">
+                            <img src="./source/product/ring/s.jpg" alt="" class="large-pic">
                         </div>
 
                         <div class="photo-thumbs">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
-
+                            <!-- <div class="photo-small">
+                                <img src="./source/product/ring/s.jpg" alt="">
+                                <img src="./source/product/ring/s2.jpg" alt="">
+                                <img src="./source/product/ring/s3.jpg" alt="">
+                                <img src="./source/product/ring/s4.jpg" alt="">
+                                <img src="./source/product/ring/s4.jpg" alt="">
+                            </div> -->
                             <ul>
                                 <li class="photo-small">
                                     <img src="./source/product/ring/s.jpg" alt="">
@@ -211,7 +217,7 @@
                         <div class="square-img">
                             <img src="./source/product/pendant/square.jpg" alt="">
                         </div>
-                        
+
                         <a href="design.html">聯絡我們</a>
                     </div>
 
@@ -312,7 +318,8 @@
 
         <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
+
         <!-- 回到頂端按鈕 start -->
         <script>
             //<![CDATA[
@@ -346,9 +353,26 @@
                     resize: function () { goTopMove(); }
                 });
             })();
-        //]]>
+        //<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
+
+        // ===== 點擊換縮圖圖片 ===============
+        function showLarge(e) {
+                // let img = e.target;
+                // alert(img.src);
+                document.getElementsByClassName("large-pic")[0].src = e.target.src;
+            }
+
+            function init() {
+                let smalls = document.getElementsByClassName("photo-small");
+                for (let i = 0; i < smalls.length; i++) {
+                    smalls[i].onclick = showLarge;
+                }
+            }
+
+            window.addEventListener("load", init, false);
         </script>
-        <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
     </div>
 </body>
 
