@@ -206,7 +206,7 @@ footer ul {
 
 footer li {
     /* border: black solid 1px; */
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 footer ul i {
@@ -234,6 +234,7 @@ footer hr {
     footer ul{
         display: block;
         padding: 50px;
+        padding-right: 0;
     }
     footer li{
         margin-bottom: 10px;
@@ -491,7 +492,7 @@ select{
   .align-bottom.slide-in {
     transform:translateY(40%);
   }
-  .zoom-in.slide-in{
+  .slide-in{
     opacity: 0;
     transform:scale(0.5);
   }
