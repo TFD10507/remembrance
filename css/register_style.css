@@ -59,7 +59,7 @@ tr:nth-child(6) input{
     padding: 5px;
 }
 
-form a{
+form .btn{
     text-decoration: none;
     color: white;
     display: block;
@@ -75,7 +75,7 @@ form a{
     transform: translate(50%, 0);
 }
 
-form a:hover{
+form .btn:hover{
     background-color: rgba(108, 56, 133, 1);
 }
 
