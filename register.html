@@ -91,7 +91,7 @@
                     <tr class="input">
                         <td>電子信箱</td>
                         <td>
-                            <input type="username" id="username" class="username_email" name="username"
+                            <input type="username" class="username_email" name="username"
                                 placeholder="您的電子郵件地址" required>
                         </td>
                     </tr>
@@ -135,7 +135,7 @@
                     <tr>
                         <td>生日</td>
                         <td>
-                            <input type="date" name="bithday" min="1920-01-01" max="today">
+                            <input type="date" name="bithday" min="1920-01-01" max="today" required>
                         </td>
                     </tr>
 
@@ -143,14 +143,14 @@
                     <tr class="input">
                         <td>電話</td>
                         <td>
-                            <input type="phone" class="phone" name="phone">
+                            <input type="phone" class="phone" name="phone" required>
                         </td>
                     </tr>
                     <!-- 8 地址 -->
                     <tr class="input">
                         <td>地址</td>
                         <td>
-                            <input type="address" class="address" name="address">
+                            <input type="address" class="address" name="address" required>
                         </td>
                     </tr>
                     <!-- 9 同意 -->
@@ -162,7 +162,8 @@
                         </td>
                     </tr>
                 </table>
-                <a href="member.html" class="btn">註冊</a>
+                <input type="submit" value="註冊" class="btn">
+                <!-- <a href="member.html" class="btn">註冊</a> -->
             </form>
 
             <form action="" class="sp-form">
@@ -170,7 +171,7 @@
                     <!-- 1 帳號 -->
                     <li>電子信箱</li>
                     <li class="input">
-                        <input type="username" id="username" class="username_email" name="username"
+                        <input type="username" class="username_email" name="username"
                             placeholder="您的電子郵件地址" required>
                     </li>
 
@@ -204,18 +205,18 @@
                     <!-- 6 生日 -->
                     <li>生日</li>
                     <li class="birthday">
-                        <input type="date" name="bithday" min="1920-01-01" max="today">
+                        <input type="date" name="bithday" min="1920-01-01" max="today" required>
                     </li>
 
                     <!-- 7 電話 -->
                     <li>電話</li>
                     <li class="input">
-                        <input type="phone" class="phone" name="phone">
+                        <input type="phone" class="phone" name="phone" required>
                     </li>
                     <!-- 8 地址 -->
                     <li>地址</li>
                     <li class="input">
-                        <input type="address" class="address" name="address">
+                        <input type="address" class="address" name="address" required>
                     </li>
                     <!-- 9 同意 -->
                     <li>
@@ -223,7 +224,8 @@
                         <label for="agree">我已閱讀並同意
                             <a href="#">《隱私權保護政策》</a>及<a href="#">《定型化契約條款》</a>。</label>
                     </li>
-                    <a href="member.html" class="btn">註冊</a>
+                    <input type="submit" value="註冊" class="btn">
+                    <!-- <a href="member.html" class="btn">註冊</a> -->
             </form>
         </div>
         <!-- ------------------footer---------------- -->
