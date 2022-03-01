@@ -121,10 +121,10 @@
                     <div class="product-in-right">
                         <ul class="product-in-text">
                             <li>
-                                <h2>曲道蜿蜒</h2>
+                                <h2 prd_id="001">曲道蜿蜒</h2>
                             </li>
                             <li>
-                                <h2>NT$1280</h2>
+                                <h2 class="price">NT$1280</h2>
                             </li>
                             <li>
                                 純銀戒指彎曲成S 形，給人具有柔軟的印象，是個只要戴上它就會讓妳開心的可愛設計。
@@ -160,7 +160,7 @@
                                 </select>
                             </li>
                             <li>數量</li>
-                            <li>
+                            <li class="num">
                                 <select>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -185,7 +185,7 @@
                                 </select>
                             </li>
                             <li>
-                                <a href="cart.html">
+                                <a href="cart.html" class="prd-btn">
                                     <i class="fas fa-shopping-cart"></i>加入購物車
                                 </a>
                                 <i class="far fa-heart"></i>
@@ -309,132 +309,129 @@
                 參考資源：https://ringram.jp/course/engraving/
             </p>
         </footer>
-
-
-        <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-        <!-- slick -->
-        <script src="./js/slick/slick.min.js"></script>
-        
-        <script src="./js/cart.js"></script>
-        <!-- 回到頂端按鈕 start -->
-        <script>
-            //<![CDATA[
-            (function () {
-                $("body").append("<img id='goTopButton' style='display: none; width:50px; z-index: 5; cursor: pointer;'/>");
-                var img = "./source/top.png",
-                    locatioin = 4 / 5, // 按鈕出現在螢幕的高度
-                    right = 10, // 距離右邊 px 值
-                    opacity = 0.5, // 透明度
-                    speed = 500, // 捲動速度
-                    $button = $("#goTopButton"),
-                    $body = $(document),
-                    $win = $(window);
-                $button.attr("src", img);
-                $button.on({
-                    mouseover: function () { $button.css("opacity", 1); },
-                    mouseout: function () { $button.css("opacity", opacity); },
-                    click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
-                });
-                window.goTopMove = function () {
-                    var css = { "top": $win.height() * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
-                    if ($body.scrollTop() > 300) {
-                        $button.css(css);
-                        $button.fadeIn("slow");
-                    } else {
-                        $button.fadeOut("slow");
-                    }
-                };
-                $win.on({
-                    scroll: function () { goTopMove(); },
-                    resize: function () { goTopMove(); }
-                });
-            })();
-            //<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
-
-
-            // ===== 點擊換縮圖圖片 ===============
-            function showLarge(e) {
-                // let img = e.target;
-                // alert(img.src);
-                document.getElementsByClassName("large-pic")[0].src = e.target.src;
-            }
-
-            function init() {
-                let smalls = document.getElementsByClassName("photo-small");
-                for (let i = 0; i < smalls.length; i++) {
-                    smalls[i].onclick = showLarge;
-                }
-            }
-
-            window.addEventListener("load", init, false);
-
-            // ===== slick 輪播套件 =======
-            $(document).ready(function () {
-                $(".responsive").slick({
-                    dots: true,
-                    infinite: false,
-                    speed: 300,
-                    slidesToShow: 6,
-                    slidesToScroll: 6,
-                    arrows: true,
-                    responsive: [
-                    {
-                            breakpoint: 1500,
-                            settings: {
-                                slidesToShow: 5,
-                                slidesToScroll: 5,
-                                infinite: true,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 1270,
-                            settings: {
-                                slidesToShow: 4,
-                                slidesToScroll: 4,
-                                infinite: true,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 3,
-                                infinite: true,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 631,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 2
-                            }
-                        },
-                        {
-                            breakpoint: 575.98,
-                            settings: {
-                                slidesToShow: 4,
-                                slidesToScroll: 4
-                            }
-                        },
-                        {
-                            breakpoint: 386,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 3
-                            }
-                        }
-                    ]
-                });
-            });
-
-        </script>
-
     </div>
+    <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- slick -->
+    <script src="./js/slick/slick.min.js"></script>
+
+    <script src="./js/cart.js"></script>
+    <!-- 回到頂端按鈕 start -->
+    <script>
+        //<![CDATA[
+        (function () {
+            $("body").append("<img id='goTopButton' style='display: none; width:50px; z-index: 5; cursor: pointer;'/>");
+            var img = "./source/top.png",
+                locatioin = 4 / 5, // 按鈕出現在螢幕的高度
+                right = 10, // 距離右邊 px 值
+                opacity = 0.5, // 透明度
+                speed = 500, // 捲動速度
+                $button = $("#goTopButton"),
+                $body = $(document),
+                $win = $(window);
+            $button.attr("src", img);
+            $button.on({
+                mouseover: function () { $button.css("opacity", 1); },
+                mouseout: function () { $button.css("opacity", opacity); },
+                click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
+            });
+            window.goTopMove = function () {
+                var css = { "top": $win.height() * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
+                if ($body.scrollTop() > 300) {
+                    $button.css(css);
+                    $button.fadeIn("slow");
+                } else {
+                    $button.fadeOut("slow");
+                }
+            };
+            $win.on({
+                scroll: function () { goTopMove(); },
+                resize: function () { goTopMove(); }
+            });
+        })();
+        //<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
+
+        // ===== 點擊換縮圖圖片 ===============
+        function showLarge(e) {
+            // let img = e.target;
+            // alert(img.src);
+            document.getElementsByClassName("large-pic")[0].src = e.target.src;
+        }
+
+        function init() {
+            let smalls = document.getElementsByClassName("photo-small");
+            for (let i = 0; i < smalls.length; i++) {
+                smalls[i].onclick = showLarge;
+            }
+        }
+
+        window.addEventListener("load", init, false);
+
+        // ===== slick 輪播套件 =======
+        $(document).ready(function () {
+            $(".responsive").slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1500,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 5,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1270,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 631,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 575.98,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 386,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
 </body>
 
 </html>
