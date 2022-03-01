@@ -74,6 +74,7 @@ form .btn{
     right: 50%;
     bottom: 20px;
     transform: translate(50%, 0);
+    cursor: pointer;
 }
 
 form .btn:hover{

@@ -334,6 +334,7 @@ button {
     border: 0;
     background-color: rgb(178, 144, 193);
     color: white;
+    cursor: pointer;
 }
 
 button:hover {

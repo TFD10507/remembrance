@@ -55,6 +55,7 @@
     padding: 30px;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 60px;
     border: #333 solid 1px; 
     box-sizing: border-box;
 }
@@ -76,10 +77,7 @@
     padding-bottom: 20px;
 }
 
-.revise ul li .revise_btn{
-    /* position: absolute;
-    bottom: 0;
-    right: 0; */
+/* .revise ul li .revise_btn{
     border: 0;
     width: 100px;
     height: 40px;
@@ -89,10 +87,17 @@
 
 .revise ul li .revise_btn:hover{
     background-color: rgba(108, 56, 133, 1);
+} */
+
+.revise_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .revise li:nth-child(9){
     text-align: center;
+    position: relative;
 }
 
 @media (max-width:768.98px) {

@@ -272,9 +272,11 @@
       bottom: 10px;
       right: 10px;
       border-bottom: 0;
+      border-radius: 0;
+      cursor: pointer;
   }
 
-  .submit:hover{
+  .hand-merit-fade-body li .submit:hover{
     background-color: rgba(108, 56, 133, 1);
   }
 
