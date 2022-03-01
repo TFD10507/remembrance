@@ -31,7 +31,7 @@ function checkSlide() {
         // 判斷是否超過圖片一半高，且視窗尚未超過圖片底部來增加或移除css效果
         if (isHalfShown && isNotScrolledPast) {
             sliderItem.classList.add('active');
-        } else {
+        }else {
             sliderItem.classList.remove('active');
         }
     });
