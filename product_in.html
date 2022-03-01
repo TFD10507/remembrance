@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>留憶金工</title>
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/product_in_style.css">
     <link rel="icon" href="./source/R.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -88,13 +91,11 @@
                 <div class="product-in-main">
                     <div class="product-in-photo">
                         <div class="photo-large">
-                            <img src="./source/product/ring/s.jpg" alt="">
+                            <img src="./source/product/ring/s.jpg" alt="" class="large-pic">
                         </div>
 
                         <div class="photo-thumbs">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-
-                            <ul>
+                            <ul class="slider responsive">
                                 <li class="photo-small">
                                     <img src="./source/product/ring/s.jpg" alt="">
                                 </li>
@@ -112,7 +113,7 @@
                                 </li>
                             </ul>
 
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-angle-right" aria-hidden="true"></i> -->
                         </div>
                     </div>
 
@@ -211,7 +212,7 @@
                         <div class="square-img">
                             <img src="./source/product/pendant/square.jpg" alt="">
                         </div>
-                        
+
                         <a href="design.html">聯絡我們</a>
                     </div>
 
@@ -312,7 +313,10 @@
 
         <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
+        <!-- slick -->
+        <script src="./js/slick/slick.min.js"></script>
+
         <!-- 回到頂端按鈕 start -->
         <script>
             //<![CDATA[
@@ -321,7 +325,7 @@
                 var img = "./source/top.png",
                     locatioin = 4 / 5, // 按鈕出現在螢幕的高度
                     right = 10, // 距離右邊 px 值
-                    opacity = 0.3, // 透明度
+                    opacity = 0.5, // 透明度
                     speed = 500, // 捲動速度
                     $button = $("#goTopButton"),
                     $body = $(document),
@@ -346,9 +350,89 @@
                     resize: function () { goTopMove(); }
                 });
             })();
-        //]]>
+            //<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
+
+            // ===== 點擊換縮圖圖片 ===============
+            function showLarge(e) {
+                // let img = e.target;
+                // alert(img.src);
+                document.getElementsByClassName("large-pic")[0].src = e.target.src;
+            }
+
+            function init() {
+                let smalls = document.getElementsByClassName("photo-small");
+                for (let i = 0; i < smalls.length; i++) {
+                    smalls[i].onclick = showLarge;
+                }
+            }
+
+            window.addEventListener("load", init, false);
+
+            // ===== slick套件 =======
+            $(document).ready(function () {
+                $(".responsive").slick({
+                    dots: true,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                    arrows: true,
+                    responsive: [
+                    {
+                            breakpoint: 1500,
+                            settings: {
+                                slidesToShow: 5,
+                                slidesToScroll: 5,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 1270,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 4,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 631,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 575.98,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 4
+                            }
+                        },
+                        {
+                            breakpoint: 386,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                            }
+                        }
+                    ]
+                });
+            });
+
         </script>
-        <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
     </div>
 </body>
 
