@@ -89,6 +89,9 @@
   }
 
   /* 價錢顏色 */
+  .price::before{
+      content: 'NT$';
+  }
   .product-in-text li:nth-child(2){
       color: rgba(209, 194, 55, 1);
   }
