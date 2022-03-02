@@ -34,7 +34,7 @@ function get_takes() {
             <ul class="cart-content">
             <li class="cart-content-flex" prd_id="${carts[i].prd_id}" prd_index="${i}">
             <div class="img">
-                <img src="./source/product/ring/s.jpg" alt="">
+                <img src="./source/product/ring/${carts[i].prd_id}.jpg" alt="">
             </div>
             <div class="info">
                 <p>${carts[i].prd_name}</p>
