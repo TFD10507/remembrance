@@ -310,50 +310,20 @@
                 參考資源：https://ringram.jp/course/engraving/
             </p>
         </footer>
+
+        <div class="js-back-to-top">
+            <img src="./source/top.png" alt="">
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/8642ae3472.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- slick -->
     <script src="./js/slick/slick.min.js"></script>
-
+    <script src="./js/all.js"></script>
     <script src="./js/cart.js"></script>
-    <!-- 回到頂端按鈕 start -->
+    
     <script>
-        //<![CDATA[
-        (function () {
-            $("body").append("<img id='goTopButton' style='display: none; width:50px; z-index: 5; cursor: pointer;'/>");
-            var img = "./source/top.png",
-                locatioin = 4 / 5, // 按鈕出現在螢幕的高度
-                right = 10, // 距離右邊 px 值
-                opacity = 0.5, // 透明度
-                speed = 500, // 捲動速度
-                $button = $("#goTopButton"),
-                $body = $(document),
-                $win = $(window);
-            $button.attr("src", img);
-            $button.on({
-                mouseover: function () { $button.css("opacity", 1); },
-                mouseout: function () { $button.css("opacity", opacity); },
-                click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
-            });
-            window.goTopMove = function () {
-                var css = { "top": $win.height() * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
-                if ($body.scrollTop() > 300) {
-                    $button.css(css);
-                    $button.fadeIn("slow");
-                } else {
-                    $button.fadeOut("slow");
-                }
-            };
-            $win.on({
-                scroll: function () { goTopMove(); },
-                resize: function () { goTopMove(); }
-            });
-        })();
-        //<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
-
-
         // ===== 點擊換縮圖圖片 ===============
         function showLarge(e) {
             // let img = e.target;

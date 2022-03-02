@@ -85,7 +85,7 @@
                 </h1>
             </div> -->
             <!------------ banner ------------>
-            <div class="banner align-bottom slide-in">
+            <div class="banner align-bottom slide-in slide-in-rwd">
                 <div class="flex-design">
                     <div class="design-img">
                         <img src="./source/product/pendant/square.jpg" alt="">
@@ -100,8 +100,8 @@
                             </h1>
                         </div>
                         <p>The most beautiful things in life.
-                        <br><br>
-                        一份獨一無二的禮物，給正在尋找不同於一般戒指的你(們) 。
+                            <br><br>
+                            一份獨一無二的禮物，給正在尋找不同於一般戒指的你(們) 。
                         </p>
                     </div>
                 </div>
@@ -265,6 +265,10 @@
             </p>
         </footer>
 
+        <div class="js-back-to-top">
+            <img src="./source/top.png" alt="">
+        </div>
+
     </div>
     <script src="./js/all.js"></script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -273,43 +277,7 @@
     </script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-    <!-- 回到頂端按鈕 start -->
-    <script>
-        //<![CDATA[
-        (function () {
-            $("body").append("<img id='goTopButton' style='display: none; width:50px; z-index: 5; cursor: pointer;'/>");
-            var img = "./source/top.png",
-                locatioin = 4 / 5, // 按鈕出現在螢幕的高度
-                right = 10, // 距離右邊 px 值
-                opacity = 0.5, // 透明度
-                speed = 500, // 捲動速度
-                $button = $("#goTopButton"),
-                $body = $(document),
-                $win = $(window);
-            $button.attr("src", img);
-            $button.on({
-                mouseover: function () { $button.css("opacity", 1); },
-                mouseout: function () { $button.css("opacity", opacity); },
-                click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
-            });
-            window.goTopMove = function () {
-                var css = { "top": $win.height() * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
-                if ($body.scrollTop() > 300) {
-                    $button.css(css);
-                    $button.fadeIn("slow");
-                } else {
-                    $button.fadeOut("slow");
-                }
-            };
-            $win.on({
-                scroll: function () { goTopMove(); },
-                resize: function () { goTopMove(); }
-            });
-        })();
-    //]]>
-    </script>
-    <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
 </body>
 
 </html>

@@ -89,9 +89,9 @@
             <!-- -----------------main------------------- -->
             <div class="container">
                 <div class="course-notice">
-                    <h2 class="align-top slide-in">課程須知</h2>
-                    <hr class="align-left slide-in">
-                    <ul class="align-left slide-in">
+                    <h2 class="align-top slide-in slide-in-rwd">課程須知</h2>
+                    <hr class="align-left slide-in slide-in-rwd">
+                    <ul class="align-left slide-in slide-in-rwd">
                         <li>採小班制教學，每次每個時段學生最多10位。</li>
                         <li>進入工作室內請全程配戴口罩，請勿攜帶外食。</li>
                         <li>報到採實名制，請配合量測體溫及酒精消毒。</li>
@@ -169,6 +169,9 @@
                 </p>
             </footer>
 
+            <div class="js-back-to-top">
+                <img src="./source/top.png" alt="">
+            </div>
 
         </div>
 
@@ -465,6 +468,7 @@
             </div>
         </div>
     </div>
+    
 
 
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
@@ -475,45 +479,7 @@
         AOS.init();
     </script> -->
     
-    <!-- 回到頂端按鈕 start -->
-    <script>
-        //<![CDATA[
-        (function () {
-            $("body").append("<img id='goTopButton' style='display: none; width:50px; z-index: 5; cursor: pointer;'/>");
-            var img = "./source/top.png",
-                locatioin = 4 / 5, // 按鈕出現在螢幕的高度
-                right = 10, // 距離右邊 px 值
-                opacity = 0.5, // 透明度
-                speed = 500, // 捲動速度
-                $button = $("#goTopButton"),
-                $body = $(document),
-                $win = $(window);
-            $button.attr("src", img);
-            $button.on({
-                mouseover: function () { $button.css("opacity", 1); },
-                mouseout: function () { $button.css("opacity", opacity); },
-                click: function () { $("html, body").animate({ scrollTop: 0 }, speed); }
-            });
-
-
-            window.goTopMove = function () {
-                var css = { "top": $win.height() * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity };
-                if ($body.scrollTop() > 300 && ($win.width() < 769) ) { //螢幕寬度 < 769且滑動 > 300才出現top
-                    $button.css(css);
-                    $button.fadeIn("slow");
-                } else {
-                    $button.fadeOut("slow");
-                }
-            };
-            $win.on({
-                scroll: function () { goTopMove(); },
-                resize: function () { goTopMove(); }
-            });
-        })();
-    //]]>
-    </script>
-    <!-- 回到頂端按鈕 end, Design by WFU BLOG -->
-
+    
 </body>
 
 </html>

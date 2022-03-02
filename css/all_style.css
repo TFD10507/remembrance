@@ -174,7 +174,7 @@ footer {
     width: 100%;
     background-color: rgba(225, 225, 197, .4);
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 14px;
     padding-top: 20px;
 }
 
@@ -187,7 +187,7 @@ footer {
 /* 左側 */
 
 .footer-text {
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 50px;
 }
 
@@ -206,7 +206,7 @@ footer ul {
 
 footer li {
     /* border: black solid 1px; */
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 footer ul i {
@@ -219,7 +219,7 @@ footer ul i {
 
 footer .reference {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 5px;
 }
 
 footer hr {
@@ -503,6 +503,11 @@ select{
     transform:translate(0%,0%) scale(1);
   }
 
+  .slide-in-rwd.active {
+    opacity: 1;
+    transform:translate(0%,0%) scale(1);
+  }
+
 
   /* =========== loading =========== */
 
@@ -697,4 +702,25 @@ select{
           transform:rotate(-180deg); 
           opacity:0;
       }
+  }
+
+
+  /* ======== go to top =========*/
+
+  .js-back-to-top{
+      width: 50px;
+      z-index: 5;
+      cursor: pointer;
+      position: fixed;
+      right: 10px;
+      bottom: 10%;
+      opacity: .5;
+  }
+
+  .js-back-to-top:hover{
+      opacity: 1;
+  }
+
+  .js-back-to-top img{
+      max-width: 100%;
   }

@@ -31,7 +31,7 @@ function checkSlide() {
         // 判斷是否超過圖片一半高，且視窗尚未超過圖片底部來增加或移除css效果
         if (isHalfShown && isNotScrolledPast) {
             sliderItem.classList.add('active');
-        }else {
+        } else {
             sliderItem.classList.remove('active');
         }
     });
@@ -40,3 +40,32 @@ function checkSlide() {
 window.addEventListener('load', debounce(checkSlide));
 window.addEventListener('scroll', debounce(checkSlide));
 
+
+
+// go to top
+document.addEventListener('DOMContentLoaded', function () {
+    $(function () {
+        var $win = $(window);
+        var $backToTop = $('.js-back-to-top');
+
+        // 當user滾動到離頂部300像素時，展示回到頂部按鈕
+        $win.scroll(function () {
+            if ($win.scrollTop() > 300) {
+                $backToTop.show();
+            }else if ($win.scrollTop() == 0) {
+                let slide_in_rwds = document.querySelectorAll('.slide-in-rwd');
+                slide_in_rwds.forEach(slide_in_rwd => {
+                    slide_in_rwd.classList.add('active');
+                });
+            }else {
+                $backToTop.hide();
+            }
+        });
+
+        // 當user點擊按鈕時，通過動畫效果返回頭部
+        $backToTop.click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 700);
+        });
+
+    });
+});
